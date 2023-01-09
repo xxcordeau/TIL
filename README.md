@@ -1,13 +1,9 @@
-# TIL
-dmfds.,dkfdfsd;
-dkfhljvdjnvj;
-gfhdghdhgfjh
-cfthgtf0GVJKADHGJKS
-eurkhffjfkasfa
-fjhsfhkfj
-dfkhlskv
-djhfgsauheifka
-dsjfgasklhfjkashlfeuj
-fsdahfdfnklsanf
-gdfdrtdfyg
-xfggyfuyg
+DFGLKHWERIOGHIAOKDJG
+FSDJKFHASLKJFLKdagfkl
+d'asfaukdsjfhsakhf;kldfh
+adsukfjahd;fa
+dsxkjfash'fjaf
+dsfjdsahf's
+dkfhas;'r
+dfhkjsdjk
+fdjkfhj'as
