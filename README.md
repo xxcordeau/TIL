@@ -1,5 +1,3 @@
 ddddss
 ffdddhnjkl;
-dfss
-
-sdasfghgfsd
+sty
