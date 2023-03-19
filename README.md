@@ -1,12 +1,2 @@
 djkl
 sdfjk
-d
-sdafg
-gfhjkl;
-fghhjkㅈㄷㄱ
-hjkㄱ
-ghjdf
-dfg
-ㅇㄹㄴ
-dfdf
-df
