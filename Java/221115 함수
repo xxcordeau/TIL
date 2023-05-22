@@ -1,0 +1,248 @@
+# 221115 함수
+
+### 함수
+
+- input , output , 기능
+    
+    ⇒ 메서드 시그니처
+    
+- 함수는 공간을 공유하지 않는다
+
+![*위 틀을 확인하면 이해가 쉽다.*](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b593d92-7141-466a-a79f-8bdb83574719/Untitled.png)
+
+*위 틀을 확인하면 이해가 쉽다.*
+
+- 메인 함수
+    
+    ### **public static void main(String[] args){  }**
+    
+
+| public | 공개범위. 모두공개 “접근제어자” |
+| --- | --- |
+| static | 객체와 무관하게 |
+| void | 아무것도 없다.  |
+
+괄호가 있다면 함수  함수는 선언 이후에 ‘**호출**’되어야 동작한다
+
+아래의 경우를 살펴보자
+
+| input | x | output | x |
+| --- | --- | --- | --- |
+
+```java
+//[함수]
+public class Test01 {
+	
+	//함수를 **선언**(정의)했다
+	**public static void hello ()** {
+		System.out.println("안녕하세요");
+	}
+	
+	public static void main(String[] args) {
+		hello(); //함수를 **호출**하여 사용했다.
+		hello();
+		hello();	
+	}
+
+}
+```
+
+아래의 경우를 살펴보자
+
+| input | o | output | x |
+| --- | --- | --- | --- |
+
+```java
+	**public static void func02(int a, int b){**
+		a++;
+		b++;
+		System.out.println("a="+a);
+		System.out.println("b="+b);
+	}
+	
+	
+	public static void main(String[] args) {
+		hello();//함수를 "호출"하여 사용했다.
+		int x=10;
+		int y=20;
+		func02(x,y);//값에 의한 호출 (call by value)
+		System.out.println("main:a="+x);	
+		System.out.println("main:b="+y);
+	}
+
+}
+```
+
+- 값에 의한 호출
+    - **call by value**
+    - 메모리 이동xx
+    - 변수안에 저장된 ‘값’만 전달
+- 참조에 의한 호출
+    - call by raference
+
+- 코드의 재 사용
+- 개발 비용 절감
+- 개발 시간 단축
+- **유지보수 용이**
+
+## return
+
+**함수는 return값을 만나면 함수 “즉시 종료”**
+
+| input | x | output | o |
+| --- | --- | --- | --- |
+
+```java
+**public static int func03(){**
+		System.out.println("로그 1");
+		System.out.println("로그 2");
+		return 100; //output을 반환하는 방법
+	} // return 값 안에서 코드를 작성해야함
+    **//데드코드: System.out.println("로그 2"); => 작동X**
+	
+	public static void main(String[] args) {
+		System.out.println( "main: " + func03() );
+		
+		int num=func03();
+		System.out.println( "num= " + num );
+// main도 함수이기 때문에 return가능
+```
+
+| input | o | output | o |
+| --- | --- | --- | --- |
+
+```java
+public class Test02 {
+	**public static double func04 (int a, int b) {**
+		**double** avg = (a + b)*1.0/2;
+		return avg;
+	}
+	public static void main(String[] args) {
+		System.out.println(func04(10,11));
+
+		double res=func04(11,12);
+		System.out.println(res);
+
+	}
+}
+```
+
+위 내용들을 이해했는지 아래의 코드를 보며 확인해보자
+
+```java
+**public static int f1 (int num1, int num2)** {
+		if(++num1>10 || ++num2>10) {
+			return num2;
+		}
+		else {
+			return num1;
+		}
+	}
+
+	public static void main(String[] args) {
+		int num1 = 10, num2=20;
+		num1=f1(num1,num2);
+		if(++num1==11 && ++num2==21) {
+			System.out.println("확인!");
+		}
+		System.out.println("num1:"+num1);
+		System.out.println("num2:"+num2);
+	}
+```
+
+함수를 이용하여 나이와 요금을 출력해보자
+
+public class Text04 {
+	public static boolean checkAge(int age) {
+		if(age<=0||200<=age) {
+			System.out.println("올바른 나이값이 아닙니다.");
+			return false;
+		}
+		return true;
+	}
+	public static int makePrice(int age) {
+		int price=0;
+		if(8<age && age<20) {
+			price=1000;
+		}
+		else if(19<age && age < 20) {
+			price=2000;
+		}
+		return price;
+	}
+	public static void main(String[] args) {
+		// 나이를 입력하면 요금출력
+		// 8살 이하 0원 
+		// 9~19까지는 1000원20~65 2000원66이상 0원
+	
+		Scanner sc = new Scanner(System.in);
+		int age;
+		while(true) {
+			System.out.println("나이입력");
+			age=sc.nextInt();
+			
+			if(checkAge(age)) {
+				break;
+			}
+		}
+		
+		int price = makePrice(age);
+				
+		System.out.println("나이:  "+ age + "살");
+		System.out.println("요금:  "+ price + "원");
+
+	}
+
+}
+package class08;
+import java.util.Random;
+public class Test01 {
+	//  선 활용 후 정의
+	//===선언==========================================
+	public static void action(int[] data) {
+								//참조에 의한 호출
+		for (int i=0; i<data.length; i++) {
+			if(data[i]%2==0) {
+				data[i]++;
+			}
+		}
+	}
+	
+	//====선언==========================================
+	public static void sort(int[] data) {
+		for(int a=0;a<data.length;a++) {
+			for(int i=0;i<data.length-1;i++) {
+				if(data[i]>data[i+1]) {
+					int tmp=data[i];
+					data[i]=data[i+1];
+					data[i+1]=tmp;
+				}
+			}
+		}
+	}
+	
+	//===호출===================================
+	public static void main(String[] args) {
+		
+		int[] data = new int [5];
+		Random rand = new Random();
+		
+		for (int i=0; i<data.length; i++) {
+			data[i]=rand.nextInt(100)+1;
+		}
+		for (int v : data) {
+			System.out.print(v+" ");
+		}
+		System.out.println();
+		
+		action(data);//  선 활용 후 정의 
+		sort(data);			
+		for(int v : data) {
+			System.out.print(v+ " ");
+		}
+		System.out.println();
+
+		
+	}
+
+}
