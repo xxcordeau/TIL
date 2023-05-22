@@ -189,3 +189,29 @@
     - 조건
         - 1~10까지 랜덤으로 정수를 생성
         - 총 5개를 저장 후 가장 작은 수는[  ] , 몇번 째에 저장되어 있는 지 출력
+        
+        					int[] data=new int[5];
+		      for(int i=0;i<data.length;i++) {
+		         data[i]=rand.nextInt(5)+1;
+		      }
+		      System.out.print("[ ");
+		      for(int v:data) {
+		         System.out.print(v+" ");
+		      }
+		      System.out.println("]");
+		      
+		      int min=data[0];
+		      for(int i=1;i<data.length;i++) {
+		         if(min>data[i]) {
+		            min=data[i];
+		         }
+		      }
+		      System.out.println("min: "+min);
+		      
+		      
+		      for(int i=0;i<data.length;i++) {
+		         if(data[i]==min) {
+		            System.out.print("["+(i+1)+"]");
+		         }
+		      }
+		      System.out.println("번째에 저장됨");
