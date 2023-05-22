@@ -1,0 +1,332 @@
+# 221111 반복문 (for문)
+
+- for
+    - 반복 횟수를 알 때
+    - N번,X회
+    - 1~n까지 A부터 d까지
+    - 배열과 함께 활용함
+- ~~ex)~~
+    - 1~12까지만 유효할 때, 사용자가 올바른 시간을 입력할 때 까지 / while
+    - 학생이 30명 있습니다 출석부에 사용할 반복문은? / for
+    - 종료 버튼을 누를 때 까지 반복 / while
+    - ARS 서비스를 만들 예정입니다. 0을 누르면 종료됩니다  / while
+    - 1부터 100가지의 정수 중에서 홀수의 개수를 카운팅 할 예정이다 / for
+- **for문**
+    
+    for문의 문법은 다음과 같다.
+    
+    ```java
+    //     (초기식; 조건식; 증감식){
+    //         수행할 소스코드;
+    			}
+    		int i;
+    		for(i=0; i<3; i++) {
+    			System.out.println("i" + i);
+    		}
+    		System.out.println("최종 i="+i);
+    ```
+    
+    | i | i<3 |
+    | --- | --- |
+    | 0 | T |
+    | 1 | T |
+    | 2 | T |
+    | 3 | F |
+    
+    초기식은 최초에 단 한번 수행
+    
+    ```java
+    //1~10까지 출력
+    	
+    		for(int i=1; i <=10;  i++) {
+    			System.out.println(i);
+    		}
+    //		xxx System.out.println();
+    
+    ```
+    
+    **약수를 구해보자**
+    
+    - 조건
+        - 1~12의 약수를 출력
+    
+    ```java
+    		int num =12;
+    		for(int i=1; i<=num;i++) {
+    			if(num%i==0) {
+    				System.out.println(i+" ");
+    			}
+    		}
+    ```
+    
+    **소수를 구해보자**
+    
+    ```java
+    		int num = 12;
+    		int cnt = 0;
+    		for(int i=1; i<=num; i++) {
+    			if(num%i == 0) {
+    				cnt++;
+    			}
+    		}
+    		
+    		if(cnt == 2) {
+    			System.out.println(num + "은 소수입니다.");
+    		}
+    		else {
+    			System.out.println(num + "은 소수가 아닙니다.");
+    		}
+    	
+    ```
+    
+    **완전수를 구해보자**
+    
+    ```java
+    		int num =12;
+    		int cnt = 0;
+    		int sum = 0;
+    		
+    		for(int i=1; i<=num;i++) {
+    			if(num%i==0) {
+    				sum+=i;
+    			}
+    		}
+    		
+    		if( sum == num ) { 
+    			System.out.println( num + "은 완전수입니다." );
+    		}
+    		else {
+    			System.out.println( num + "은 완전수가 아닙니다." );
+    		}
+    ```
+    
+    <aside>
+    ✔️ 해당 문제를 풀이해보자
+    
+    </aside>
+    
+    - 조건
+        - 정수 1: 14
+        정수 2: 10
+        10 11 12 13 14
+        - 합 60
+        - 평균 12.0
+    
+    ```java
+    
+    ```
+    
+    <aside>
+    ✔️ 해당 문제를 풀이해보자
+    
+    </aside>
+    
+    - 조건
+        - 정수: 100가지 중
+        2 3 5 7 11...
+        1~100중에서 소수는 총 ()개 입니다.
+    
+    ```java
+    
+    System.out.println("정수:   ");
+    		int num =sc.nextInt();
+    		
+    		
+    		int cnt = 0; // 총 소수의 개수
+    		for(int i =1; num>=i; i++) {
+    			
+    			int c=0; // i의 약수 개수
+    			for (int j=1; j<=i; j++){
+    				if(i%j==0) {
+    					c++;
+    				}
+    			}
+    			
+    			
+    			
+    			if( c == 2 ) {
+    				cnt++;
+    				System.out.println(i);
+    			}
+    		}
+    		System.out.println("1~"+num+"중에서 소수는 총"+cnt+"개 입니다.");
+    ```
+    
+    <aside>
+    ✔️ 해당 문제를 풀이해보자
+    
+    </aside>
+    
+    - 조건
+        - 정수: 5
+        5 4 3 2 1 0 까지 , 거꾸로 출력
+    
+    ```java
+    for(int a=0; a<5; a++) { //세로
+    			for(int i=0; a+i<5; i++) { //가로
+    				System.out.print("*");
+    			}
+    			System.out.println();
+    		}
+    ```
+    
+- **중첩 반복문, 이중 for문 (& 별찍기)**
+    
+    ### 중첩 반복문, 이중 for문
+    
+    구구단을 2단부터 9단까지 출력해보자
+    
+    ```java
+    for(int a=2; a<=9; a++) {
+    		// 8번 
+    			for(int i=1; i<=9; i++) {
+    			System.out.println(a + "X" + i + "=" + (a*i));
+    			// 8번 X 9번 => 총 72 번
+    			}
+    			
+    		}
+    
+    ```
+    
+    ### 별찍기
+    
+    **별찍기를 통해 디버깅표를 익혀보자**
+    
+    아래의 그림과 같이 별을 출력해보자
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1643ce4-2938-439a-8ce3-254a4c80a73d/Untitled.png)
+    
+    ```java
+    for(int a=0; a<5; a++) { //세로
+    			for(int i=0; i<=a; i++) { //가로
+    				System.out.print("*");
+    			}
+    			System.out.println();
+    }
+    ```
+    
+    | a | a<5 | i | i<=a |  |
+    | --- | --- | --- | --- | --- |
+    | 0 | T | 0 | T |  |
+    |  |  | 1 | F |  |
+    | 1 | T | 0 | T |  |
+    |  |  | 1 | T |  |
+    |  |  | 2 | F | i(2)<=a(1) |
+    | 2 | T | 0 | T |  |
+    |  |  | 1 | T |  |
+    |  |  | 2 | T |  |
+    |  |  | 3 | F | i(3)<=a(2) |
+    | 3 | T | 0 | T |  |
+    
+    아래의 그림과 같이 별을 출력해보자
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a21e185-4cf3-4fb3-bea1-99e90af35262/Untitled.png)
+    
+    ```java
+    for(int a=0; a<4; a++) {
+    	for(int i=0; a+i<4; i++) { 
+    	System.out.print("*");
+    	}
+    	System.out.println();
+    }
+    ```
+    
+    | a | a<4 | i | a+i<4 |  |
+    | --- | --- | --- | --- | --- |
+    | 0 | T | 0 | T |  |
+    |  |  | 1 | T |  |
+    |  |  | 2 | T |  |
+    |  |  | 3 | T |  |
+    |  |  | 4 | F | a+i(4) <4 |
+    | 1 | T | 0 | T |  |
+    
+    아래의 그림과 같이 별을 출력해보자
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77ce1b84-14d6-470c-8d42-6b3a76d3c1ff/Untitled.png)
+    
+    ```java
+    for(int i=1;i<5;i++){
+    			for(int j=4;j>0;j--){
+    				if(i<j){
+    					System.out.print(" ");
+    				}else{
+    					System.out.print("*");
+    				}
+    			}
+    ```
+    
+    | i | j | ??? |  |
+    | --- | --- | --- | --- |
+    | 0 | 0 | F |  |
+    |  | 1 | F |  |
+    |  | 2 | F |  |
+    |  | 3 | F |  |
+    |  | 4 | T | a+i >= 4 |
+    | 1 | 0 | F |  |
+    |  | 1 | F |  |
+    |  | 2 | F |  |
+    |  | 3 | T |  |
+    |  | 4 | T |  |
+    
+    아래의 그림과 같이 별을 입력해보자
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/94e57b06-c1c7-4c3c-aed9-be2eeb38d344/Untitled.png)
+    
+    | i | j | ??? |  |
+    | --- | --- | --- | --- |
+    | 0 | 0 | T |  |
+    |  | 1 | T |  |
+    |  | 2 | T |  |
+    |  | 3 | T |  |
+    |  | 4 | T |  |
+    |  | 5 | F | i+j < 5 |
+    | 1 | 0 | T |  |
+    |  | 1 | T |  |
+    |  | 2 | T |  |
+    |  | 3 | T |  |
+    |  | 4 | F |  |
+    
+    아래의 그림과 같이 별을 출력해보자
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b13a6b7-ff04-4496-bf8b-d745b032131a/Untitled.png)
+    
+    ```java
+    Scanner sc =  new Scanner (System.in); // 스캐너
+    
+    		System.out.print("원하는 정수값을 입력하세요. (1이상) : "); 
+    		int star = sc.nextInt(); //사용자가 원하는 숫자입력
+    		System.out.println("\n"); //보기 편함을 위한 한 줄 비워쓰기
+    
+    		while(star <= 0) { //다시 입력할 때에 재 입력 할 수 있도록
+    			System.out.print("다시 입력해주세요. (1이상) : " );
+    			star = sc.nextInt(); //사용자가 원하는 숫자입력
+    			System.out.println("\n"); //보기 편함을 위한 한 줄 비워쓰기
+    		
+    		}
+    
+    		for (int i=0; i<star; i++) { // 입력 값 만큼 행 루프
+    			for (int j=1; j<star-i; j++) { //입력 값만큼 공백이 1개씩 줄어감
+    				System.out.print(" "); // 공백
+    			}
+    			for (int k=0; k<i*2+1; k++) { // 1개 시작으로 2개씩 증가 / 홀수
+    				System.out.print("*"); // 별 출력
+    			}
+    			System.out.println(); //해당 반복문 출력
+    		}
+    ```
+    
+    ```java
+    
+    //정수값이 5일 경우
+    		for (int i=0; i<5; i++) { // 입력 값 만큼 행 루프
+    			for (int j=1; j<5-i; j++) { //입력 값만큼 공백이 1개씩 줄어감
+    				System.out.print(" "); // 공백
+    			}
+    			for (int j=0; j<i*2+1; j++) { // 1개 시작으로 2개씩 증가 / 홀수
+    				System.out.print("*"); // 별 출력
+    			}
+    			System.out.println(); //해당 반복문 출력
+    		}
+    ```
+    
+    - 확인차 디버깅표
