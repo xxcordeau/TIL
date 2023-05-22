@@ -1,0 +1,191 @@
+# 221114 배열
+
+- Sc.nextLine();의 사용
+    
+    ### Sc.nextLine();의 사용
+    
+    ### 문자열 입력 이슈
+    
+    - **.nextLine()** 엔터를 찾는 메서드
+    - 엔터의 영향을 받는다
+        - 정수 다음에 입력할 때에는 .nextLine()을 한번 호출하자!
+    - 띄어쓰기 입력 0
+    
+    - **.next()**는 문자열 입력 메서드
+    - 띄어쓰기 입력x
+    
+    직접 확인해보자
+    
+    ```java
+    		System.out.println("정수 입력: ");
+    		int i = sc.nextInt();
+    		System.out.println("문자열 입력: ");
+    		String str = sc.nextLine(); //엔터
+    		
+    		System.out.println("i [" + i + "] ");
+    		System.out.println("str [" + str + "] ");
+    ```
+    
+    ```java
+    		System.out.println("문자열 입력: ");
+    		String str = sc.nextLine(); //엔터값
+    		System.out.println("정수 입력: ");
+    		int i = sc.nextInt();
+    		
+    		System.out.println("str [" + str + "] ");
+    		System.out.println("i [" + i + "] ");
+    ```
+    
+- 배열의 사용
+    
+    ## 배열
+    
+    - 배열
+        - 서로 관련된 데이터
+        - 동일한 자료형
+        - 데이터의 개수를 알고 있어야함
+        - for문과 잘 어울림
+        - for Each문
+            - for ( 저장된 데이터 타입 : 데이터 집합(배열) 이름) {
+                            수행할 소스코드;     }
+            
+            ```java
+            int[] data=new int[3];					
+            for(int v:data) {
+            	  v++;
+            	  System.out.println(v);
+            	  }
+            ```
+            
+            - forEach문은 데이터 집합에 저장된 데이터들을 “복사” 해서 출력
+            - 배열에 저장된 데이터들을 “복사”해서 출력
+    - INDEX
+        - [0]부터 시작 ([3]일 경우 [0][1][2]까지)
+        
+    - length
+        - len, 길이, 크기
+        
+    - 개발자 영역 == 힙 메모리
+        - 힙 메모리 영역은
+        - 배열을 생성할 때에는 new int [N]; 
+        ⇒ new : 힙 메모리
+        - Iint [] data = new int [N];
+        - data 변수는 “주소(힙 메모리)”를 저장하고 있음
+    
+    ```java
+    	int[] stu = new int[3];
+    		stu[0]=10;
+    		stu[1]=20;
+    		stu[2]=55;
+    		
+    		for(int i=0; i<3; i++) {
+    			System.out.println("학생"+ (i+1) +"번의 성적은 " + stu[i] + " 점입니다");
+    		}
+    	}
+    ```
+    
+    ```java
+    int [] data = new int[**9**]; // 
+    		//new ==  힙 메모리 (개발자 영역)  사용하겠다!
+    		
+    		System.out.println(data);
+    		
+    		for(int i=0; i<**9**; i++) {
+    			data[i]=(i+1)*10;
+    		}
+    		for (int i=0; i<**9**; i++) {
+    			System.out.println(data[i]);
+    		}
+    ```
+    
+    ```java
+    int **N** = 9;
+    		int [] data = new int[**N**]; // 
+    		//new ==  힙 메모리 (개발자 영역)  사용하겠다!
+    	
+    		System.out.println(data);
+    		
+    		for(int i=0; i<**N**; i++) {
+    			data[i]=(i+1)*10;
+    		}
+    		for (int i=0; i<**N**; i++) {
+    			System.out.println(data[i]);
+    		}
+    ```
+    
+    ```java
+    int [] data = new int[10]; // 
+    		//new ==  힙 메모리 (개발자 영역)  사용하겠다!
+    		
+    		System.out.println(data);
+    		
+    		for(int i=0; i<**data.length;** i++) {
+    			data[i]=(i+1)*10;
+    		}
+    		for (int i=0; i<**data.length;** i++) {
+    			System.out.println(data[i]);
+    ```
+    
+    <aside>
+    ✔️ 해당 문제를 풀이해보자
+    
+    </aside>
+    
+    - 조건
+        - 각 학생의 성적을 입력 받아 총점과 평균계산
+        - 총점 170점, 평균____.____ 점 입니다.
+    
+    ```java
+    Scanner sc = new Scanner (System.in);
+    		
+    		int num = 3;
+    		int[] data = new int[num];
+    		for (int i=0; i<num; i++) {
+    			System.out.println("학생"+(i+1)+"성적입력");
+    			data[i]=sc.nextInt();
+    		}
+    		int sum = 0;
+    		for (int v:data) {
+    			sum+=v;
+    		}
+    		double avg=sum*1.0/data.length;
+    		
+    		System.out.println("평균" + avg + "점");
+    		System.out.println("총점"+ sum + "점");
+    ```
+    
+    <aside>
+    ✔️ 해당 문제를 풀이해보자
+    
+    </aside>
+    
+    - 조건
+        - 학생수 입력 : 2
+        학생수를 입력하면 랜덤으로 값이 생성될 수 있도록
+        - 학생들의 점수는 0~100까지 랜덤 저장될 수 있도록 하자
+    
+    ```java
+    
+    Scanner sc = new Scanner (System.in);
+    		System.out.println(" 학생 수 입력 : ");
+    		int num = sc.nextInt();
+    		int[] data = new int [num];
+    		
+    		Random rand = new Random();
+    		for ( int i = 0; i<data.length; i++) {
+    			data [i] = rand.nextInt(101);
+    			
+    		}
+    		for ( int i = 0; i<data.length; i++) {
+    			System.out.println("학생"+(i+1) + "점수: " + data[i]+"점");
+    		}
+    ```
+    
+    <aside>
+    ✔️ 해당 문제를 풀이해보자
+    
+    </aside>
+    
+    - 조건
+        - 1~10까지 랜덤으로 정수를 생성
+        - 총 5개를 저장 후 가장 작은 수는[  ] , 몇번 째에 저장되어 있는 지 출력
