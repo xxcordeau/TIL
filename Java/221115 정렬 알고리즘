@@ -1,0 +1,395 @@
+# 221115 정렬 알고리즘
+
+### 정렬 알고리즘
+
+“검색(탐색)”을 용이하게 하기위함 
+
+ex) 버블, 선택 , 삽입, 합병, 퀵, 도수, 셀……
+
+- **버블 알고리즘**
+    
+    ## **버블 알고리즘**
+    
+    **버블 정렬의 1회전 정렬**
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93cbc6c6-5f37-4d0c-9d6f-a49b470b5a07/Untitled.png)
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/637b7a13-5491-4efd-8cbe-382e7cbfaaee/Untitled.png)
+    
+    다음 내용을 코드를 통해 확인해보자
+    
+    - 무작위 값의 1 2 3 4 5를 오름차순으로 변경
+    
+    ```java
+    		int [] data = new int [5];
+    			data[0]=3; 
+    			data[1]=1;
+    			data[2]=5;
+    			data[3]=4;
+    			data[4]=2;
+    
+    			for(int a=0;a<data.length;a++) {
+    	         for(int i=0;i<data.length-1;i++) { //4번 교환 하기 때문에 -1을 써주기
+    	            if(data[i] > data[i+1]) {
+    									
+    								// 교환식(tmp)
+    	               int tmp=data[i];
+    	               data[i]=data[i+1];
+    	               data[i+1]=tmp;
+    	            }
+    	         } // 1회전 정렬
+    	      }
+    				
+    	      for(int v:data) {
+    	          System.out.print(v+" ");
+    	       }
+    	       System.out.println();
+    ```
+    
+    ```java
+    // [버블정렬 복습]
+    
+    		Random rand=new Random(); 
+    		int[] data =new int[5];
+    		for (int i=0; i<data.length; i++) {
+    			data[i]=rand.nextInt(100)+1;
+    		}
+    		for (int v:data) {
+    			System.out.println(v+" ");
+    		}
+    		System.out.println();
+    		for (int j=0; j<data.length; j++) {//1회전 정렬을 반복
+    			if (data[j]>data[j+1]) {
+    				int tmp = data[j];
+    				data[j]=data[j+1];
+    				data[j+1]=tmp;
+    			}
+    
+    		}
+    ```
+    
+    해당 내용을 통해 로또를 만들어보자
+    
+    ```java
+    // [로또 예제]
+    	public class Test02 {
+    			
+    		  public static void main(String[] args) {
+          
+          Random rand=new Random();
+          int[] lotto=new int[4];
+          /* 로또 랜덤수 4개 저장 */
+          while(true) {
+             int rNum=rand.nextInt(15)+1;
+             
+             // [0]부터 끝까지 죽- 봐도 괜찮은 상황이나,
+             // 만약 랜덤수 범위에 0이 포함된다면 불가능해짐...
+             for(0부터 현재 값이 저장된 index까지) {
+                if(혹시라도 값이 같다면) {
+                   중복이 발생한 것
+                }
+             }
+             if(중복이 발생했다라는 if문에 단 한번도 안걸렸다면,) {
+                중복아님
+             }
+             
+             3-1. 만약, 중복값이라면 다시 1번으로 돌아가
+             3-2. 새로운 값이 맞다면, 저장
+             
+             if(랜덤수 4개를 모두 올바르게 생성했을때) {
+                break;
+             }
+          }
+          /* 로또 오름차순 정렬 */
+          for(int i=0;i<lotto.length;i++) {
+             for(int j=0;j<lotto.length-1;j++) {
+                if(lotto[j]>lotto[j+1]) {
+                   int tmp=lotto[j];
+                   lotto[j]=lotto[j+1];
+                   lotto[j+1]=tmp;
+                }
+             }
+          }
+          /* 로또 console에 출력 */
+          System.out.print("[ ");
+          for(int v:lotto) {
+             System.out.print(v+" ");
+          }
+          System.out.println("]");
+          /*
+          1~15까지 랜덤수를 4개 생성
+          [ 5 6 7 8 ]
+          
+          사용자가 랜덤수를 예측
+          숫자1: 10
+          숫자2: 15
+          숫자3: 7
+          숫자4: 8
+          
+          2점
+          4점-A, 3~2점-B, 1~0점-C
+           */
+    ```
+    
+    *해당 코드의 디버깅표*
+    
+    | ci | flag | rNum |
+    | --- | --- | --- |
+    | 0 | F | 3 |
+    | 1 |  | 4 |
+    | 2 |  | 3 |
+    |  | T |  |
+    
+    위 코드를 완성하면 아래와 같다.
+    
+    ```java
+    Random rand=new Random();
+          int[] lotto=new int[4];
+         
+    			 /* 로또 랜덤수 4개 저장 */
+          int index=0; // 현재 값이 저장된 index
+          
+    			while(true) {
+             boolean flag=false; // 플래그 변수(중복인지 아닌지를 확인)
+             int rNum=rand.nextInt(15)+1;
+             System.out.println("rNum: "+rNum);
+             
+             for(int i=0;i<index;i++) {
+                if(rNum == lotto[i]) {
+                   flag=true;
+                   break;
+                }
+             }
+             if(!flag) {
+                lotto[index]=rNum;
+                index++;
+                // 중복아님
+                // 3-2. 새로운 값이 맞다면, 저장
+             }
+             else {
+                System.out.println("중복발생!");
+                continue;
+                // 중복발생
+                // 3-1. 만약, 중복값이라면 다시 1번으로 돌아가
+             }
+             /*
+             // [0]부터 끝까지 죽- 봐도 괜찮은 상황이나,
+             // 만약 랜덤수 범위에 0이 포함된다면 불가능해짐...
+             for(0부터 현재 값이 저장된 index까지) {
+                if(혹시라도 값이 같다면) {
+                   중복이 발생한 것
+                }
+             }
+             if(중복이 발생했다라는 if문에 단 한번도 안걸렸다면,) {
+                중복아님
+             }
+             */
+             
+             
+             
+             
+             if(index==lotto.length) { // 랜덤수 4개를 모두 올바르게 생성했을때
+                break;
+             }
+          }
+          /* 로또 오름차순 정렬 */
+          for(int i=0;i<lotto.length;i++) {
+             for(int j=0;j<lotto.length-1;j++) {
+                if(lotto[j]>lotto[j+1]) {
+                   int tmp=lotto[j];
+                   lotto[j]=lotto[j+1];
+                   lotto[j+1]=tmp;
+                }
+             }
+          }
+          /* 로또 console에 출력 */
+          System.out.print("[ ");
+          for(int v:lotto) {
+             System.out.print(v+" ");
+          }
+          System.out.println("]");
+          /*
+          1~15까지 랜덤수를 4개 생성
+          [ 5 6 7 8 ]
+          
+          사용자가 랜덤수를 예측
+          숫자1: 10
+          숫자2: 15
+          숫자3: 7
+          숫자4: 8
+          
+          2점
+          4점-A, 3~2점-B, 1~0점-C
+           */
+          
+          
+          Scanner sc=new Scanner(System.in);
+          int score=0;
+          for(int i=0;i<lotto.length;i++) {
+             System.out.print("숫자입력: ");
+             int num=sc.nextInt();
+             
+             for(int j=0;j<lotto.length;j++) {
+                if(num==lotto[j]) {
+                   score++;
+                   break;
+                }
+             }   
+          }
+          if(score>=4) {
+             System.out.println("A");
+          }
+          else if(score>=2) {
+             System.out.println("B");
+          }
+          else {
+             System.out.println("C");
+          }
+    ```
+    
+    위 내용을 이해하여 문제를 풀어보자
+    
+    1. 정수 입력받음 : 3
+    -> 저장할 랜덤 수 개수
+    -> 랜덤수 개수 == 랜덤범위
+    +) 유효성 검사
+    2. 범위 입력 : 20
+    -> 1~20까지 랜덤 범위 설정
+    3. 중복없이 랜덤값들을 저장해주세요
+    [19 20 3]
+    
+    +) 내림차순 정렬
+    
+    ```java
+    Scanner sc=new Scanner(System.in);
+    		System.out.print("저장할 랜덤수 개수: ");
+    		int cnt=sc.nextInt();
+    		int range;
+    		while(true) {
+    			System.out.print("랜덤범위: ");
+    			range=sc.nextInt();
+    			if(cnt<=range) {
+    				break;
+    			}
+    			System.out.println("랜덤개수<=랜덤범위");
+    		}
+    
+    		Random rand=new Random();
+    		int[] data=new int[cnt];
+    		int index=0;
+    		while(true) {
+    			int rNum=rand.nextInt(range)+1;
+    			boolean flag=false;
+    
+    			for(int i=0;i<index;i++) {
+    				if(rNum==data[i]) {
+    					flag=true;
+    					break;
+    				}
+    			}
+    
+    			if(!flag) {
+    				data[index]=rNum;
+    				index++;
+    			}
+    			else {
+    				continue;
+    			}
+    
+    			if(index==data.length) {
+    				break;
+    			}
+    		}
+    
+    		for(int i=0;i<data.length;i++) {
+    			for(int j=0;j<data.length-1;j++) {
+    				if(data[j]<data[j+1]) {
+    					int tmp=data[j];
+    					data[j]=data[j+1];
+    					data[j+1]=tmp;
+    				}
+    			}
+    		}
+    
+    		for(int v:data) {
+    			System.out.print(v+" ");
+    		}
+    		System.out.println();
+    ```
+    
+- **검색 (탐색) 알고리즘**
+    
+    ## 검색 (탐색) 알고리즘
+    
+    - 정렬 하는 이유
+        - 탐색을 용이하게 하기 위해
+    
+    코테 : 정렬, 중복배제, 탐색
+    
+    ### 이진탐색(이분검색)
+    
+    **검색의 전제조건**
+    :데이터가 정렬된 상태
+    
+    ```java
+    	
+    		int[] data=new int [10];
+    		for (int i=0; i<data.length; i++) {
+    			data[i]=i+1;
+    		}
+    
+    		Scanner sc=new Scanner(System.in);
+    		System.out.println("찾을 정수 입력:  ");
+    		int num=sc.nextInt();
+    
+    		int L=0; // 최소값
+    		int H=data.length-1; // 인덱스번호와 (값을 맞춰주기 위해 -1)
+    		
+    		while(true) { // while(true)문 안에서 실행
+    			int M=(L+H)/2; //중간 값 함수
+    			System.out.println("L:"+L);
+    			System.out.println("H:"+H);
+    			System.out.println("M:"+M);
+    			System.out.println();
+    			
+    			if(num == data[M]){ 
+    				System.out.println( "index:" + M );
+    				break;
+    			}
+    			else if( data[M] < num ) {
+    				**L = M+1; //** num이 더 크기 때문에 num을 찾아주기 위해 L에서 증가(+1)
+    			}
+    			else {
+    				**H = M-1;  //** num이 더 작기 때문에 num을 찾아주기 위해 H에서 감소(-1)
+    			} 
+    		}
+    ```
+    
+    디버깅표를 통해 확인해보자
+    
+    | num | L | H | M |
+    | --- | --- | --- | --- |
+    | 4 | 0 | 9 | 4 |
+    |  |  | 3 | 1 |
+    |  | 2 |  | 2 |
+    |  |  |  |  |
+    |  | 3 |  | 3 |
+    
+    같게 나오는 것이 확인 가능하다
+    
+    - 교차
+        - 타겟데이터를 찾지 못하면 CROSS(교차)가 발생한다
+        - CROSS 발생 시 반복문 종료
+    
+    ```java
+    				....
+    
+    				if(L > H) { // CROSS(교차)
+    				System.out.println(num+"은 없습니다");
+    				break;
+    			}
+    
+    ```
+    
+
+- 선택정렬
