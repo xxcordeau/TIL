@@ -1,0 +1,387 @@
+class
+
+자바의 기본단위
+
+대문자로 시작
+
+변수명
+
+이름 규칙
+
+선언, 초기화, 정의
+
+3요소: 자료형 (크기), 메모리 주소, 변수명
+
+함수(메서드)
+
+3요소 : input, output,기능
+
+연산자
+
+우선순위
+
+디버깅표
+
+ 
+
+제어문 
+
+### 설치
+
+1. JDK -> IDE
+2. JDK 11 (웹 크롤링)
+자바 환경에서 수행되는 프로그램들을 개발할 때 필요한 도구들 모음
+JRE(JVM) + 컴파일러(번역기) + 각종 리소스
+3.IDE
+ex) 이클립스 , 인텔리제이...
+통합 개발 환경
+소스코드를 쉽게 편집할 수 있도록 환경을 제공
+보라색 글씨 - 키워드: 이미 뜻이 있는 단어/ 문법에 맞추어 써야함
+    - 퍼블릭: 뭔가 지정하지 않는 나눠쓰려고 만든 언어
+    -static : 객체와 무관하게
+
+```java
+package class04;
+
+//JAVA의 기본단위인 class는 대문자로 시작하는 것이 원칙
+public class Test01 { 
+  public static void main(String[] args) {
+     System.out.println("안녕하세요!");
+     System.out.print("안녕하세요2"); // ln 없음
+     System.out.println("안녕하세요3");
+   // static : 객체와 무관하게
+   // 주석 없이 제출 시 점수x 
+   
+     /*
+     여러줄 주석
+    */
+     
+     int a;
+     // 1)변수 선언
+     // 2)변수 초기화
+     a = 10; // 값은 변수 3요소가 아니다!(필수 아님)
+     
+     int aa = 123;
+     System.out.println(aa); // 변수명 => 식별자 -> 소문자 시작
+  }
+  
+}
+
+```
+
+```java
+
+package class05;
+
+public class test01 {
+   public static void main(String[] args) {
+   
+      int a; //원시타입
+      a = 10;
+      
+      double b=3.14;
+      char c='A';
+      String d="apple";
+      boolean e= false;
+      
+      System.out.println(a);
+      System.out.println(b);
+      System.out.println(c);
+      System.out.println(d);
+      System.out.println(e);
+      
+// 연산자와 조건문   
+   
+   }   
+}
+```
+
+```java
+package class05;
+
+public class test02 {
+   public static void main(String[] args) {
+      
+      //연산자.
+      // *우선순위* 매우 중요
+      //산술,대입,복합대입,비교,논리,조건....
+      
+      // 대입 연산자는 연산자 우선 순위가 낮다!
+      
+      int a=10/3; //나누기 int
+      //ㄴ9번 line에는 연산자가 두개이다. 
+      int b=10%3; //나머지(몫) MOD
+       
+      System.out.println(a);
+      System.out.println(b);
+      
+      
+      int total = 0;
+      int place1= 100;
+      int place2= 1000;
+      int place3= 3100;
+      
+      total = total + place1;
+      // 밑에 처럼 바꿀 수 있음
+      total += place1;
+      total += place2;
+      total += place3;
+      System.out.println("통 금액:"+ total + "원 입니다");
+   
+   
+   }
+
+}
+
+```
+
+```java
+package class06;
+
+public class Test01 {
+   
+   public static void main(String[] args) {
+      
+      int proA=1000;
+      int proB=1500;
+      int cntA=2;
+      int cntB=3;
+      int sum=proA*cntA+proB*cntB;
+      
+            //A은 2개 , B는 3개 주문했습니다.
+            // 총 금액은 ????입니다.
+            
+   
+
+      System.out.println("A는"+cntA+ "개, B는 " +cntB +"개 주문했습니다");
+      System.out.println("총 금액은 "+sum+"입니다");
+      
+      
+      
+      
+            
+   }
+
+}
+```
+
+```java
+
+package class06;
+
+public class test02 {
+   public static void main(String[] args) {
+      
+      int cnt=10;
+      cnt = cnt+1;
+      System.out.println(cnt);
+      cnt +=1;
+      System.out.println(cnt);
+      cnt++;
+      System.out.println(cnt);
+      cnt--;
+      System.out.println(cnt);
+      ++cnt;
+      System.out.println(cnt);
+      --cnt;
+      System.out.println(cnt);
+      //  연산자 우선순위가 다름!!!
+      
+      System.out.println("-------------------------------------");
+      
+      int a=10;
+      int b=++a; // 전위 증감연산자는 우선순위가 매우 높음!
+      int c=b++; // 후위 증감연산자는 우선순위가 *매우* 낮음!
+      System.out.println("a:"+a);
+      System.out.println("b:"+b);
+      System.out.println("c:"+c);
+      
+      /*
+       a:11
+       b:12
+       c:11
+       */
+      //-------------------------------------
+      
+       int num1 = 10;          
+       int num2 = num1++;   
+       int num3 = ++num1 - ++num2;    
+       int num4 = num1++ + ++num3;
+        System.out.println("num1: "+num1);
+        System.out.println("num2: "+num2);
+        System.out.println("num3: "+num3);
+        System.out.println("num4: "+num4);
+
+   }
+
+}
+```
+
+> 디버깅표를 활용한 풀이
+> 
+
+| num1 | num2 | num3 | num4 |
+| --- | --- | --- | --- |
+| 10 |  |  |  |
+| 11 | 10 |  |  |
+| 12 | 11 | 1 |  |
+| 13 |  | 2 | 14 |
+| 13 | 11 | 2 | 14 |
+
+```java
+
+package class07;
+
+public class Test01 {
+   public static void main(String[] args) {
+      int a=10;
+      int b=10;
+      System.out.println(a>=b);
+      System.out.println(a<=b);
+      System.out.println(a==b);
+      System.out.println(a!=b); // !부정
+      
+      
+      int num1=10;
+      int num2=20;
+      System.out.println(num1<1 && num2>2);
+      //~~하고, ~~이고, ~~면서 동시에, 그리고, AND
+      
+      //ex)
+      int age;
+      // 10<=age && age <=50
+   
+      System.out.println(num1<1 || num2>2);
+      // ~~이거나 , 혹은, 또는 -> or
+      
+      //이산수학/이것이 버터가 아니라는 사실을 믿을수가 없다!
+      //       ==버터가 아니다(마가린임)
+      
+      //! NOT
+   boolean result=!(10>20);
+      System.out.println(result);
+   
+   // !로 전체를 부정하였으니 true 가 나온다
+
+   
+      
+   }
+
+}
+```
+
+```java
+package class07;
+
+public class Test02 {
+   public static void main(String[] args) {
+      int num =10>20? 1:2;
+      //조건식? T:F
+      
+      System.out.println(num);
+      
+      int a=1;
+      int b=50;
+      int max=a>b?a:b;
+      
+      System.out.println(max);
+      
+      num=100;
+      char res=num%2==0?'E':'O';
+      System.out.println("num은"+res);
+      
+      
+      
+      
+      
+   }
+}
+
+```
+
+```java
+
+package class07;
+
+public class Test03 {
+   public static void main(String[] args) {
+      
+      
+      
+//      1) a = ?
+//         b = ?
+//         c = ?
+//            a,b,c 는 각자 다 다른 정수 입니다.
+//            가장 작은 숫자를 min에 저장, 출력!
+   
+   // 조건연산자 사용
+      int a=10;
+      int b=11;
+      int c=12;
+      int min = a<b? a<c? a:c   : b<c? b:c ;
+      
+      System.out.println(min);
+//   num = ?
+//   10의 배수 이면 o
+//   10의 배수가 아니면 x를 출력!
+       int num=11;
+         char res= num%10==0 ? 'O':'X';
+         System.out.println("num은 10의 배수 "+res);
+      
+      
+   }
+
+}
+```
+
+## 쉬어가는 심화
+
+> 비트연산자
+> 
+
+- int 정수 4byte(32bit)
+- 1byte == 8bit
+
+```java
+package class08;
+
+public class Test01 {
+
+   public static void main(String[] args) {
+/*      int a=10;
+      int b=11;
+      
+      int c=a&b;// & 비트연산자 and 
+      // && 논리연산자 and
+      System.out.println(c);//1010-> 10
+      
+      int d =a|b; //비트연산자 or
+       //|| 논리연산자 or
+      System.out.println(d); // 1011->11
+*/      
+      int a=10; //1010
+      int b=3;  //0011
+      int c=a&b;
+      int d=a|b;
+      System.out.println(c); //0010 -> 2
+      System.out.println(d); //1011 -> 11
+      
+      
+      a=10; //1010
+       a=    a<<2; // 00000000 00000000 00000000 00101000
+      // -> 40 
+       System.out.println("a="+ a);
+       a= a>>4; //00000000 00000000 00000000 00000010
+       // -> 2
+       System.out.println("a="+ a);
+      
+      
+   }
+
+}
+
+```
+
+00: 00000000 00000000 00000000 00000000
+01: 00000000 00000000 00000000 00000001
+02: 00000000 00000000 00000000 00000010
