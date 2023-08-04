@@ -1,11 +1,4 @@
 XDDDDffddd
 fff
 SSSSSS
-SSSSSSaa
-SSSSd
-F
-ggaaa
-aaadddd
-aaa
-ddddddd
-ddddddd
+dd
