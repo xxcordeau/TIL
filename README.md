@@ -1,1 +1,1 @@
-dafdsfasf
+오늘의 기록
