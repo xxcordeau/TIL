@@ -192,7 +192,8 @@
         "output": "12"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-01"
   },
   {
     "id": 10,
@@ -546,7 +547,11 @@
       },
       {
         "input": "number = [-3,-2,-1,0,1,2,3]",
-        "output": "4"
+        "output": "5"
+      },
+      {
+        "input": "number = [-1,1,-1,1]",
+        "output": "0"
       }
     ],
     "solved": false
@@ -580,7 +585,229 @@
       },
       {
         "input": "keymap = [\"AABB\", \"BBAC\"], targets = [\"ABBA\", \"BAA\", \"BBB\"]",
-        "output": "[4, 3, 5]"
+        "output": "[4, 3, 3]"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 31,
+    "level": 2,
+    "title": "위장",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42578",
+    "statement": "스파이가 매일 다른 옷을 조합해서 입으려고 합니다. 스파이가 가진 의상들이 담긴 2차원 배열 clothes가 주어질 때 서로 다른 옷의 조합의 수를 return 하도록 solution 함수를 작성해주세요.",
+    "constraints": "clothes의 각 행은 [의상의 이름, 의상의 종류]로 이루어져 있습니다. clothes의 길이는 1 이상 30 이하입니다. 같은 이름을 가진 의상은 존재하지 않습니다. 계절 요소 없이, 총 옷의 개수는 30개 이하입니다.",
+    "examples": [
+      {
+        "input": "clothes = [[\"yellow_hat\", \"headgear\"], [\"blue_sunglasses\", \"eyewear\"], [\"green_turban\", \"headgear\"]]",
+        "output": "5"
+      },
+      {
+        "input": "clothes = [[\"crow_mask\", \"face\"], [\"blue_sunglasses\", \"face\"], [\"smoky_makeup\", \"face\"]]",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 32,
+    "level": 2,
+    "title": "캐시",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/17680",
+    "statement": "캐시 크기 cacheSize와 순차적으로 요청되는 도시이름 목록 cities를 매개변수로 받아, LRU(Least Recently Used) 캐시 정책을 이용해 캐시를 구현했을 때 총 실행시간을 return 하도록 solution 함수를 완성해주세요. 캐시 히트는 1, 캐시 미스는 5의 실행시간이 소요됩니다. 단, 캐시 크기가 0이라면 항상 5가 소요됩니다.",
+    "constraints": "cacheSize는 0 이상 100 이하의 정수입니다. cities는 도시 이름으로 이루어진 배열이며 원소의 개수는 1 이상 100,000 이하입니다. 각 도시 이름은 대소문자를 구별하지 않습니다.",
+    "examples": [
+      {
+        "input": "cacheSize = 3, cities = [\"Jeju\", \"Pangyo\", \"Seoul\", \"NewYork\", \"LA\", \"Jeju\", \"Pangyo\", \"Seoul\", \"NewYork\", \"LA\"]",
+        "output": "50"
+      },
+      {
+        "input": "cacheSize = 3, cities = [\"Jeju\", \"Pangyo\", \"Seoul\", \"Jeju\", \"Pangyo\", \"Seoul\", \"Jeju\", \"Pangyo\", \"Seoul\"]",
+        "output": "21"
+      },
+      {
+        "input": "cacheSize = 2, cities = [\"Jeju\", \"Pangyo\", \"Seoul\", \"NewYork\", \"LA\", \"SanFrancisco\", \"Seoul\", \"Rome\", \"Paris\", \"Jeju\", \"NewYork\", \"Rome\"]",
+        "output": "60"
+      },
+      {
+        "input": "cacheSize = 0, cities = [\"Jeju\", \"Pangyo\", \"Seoul\", \"NewYork\", \"LA\"]",
+        "output": "25"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 33,
+    "level": 2,
+    "title": "오픈채팅방",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42888",
+    "statement": "오픈채팅방에서 유저가 나가거나 들어올 때, 그리고 닉네임을 변경할 때마다 다음 메시지 중 하나를 출력해야 합니다: '[닉네임]님이 들어왔습니다.', '[닉네임]님이 나갔습니다.'. 채팅방에서 닉네임을 변경할 때는 기록에 남지 않고, 마지막에 등록된 닉네임으로 모든 기록이 표시됩니다. 유저의 아이디, 이벤트 종류, 닉네임이 담긴 문자열 배열 record가 매개변수로 주어질 때, 채팅방에서 출력되는 메시지를 순서대로 배열에 담아 return 하도록 solution 함수를 완성해주세요.",
+    "constraints": "record는 다음 규칙을 지킵니다. 'Enter uid nickname' (입장), 'Leave uid' (퇴장), 'Change uid nickname' (닉네임 변경). record는 1 이상 100,000 이하의 길이를 가집니다.",
+    "examples": [
+      {
+        "input": "record = [\"Enter uid1234 Muzi\", \"Enter uid4567 Prodo\", \"Leave uid1234\", \"Enter uid1234 Prodo\", \"Change uid4567 Ryan\"]",
+        "output": "[\"Prodo님이 들어왔습니다.\", \"Ryan님이 들어왔습니다.\", \"Prodo님이 나갔습니다.\", \"Prodo님이 들어왔습니다.\"]"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 34,
+    "level": 2,
+    "title": "문자열 압축",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/60057",
+    "statement": "데이터 처리 전문가가 되고 싶은 어피치는 문자열을 압축하는 방법을 공부하고 있습니다. 문자열 s가 매개변수로 주어질 때, 1개 이상 단위로 문자열을 잘라 압축하여 표현한 문자열 중 가장 짧은 것의 길이를 return 하도록 solution 함수를 완성해주세요.",
+    "constraints": "s의 길이는 1 이상 1,000 이하입니다. s는 알파벳 소문자로만 이루어져 있습니다.",
+    "examples": [
+      {
+        "input": "s = \"aabbaccc\"",
+        "output": "7"
+      },
+      {
+        "input": "s = \"ababcdcdababcdcd\"",
+        "output": "9"
+      },
+      {
+        "input": "s = \"abcabcdede\"",
+        "output": "8"
+      },
+      {
+        "input": "s = \"abcabcabcabcdededededede\"",
+        "output": "14"
+      },
+      {
+        "input": "s = \"xababcdcdababcdcd\"",
+        "output": "17"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 35,
+    "level": 2,
+    "title": "괄호 변환",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/60058",
+    "statement": "'(' 와 ')' 로만 이루어진 문자열 p를 재귀적인 방법으로 균형잡힌 괄호 문자열로 변환하려 합니다. 문자열 p가 매개변수로 주어질 때, 균형잡힌 괄호 문자열로 변환한 결과를 return 하도록 solution 함수를 완성해주세요.",
+    "constraints": "p는 '(' 와 ')' 로만 이루어진 문자열이며, 길이는 2 이상 1,000 이하인 짝수입니다.",
+    "examples": [
+      {
+        "input": "p = \"(()())()\"",
+        "output": "\"(()())()\""
+      },
+      {
+        "input": "p = \")(\"",
+        "output": "\"()\""
+      },
+      {
+        "input": "p = \"()))((()\"",
+        "output": "\"()(())()\""
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 36,
+    "level": 2,
+    "title": "카펫",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42842",
+    "statement": "Leo는 카펫을 하나 사서 방 가운데에 깔고, 카펫을 흰색 격자무늬 시트로 채운 후 테두리를 갈색 격자무늬 시트로 채웠습니다. 갈색 격자무늬 시트의 수 brown, 노란색 격자무늬 시트의 수 yellow가 매개변수로 주어질 때 카펫의 가로, 세로 크기를 순서대로 배열에 담아 return 하도록 solution 함수를 작성해주세요.",
+    "constraints": "brown은 8 이상 5,000 이하인 자연수입니다. yellow는 1 이상 2,000,000 이하인 자연수입니다. 카펫의 가로 길이는 세로 길이와 같거나, 세로 길이보다 깁니다.",
+    "examples": [
+      {
+        "input": "brown = 10, yellow = 2",
+        "output": "[4, 3]"
+      },
+      {
+        "input": "brown = 8, yellow = 1",
+        "output": "[3, 3]"
+      },
+      {
+        "input": "brown = 24, yellow = 24",
+        "output": "[8, 6]"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 37,
+    "level": 2,
+    "title": "다리를 지나는 트럭",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42583",
+    "statement": "트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순서대로 건너려 합니다. 다리에는 트럭이 최대 bridge_length대 올라갈 수 있고, 다리는 weight 이하까지 견딜 수 있습니다. 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 return 하도록 solution 함수를 완성해주세요.",
+    "constraints": "bridge_length는 1 이상 10,000 이하입니다. weight는 1 이상 10,000 이하입니다. truck_weights의 길이는 1 이상 10,000 이하입니다. 모든 트럭의 무게는 1 이상 weight 이하입니다.",
+    "examples": [
+      {
+        "input": "bridge_length = 2, weight = 10, truck_weights = [7,4,5,6]",
+        "output": "8"
+      },
+      {
+        "input": "bridge_length = 100, weight = 100, truck_weights = [10]",
+        "output": "101"
+      },
+      {
+        "input": "bridge_length = 100, weight = 100, truck_weights = [10,10,10,10,10,10,10,10,10,10]",
+        "output": "110"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 38,
+    "level": 2,
+    "title": "기능개발",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
+    "statement": "프로그래머스 팀에서는 기능 개선 작업을 수행 중입니다. 각 기능은 진도가 100%일 때 배포될 수 있고, 뒤 순서 기능이 앞 순서 기능보다 먼저 개발되어 있어도 앞 순서 기능이 배포되기 전에는 먼저 배포될 수 없습니다. 각 기능의 현재 진도 progresses와 하루에 진도가 증가하는 양 speeds가 매개변수로 주어질 때 각 배포마다 몇 개의 기능이 배포되는지를 순서대로 배열에 담아 return 하도록 solution 함수를 완성해주세요.",
+    "constraints": "작업의 개수(progresses, speeds 배열의 길이)는 100개 이하입니다. 작업 진도는 100 미만의 자연수입니다. 작업 속도는 100 이하의 자연수입니다.",
+    "examples": [
+      {
+        "input": "progresses = [93, 30, 55], speeds = [1, 30, 5]",
+        "output": "[2, 1]"
+      },
+      {
+        "input": "progresses = [95, 90, 99, 99, 80, 99], speeds = [1, 1, 1, 1, 1, 1]",
+        "output": "[1, 3, 2]"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 39,
+    "level": 2,
+    "title": "게임 맵 최단거리",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1844",
+    "statement": "게임 맵의 상태 maps가 매개변수로 주어질 때, 캐릭터가 상대 팀 진영에 도착하기 위해서 지나가야 하는 칸의 개수의 최솟값을 return 하도록 solution 함수를 완성해주세요. 상대 팀 진영에 도착할 수 없을 때는 -1을 return 해주세요.",
+    "constraints": "maps는 n x m 크기의 정수 배열로, n과 m은 각각 1 이상 100 이하입니다. maps는 0과 1로만 이루어져 있으며, 1은 벽이 아닌 지역, 0은 벽인 지역을 나타냅니다.",
+    "examples": [
+      {
+        "input": "maps = [[1,0,1,1,1],[1,0,1,0,1],[1,0,1,1,1],[1,1,1,0,1],[0,0,0,0,1]]",
+        "output": "11"
+      },
+      {
+        "input": "maps = [[1,0,1,1,1],[1,0,1,0,1],[1,0,1,1,1],[1,1,1,0,0],[0,0,0,0,1]]",
+        "output": "-1"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 40,
+    "level": 2,
+    "title": "전화번호 목록",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42577",
+    "statement": "전화번호부에 저장된 전화번호 중, 한 번호가 다른 번호의 접두어인 경우가 있는지 확인하려 합니다. 전화번호가 담긴 배열 phone_book이 매개변수로 주어질 때, 어떤 번호가 다른 번호의 접두어인 경우가 있으면 false, 아니면 true를 return 하도록 solution 함수를 작성해주세요.",
+    "constraints": "phone_book의 길이는 1 이상 1,000,000 이하입니다. 각 전화번호의 길이는 1 이상 20 이하이며, 서로 다른 전화번호가 중복해서 들어있지 않습니다.",
+    "examples": [
+      {
+        "input": "phone_book = [\"119\", \"97674223\", \"1195524421\"]",
+        "output": "false"
+      },
+      {
+        "input": "phone_book = [\"123\",\"456\",\"789\"]",
+        "output": "true"
+      },
+      {
+        "input": "phone_book = [\"12\",\"123\",\"1235\",\"567\",\"88\"]",
+        "output": "false"
       }
     ],
     "solved": false
