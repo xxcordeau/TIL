@@ -260,7 +260,8 @@
         "output": "[1, 10]"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-04"
   },
   {
     "id": 13,
