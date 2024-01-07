@@ -312,7 +312,8 @@
         "output": "\"김서방은 1에 있다\""
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-07"
   },
   {
     "id": 16,
