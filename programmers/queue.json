@@ -388,7 +388,8 @@
         "output": "\"TrY HeLlO WoRlD\""
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-11"
   },
   {
     "id": 20,
