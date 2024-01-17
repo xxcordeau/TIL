@@ -1,4 +1,4 @@
-const formModel = inject('formModel')
+
 onMounted(async ()=>{
 
   await useAuditAssetFormFetch(formModel);
