@@ -7,3 +7,4 @@ onMounted(async ()=>{
   const el = element.parentElement
   el.addEventListener('scroll', scrollAnchor )
 })
+  emit( "close" )
