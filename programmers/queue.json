@@ -608,7 +608,8 @@
         "output": "[4, 3, 3]"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-22"
   },
   {
     "id": 31,
