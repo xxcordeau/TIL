@@ -672,7 +672,8 @@
         "output": "[\"Prodo님이 들어왔습니다.\", \"Ryan님이 들어왔습니다.\", \"Prodo님이 나갔습니다.\", \"Prodo님이 들어왔습니다.\"]"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-25"
   },
   {
     "id": 34,
