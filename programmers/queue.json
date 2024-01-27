@@ -728,7 +728,8 @@
         "output": "\"()(())()\""
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-27"
   },
   {
     "id": 36,
