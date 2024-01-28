@@ -752,7 +752,8 @@
         "output": "[8, 6]"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-28"
   },
   {
     "id": 37,
