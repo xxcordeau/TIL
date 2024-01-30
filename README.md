@@ -4,4 +4,4 @@ defineExpose({
 
 const columnModalVisible = ref(false)
 const onCloseColumnModal = () => {
-  columnModalVisible.value = false
+  columnModalVisible.value = fals
