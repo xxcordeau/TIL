@@ -3,4 +3,4 @@ defineExpose({
 });
 
 const columnModalVisible = ref(false)
-const onCloseColumnMod
+const onCloseColumnM
