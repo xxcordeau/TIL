@@ -816,7 +816,8 @@
         "output": "-1"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-01-31"
   },
   {
     "id": 40,
