@@ -1,4 +1,4 @@
-defineExpose({
+ㅌㅇㅇdefineExpose({
   fetchData
 });
 
