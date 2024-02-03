@@ -3,4 +3,4 @@
 });
 
 const columnModalVisible = ref(false)
-const onClose
+const onC
