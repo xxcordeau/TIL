@@ -115,7 +115,8 @@
         "output": "1\n2\n3\n4\n5"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-02-08"
   },
   {
     "id": 8,
