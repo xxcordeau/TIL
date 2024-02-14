@@ -217,7 +217,8 @@
         "output": "A"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-02-14"
   },
   {
     "id": 14,
