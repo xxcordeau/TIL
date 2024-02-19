@@ -306,7 +306,8 @@
         "output": "AAABBBCCC\nwwwwwooooorrrrrddddd"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-02-19"
   },
   {
     "id": 19,
