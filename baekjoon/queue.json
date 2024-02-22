@@ -342,5 +342,486 @@
     ],
     "solved": true,
     "solvedDate": "2024-02-21"
+  },
+  {
+    "id": 21,
+    "number": 2438,
+    "tier": "Bronze 4",
+    "title": "별 찍기 - 1",
+    "url": "https://www.acmicpc.net/problem/2438",
+    "statement": "첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제.",
+    "constraints": "N은 100보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "3",
+        "output": "*\n**\n***"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-02-22"
+  },
+  {
+    "id": 22,
+    "number": 2439,
+    "tier": "Bronze 3",
+    "title": "별 찍기 - 2",
+    "url": "https://www.acmicpc.net/problem/2439",
+    "statement": "별 찍기 - 1과 동일하지만 오른쪽을 기준으로 정렬한 별(즉 왼쪽에 공백을 채운 별)을 출력해야 한다.",
+    "constraints": "N은 100보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "3",
+        "output": "  *\n **\n***"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 23,
+    "number": 2440,
+    "tier": "Bronze 4",
+    "title": "별 찍기 - 3",
+    "url": "https://www.acmicpc.net/problem/2440",
+    "statement": "첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ... N번째 줄에는 별 1개를 찍는 문제.",
+    "constraints": "N은 100보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "3",
+        "output": "***\n**\n*"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 24,
+    "number": 2441,
+    "tier": "Bronze 3",
+    "title": "별 찍기 - 4",
+    "url": "https://www.acmicpc.net/problem/2441",
+    "statement": "별 찍기 - 3과 동일하지만 오른쪽 정렬로, 줄이 내려갈수록 왼쪽 공백이 늘어나는 별을 출력해야 한다.",
+    "constraints": "N은 100보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "3",
+        "output": "***\n **\n  *"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 25,
+    "number": 1157,
+    "tier": "Bronze 2",
+    "title": "단어 공부",
+    "url": "https://www.acmicpc.net/problem/1157",
+    "statement": "알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않고, 답은 항상 대문자로 출력한다. 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.",
+    "constraints": "첫째 줄에 최대 1,000,000글자로 이루어진 단어가 주어진다.",
+    "examples": [
+      {
+        "input": "aAbB",
+        "output": "?"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 26,
+    "number": 1546,
+    "tier": "Bronze 3",
+    "title": "평균",
+    "url": "https://www.acmicpc.net/problem/1546",
+    "statement": "세준이의 성적을 채점할 때, 자신의 최고점을 M이라 하면 원래 점수 A를 A/M*100으로 새로 계산한다고 한다. 이 새로운 평균을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 시험 본 과목의 개수 N, 둘째 줄에 N개의 점수가 주어진다.",
+    "examples": [
+      {
+        "input": "2\n50 100",
+        "output": "75.000000"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 27,
+    "number": 8958,
+    "tier": "Bronze 2",
+    "title": "OX퀴즈",
+    "url": "https://www.acmicpc.net/problem/8958",
+    "statement": "OX퀴즈에서 문제를 맞히면 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다(1점, 1+2점, ...). X를 받으면 그 문제의 점수는 0점이다. 각 테스트 케이스에 대한 점수를 계산하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 테스트 케이스 개수, 각 줄마다 O와 X로 이루어진 문자열(길이 80 이하)이 주어진다.",
+    "examples": [
+      {
+        "input": "1\nOOXXOXXOOO",
+        "output": "10"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 28,
+    "number": 4344,
+    "tier": "Bronze 2",
+    "title": "평균은 넘겠지",
+    "url": "https://www.acmicpc.net/problem/4344",
+    "statement": "각 케이스마다 학생 점수가 주어질 때, 평균을 초과하는 학생의 비율을 반올림하여 소수점 셋째 자리까지 출력하고 %를 붙이는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 테스트 케이스 개수 C, 각 케이스의 첫 수는 학생 수 N, 이어서 점수 N개가 주어진다.",
+    "examples": [
+      {
+        "input": "1\n5 50 50 70 80 100",
+        "output": "40.000%"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 29,
+    "number": 2562,
+    "tier": "Bronze 4",
+    "title": "최댓값",
+    "url": "https://www.acmicpc.net/problem/2562",
+    "statement": "9개의 서로 다른 자연수가 주어질 때, 이 중 최댓값을 찾고 그 값이 몇 번째 수인지 출력하는 프로그램을 작성하시오.",
+    "constraints": "9개의 자연수는 각각 100 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "3 29 38 32 12 57 74 40 92",
+        "output": "92\n9"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 30,
+    "number": 10820,
+    "tier": "Bronze 2",
+    "title": "문자열 분석",
+    "url": "https://www.acmicpc.net/problem/10820",
+    "statement": "문자열이 여러 줄 주어질 때, 각 줄마다 소문자 개수, 대문자 개수, 숫자 개수, 공백 개수를 순서대로 출력하는 프로그램을 작성하시오.",
+    "constraints": "입력은 최대 100줄이며, 각 줄의 길이는 100을 넘지 않는다.",
+    "examples": [
+      {
+        "input": "abc123ABCxyz",
+        "output": "6 3 3 0"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 31,
+    "number": 11654,
+    "tier": "Bronze 5",
+    "title": "아스키 코드",
+    "url": "https://www.acmicpc.net/problem/11654",
+    "statement": "알파벳 한 개를 입력받아 아스키 코드값을 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 문자 1개가 주어진다.",
+    "examples": [
+      {
+        "input": "A",
+        "output": "65"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 32,
+    "number": 11720,
+    "tier": "Bronze 4",
+    "title": "숫자의 합",
+    "url": "https://www.acmicpc.net/problem/11720",
+    "statement": "N개의 숫자가 공백 없이 주어졌을 때, 그 숫자의 합을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 숫자의 개수 N, 둘째 줄에 N개의 숫자가 공백 없이 주어진다.",
+    "examples": [
+      {
+        "input": "5\n54321",
+        "output": "15"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 33,
+    "number": 9086,
+    "tier": "Bronze 3",
+    "title": "문자열",
+    "url": "https://www.acmicpc.net/problem/9086",
+    "statement": "영어 대문자로 이루어진 문자열이 주어졌을 때, 첫 번째 문자와 마지막 문자를 이어붙여 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 테스트 케이스 개수 T, 각 줄마다 길이 1000 이하의 영어 대문자 문자열이 주어진다.",
+    "examples": [
+      {
+        "input": "1\nKHANACADEMY",
+        "output": "KY"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 34,
+    "number": 2743,
+    "tier": "Bronze 5",
+    "title": "단어 길이 재기",
+    "url": "https://www.acmicpc.net/problem/2743",
+    "statement": "알파벳으로 이루어진 단어를 입력받아 그 길이를 출력하는 프로그램을 작성하시오.",
+    "constraints": "단어의 길이는 100을 넘지 않는다.",
+    "examples": [
+      {
+        "input": "hello",
+        "output": "5"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 35,
+    "number": 1712,
+    "tier": "Bronze 3",
+    "title": "손익분기점",
+    "url": "https://www.acmicpc.net/problem/1712",
+    "statement": "고정 비용 A, 개당 변동 비용 B, 개당 판매 가격 C가 주어질 때, 이익이 손해보다 커지는 최소 판매 수량을 구하는 프로그램을 작성하시오. 손익분기점이 존재하지 않으면 -1을 출력한다.",
+    "constraints": "A, B, C는 21억 이하의 자연수이며, C는 B보다 크거나 같을 수도, 작을 수도 있다.",
+    "examples": [
+      {
+        "input": "1000 70 170",
+        "output": "11"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 36,
+    "number": 2525,
+    "tier": "Bronze 4",
+    "title": "오븐 시계",
+    "url": "https://www.acmicpc.net/problem/2525",
+    "statement": "현재 시각 A시 B분과 조리 시간 C분이 주어질 때, 조리가 끝나는 시각을 24시간 형식으로 출력하는 프로그램을 작성하시오.",
+    "constraints": "0 ≤ A ≤ 23, 0 ≤ B ≤ 59, 0 ≤ C ≤ 1439",
+    "examples": [
+      {
+        "input": "9 57\n30",
+        "output": "10 27"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 37,
+    "number": 2480,
+    "tier": "Bronze 2",
+    "title": "주사위 세개",
+    "url": "https://www.acmicpc.net/problem/2480",
+    "statement": "세 개의 주사위를 굴려 나온 눈에 따라 상금을 계산한다. 세 눈이 모두 같으면 10,000원 + 같은 눈*1,000원, 두 눈만 같으면 1,000원 + 같은 눈*100원, 모두 다르면 그중 가장 큰 눈*100원을 받는다.",
+    "constraints": "세 주사위 눈은 각각 1부터 6까지의 정수이다.",
+    "examples": [
+      {
+        "input": "3 3 6",
+        "output": "1300"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 38,
+    "number": 11005,
+    "tier": "Bronze 2",
+    "title": "진법 변환 2",
+    "url": "https://www.acmicpc.net/problem/11005",
+    "statement": "10진수 N을 B진수로 변환하여 출력하는 프로그램을 작성하시오. 10 이상의 자리는 알파벳 대문자로 표기한다.",
+    "constraints": "1 ≤ N ≤ 1,000,000,000, 2 ≤ B ≤ 36",
+    "examples": [
+      {
+        "input": "37 16",
+        "output": "25"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 39,
+    "number": 2745,
+    "tier": "Bronze 2",
+    "title": "진법 변환",
+    "url": "https://www.acmicpc.net/problem/2745",
+    "statement": "N진법으로 표현된 수(대문자로 10 이상 표기)와 진법 B가 주어질 때, 이를 10진법으로 바꾸어 출력하는 프로그램을 작성하시오.",
+    "constraints": "N은 소문자, 대문자, 숫자로 이루어진 문자열이며, B는 2 이상 36 이하이다.",
+    "examples": [
+      {
+        "input": "11 2",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 40,
+    "number": 10817,
+    "tier": "Bronze 4",
+    "title": "세 수",
+    "url": "https://www.acmicpc.net/problem/10817",
+    "statement": "세 정수를 입력받아 크기순으로 정렬했을 때 중간값을 출력하는 프로그램을 작성하시오.",
+    "constraints": "세 정수는 각각 -100,000 이상 100,000 이하이다.",
+    "examples": [
+      {
+        "input": "1 2 3",
+        "output": "2"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 41,
+    "number": 2941,
+    "tier": "Bronze 1",
+    "title": "크로아티아 알파벳",
+    "url": "https://www.acmicpc.net/problem/2941",
+    "statement": "크로아티아 알파벳(c=, c-, dz=, d-, lj, nj, s=, z=)은 한 글자로 취급한다. 어떤 단어가 주어질 때, 몇 개의 크로아티아 알파벳으로 이루어져 있는지 출력하는 프로그램을 작성하시오.",
+    "constraints": "단어는 최대 100글자이며, 알파벳 소문자와 크로아티아 알파벳으로만 이루어져 있다.",
+    "examples": [
+      {
+        "input": "ljes=njak",
+        "output": "6"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 42,
+    "number": 2908,
+    "tier": "Bronze 3",
+    "title": "상수",
+    "url": "https://www.acmicpc.net/problem/2908",
+    "statement": "세 자리 자연수 두 개가 주어지면, 각 수를 뒤집었을 때 두 수 중 더 큰 값을 출력하는 프로그램을 작성하시오.",
+    "constraints": "두 수는 모두 100 이상 999 이하의 자연수이며, 0으로 끝나지 않는다.",
+    "examples": [
+      {
+        "input": "123 456",
+        "output": "654"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 43,
+    "number": 5622,
+    "tier": "Bronze 3",
+    "title": "다이얼",
+    "url": "https://www.acmicpc.net/problem/5622",
+    "statement": "옛날 전화기는 다이얼을 돌려서 번호를 입력했다. 숫자 하나를 걸기 위해서는 (그 숫자에 대응하는 다이얼 값 + 1)초가 걸린다. 알파벳으로 이루어진 이름을 입력받아 전화를 거는 데 걸리는 최소 시간을 구하는 프로그램을 작성하시오.",
+    "constraints": "이름은 2 이상 15 이하 길이의 알파벳 대문자로 이루어져 있다.",
+    "examples": [
+      {
+        "input": "WA",
+        "output": "13"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 44,
+    "number": 2577,
+    "tier": "Bronze 2",
+    "title": "숫자의 개수",
+    "url": "https://www.acmicpc.net/problem/2577",
+    "statement": "세 개의 자연수 A, B, C가 주어지면 A×B×C를 계산한 결과에서 0부터 9까지 각 숫자가 몇 번씩 쓰였는지 구하는 프로그램을 작성하시오.",
+    "constraints": "A, B, C는 모두 1000보다 작은 자연수이다.",
+    "examples": [
+      {
+        "input": "2\n3\n4",
+        "output": "0\n0\n1\n0\n1\n0\n0\n0\n0\n0"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 45,
+    "number": 10951,
+    "tier": "Bronze 4",
+    "title": "A+B - 4",
+    "url": "https://www.acmicpc.net/problem/10951",
+    "statement": "두 정수 A와 B가 주어지는 줄이 여러 개(개수를 알 수 없음, 입력의 끝까지) 주어질 때, 각 줄마다 A+B를 출력하는 프로그램을 작성하시오.",
+    "constraints": "입력이 끝날 때까지 여러 테스트 케이스가 주어진다.",
+    "examples": [
+      {
+        "input": "1 2\n3 4",
+        "output": "3\n7"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 46,
+    "number": 2557,
+    "tier": "Bronze 5",
+    "title": "Hello World",
+    "url": "https://www.acmicpc.net/problem/2557",
+    "statement": "Hello World!를 출력하는 프로그램을 작성하시오.",
+    "constraints": "입력은 없다.",
+    "examples": [
+      {
+        "input": "",
+        "output": "Hello World!"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 47,
+    "number": 3052,
+    "tier": "Bronze 3",
+    "title": "나머지",
+    "url": "https://www.acmicpc.net/problem/3052",
+    "statement": "열 개의 정수를 입력받아 각각을 42로 나눈 나머지를 구하고, 서로 다른 나머지 값이 몇 개인지 출력하는 프로그램을 작성하시오.",
+    "constraints": "10개의 정수가 주어지며, 절댓값은 10,000 이하이다.",
+    "examples": [
+      {
+        "input": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10",
+        "output": "10"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 48,
+    "number": 4673,
+    "tier": "Bronze 2",
+    "title": "셀프 넘버",
+    "url": "https://www.acmicpc.net/problem/4673",
+    "statement": "양의 정수 d(n)은 n에 n의 각 자리수를 더해 만든 수이다. n을 d(n)의 생성자라고 한다. 1부터 10,000까지의 수 중에서 생성자가 없는 셀프 넘버를 모두 한 줄에 하나씩 출력하는 프로그램을 작성하시오.",
+    "constraints": "입력은 없다. 1부터 10,000 사이의 셀프 넘버를 오름차순으로 출력한다.",
+    "examples": [
+      {
+        "input": "",
+        "output": "1\n3\n5\n7\n9\n20\n31\n42\n53\n64\n75\n86\n97\n108\n110"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 49,
+    "number": 2609,
+    "tier": "Bronze 2",
+    "title": "최대공약수와 최소공배수",
+    "url": "https://www.acmicpc.net/problem/2609",
+    "statement": "두 개의 자연수를 입력받아 최대공약수와 최소공배수를 순서대로 한 줄씩 출력하는 프로그램을 작성하시오.",
+    "constraints": "두 자연수는 10,000 이하이다.",
+    "examples": [
+      {
+        "input": "24 18",
+        "output": "6\n72"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 50,
+    "number": 1978,
+    "tier": "Bronze 1",
+    "title": "소수 찾기",
+    "url": "https://www.acmicpc.net/problem/1978",
+    "statement": "주어진 N개의 수 중에서 소수가 몇 개인지 찾아 출력하는 프로그램을 작성하시오.",
+    "constraints": "N은 100 이하이며, 주어지는 수는 1이상 1,000이하이다.",
+    "examples": [
+      {
+        "input": "4\n1 3 5 7",
+        "output": "3"
+      }
+    ],
+    "solved": false
   }
 ]
