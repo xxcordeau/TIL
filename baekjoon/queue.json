@@ -408,7 +408,8 @@
         "output": "***\n **\n  *"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-02-25"
   },
   {
     "id": 25,
