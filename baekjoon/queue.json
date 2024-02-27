@@ -442,7 +442,8 @@
         "output": "75.000000"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-02-27"
   },
   {
     "id": 27,
