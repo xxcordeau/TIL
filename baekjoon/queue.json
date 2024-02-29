@@ -476,7 +476,8 @@
         "output": "40.000%"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-02-29"
   },
   {
     "id": 29,
