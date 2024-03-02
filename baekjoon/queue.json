@@ -510,7 +510,8 @@
         "output": "6 3 3 0"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-02"
   },
   {
     "id": 31,
