@@ -527,7 +527,8 @@
         "output": "65"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-03"
   },
   {
     "id": 32,
