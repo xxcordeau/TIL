@@ -544,7 +544,8 @@
         "output": "15"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-04"
   },
   {
     "id": 33,
