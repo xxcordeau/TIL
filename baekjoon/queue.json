@@ -561,7 +561,8 @@
         "output": "KY"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-05"
   },
   {
     "id": 34,
