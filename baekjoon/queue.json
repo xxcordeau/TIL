@@ -612,7 +612,8 @@
         "output": "10 27"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-08"
   },
   {
     "id": 37,
