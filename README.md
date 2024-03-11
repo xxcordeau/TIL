@@ -1,2 +1,1 @@
-asdfadfADSF
-ㅇㄹㄶ
+afd
