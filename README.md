@@ -1,4 +1,1 @@
-afdafdasf
-fasdf
-afds
-ㅁㅇㄹㄴ
+afd
