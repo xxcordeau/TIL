@@ -782,7 +782,8 @@
         "output": "Hello World!"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-18"
   },
   {
     "id": 47,
