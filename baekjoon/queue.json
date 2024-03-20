@@ -816,7 +816,8 @@
         "output": "1\n3\n5\n7\n9\n20\n31\n42\n53\n64\n75\n86\n97\n108\n110"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-20"
   },
   {
     "id": 49,
