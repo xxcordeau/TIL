@@ -884,7 +884,8 @@
         "output": "1\n2\n3"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-24"
   },
   {
     "id": 53,
