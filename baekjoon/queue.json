@@ -918,7 +918,8 @@
         "output": "1 -1\n1 1\n3 4"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-03-26"
   },
   {
     "id": 55,
