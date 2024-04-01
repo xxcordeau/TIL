@@ -1020,7 +1020,8 @@
         "output": "Right\nWrong\nRight"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-01"
   },
   {
     "id": 61,
