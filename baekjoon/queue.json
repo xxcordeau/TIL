@@ -1105,7 +1105,8 @@
         "output": "  *\n ***\n*****\n ***\n  *"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-06"
   },
   {
     "id": 66,
