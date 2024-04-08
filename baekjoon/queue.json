@@ -1139,7 +1139,8 @@
         "output": "  *\n **\n***\n **\n  *"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-08"
   },
   {
     "id": 68,
