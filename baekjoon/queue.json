@@ -1258,6 +1258,7 @@
         "output": "1 1 0"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-15"
   }
 ]
