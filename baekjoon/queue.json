@@ -1260,5 +1260,390 @@
     ],
     "solved": true,
     "solvedDate": "2024-04-15"
+  },
+  {
+    "id": 75,
+    "number": 10828,
+    "tier": "Silver 4",
+    "title": "스택",
+    "url": "https://www.acmicpc.net/problem/10828",
+    "statement": "정수를 저장하는 스택을 구현한 다음 명령을 처리하는 프로그램을 작성하시오. 명령은 push X, pop, size, empty, top이 있으며, pop과 top은 스택이 비어있으면 -1을 출력한다.",
+    "constraints": "명령의 수는 100,000개 이하이다.",
+    "examples": [
+      {
+        "input": "7\npush 1\npush 2\ntop\nsize\npop\npop\npop",
+        "output": "2\n2\n2\n1\n-1"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-04-16"
+  },
+  {
+    "id": 76,
+    "number": 10845,
+    "tier": "Silver 4",
+    "title": "큐",
+    "url": "https://www.acmicpc.net/problem/10845",
+    "statement": "정수를 저장하는 큐를 구현한 다음 명령을 처리하는 프로그램을 작성하시오. 명령은 push X, pop, size, empty, front, back이 있으며, 큐가 비어있는 경우 pop/front/back은 -1을 출력한다.",
+    "constraints": "명령의 수는 100,000개 이하이다.",
+    "examples": [
+      {
+        "input": "7\npush 1\npush 2\nfront\nback\npop\npop\npop",
+        "output": "1\n2\n1\n2\n-1"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 77,
+    "number": 9012,
+    "tier": "Silver 4",
+    "title": "괄호",
+    "url": "https://www.acmicpc.net/problem/9012",
+    "statement": "괄호 문자열(VPS)이 여러 개 주어질 때, 각 문자열이 올바른 괄호 문자열이면 YES, 아니면 NO를 출력하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 개수 T가 첫 줄에 주어지며, 각 문자열의 길이는 50 이하이다.",
+    "examples": [
+      {
+        "input": "2\n(()\n()()",
+        "output": "NO\nYES"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 78,
+    "number": 10773,
+    "tier": "Silver 5",
+    "title": "제로",
+    "url": "https://www.acmicpc.net/problem/10773",
+    "statement": "K개의 정수를 순서대로 받는데, 0이 아닌 수는 종이에 적고, 0이 나오면 가장 최근에 적은 수를 지운다. 모든 수를 받은 후 종이에 남아있는 수의 합을 구하는 프로그램을 작성하시오.",
+    "constraints": "K는 100,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "7\n1\n2\n3\n0\n4\n0\n0",
+        "output": "1"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 79,
+    "number": 1874,
+    "tier": "Silver 2",
+    "title": "스택 수열",
+    "url": "https://www.acmicpc.net/problem/1874",
+    "statement": "1부터 N까지의 수를 스택에 순서대로 push할 수 있을 때, 주어진 수열을 pop 순서로 만들 수 있는지 확인하고 가능하면 사용한 연산(+는 push, -는 pop)을 순서대로, 불가능하면 NO를 출력하는 프로그램을 작성하시오.",
+    "constraints": "N은 100,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "5\n5\n1\n2\n3\n4",
+        "output": "NO"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 80,
+    "number": 1966,
+    "tier": "Silver 3",
+    "title": "프린터 큐",
+    "url": "https://www.acmicpc.net/problem/1966",
+    "statement": "프린터 큐에서 맨 앞 문서를 꺼내 남은 문서 중 더 중요한 문서가 있으면 큐의 맨 뒤로 보내고, 없으면 인쇄한다. 궁금한 문서가 몇 번째로 인쇄되는지 구하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 T가 주어지며, 각 케이스마다 문서 개수 N과 궁금한 문서의 위치(0-indexed) M, 각 문서의 중요도가 주어진다.",
+    "examples": [
+      {
+        "input": "1\n4 2\n1 1 9 1",
+        "output": "1"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 81,
+    "number": 1260,
+    "tier": "Silver 2",
+    "title": "DFS와 BFS",
+    "url": "https://www.acmicpc.net/problem/1260",
+    "statement": "그래프를 DFS로 탐색한 결과와 BFS로 탐색한 결과를 출력하는 프로그램을 작성하시오. 정점 번호가 작은 것을 먼저 방문한다.",
+    "constraints": "정점의 개수 N, 간선의 개수 M, 탐색을 시작할 정점 V가 주어진다.",
+    "examples": [
+      {
+        "input": "4 5 1\n1 2\n1 3\n1 4\n2 4\n3 4",
+        "output": "1 2 4 3\n1 2 3 4"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 82,
+    "number": 2606,
+    "tier": "Silver 3",
+    "title": "바이러스",
+    "url": "https://www.acmicpc.net/problem/2606",
+    "statement": "1번 컴퓨터가 웜 바이러스에 걸렸을 때, 네트워크 연결 정보를 이용해 1번 컴퓨터와 직접 또는 간접적으로 연결된 컴퓨터의 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "컴퓨터 수는 100 이하, 연결 쌍의 수는 (컴퓨터수*(컴퓨터수-1))/2 이하이다.",
+    "examples": [
+      {
+        "input": "7\n6\n1 2\n2 3\n1 5\n5 2\n5 6\n4 7",
+        "output": "4"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 83,
+    "number": 11724,
+    "tier": "Silver 2",
+    "title": "연결 요소의 개수",
+    "url": "https://www.acmicpc.net/problem/11724",
+    "statement": "방향 없는 그래프가 주어질 때 연결 요소(컴포넌트)의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "정점의 개수 N은 1,000 이하, 간선의 개수 M은 100,000 이하이다.",
+    "examples": [
+      {
+        "input": "6 5\n1 2\n2 5\n5 1\n3 4\n4 6",
+        "output": "2"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 84,
+    "number": 2667,
+    "tier": "Silver 2",
+    "title": "단지번호붙이기",
+    "url": "https://www.acmicpc.net/problem/2667",
+    "statement": "N x N 지도에서 1은 집이 있는 곳, 0은 없는 곳을 나타낸다. 상하좌우로 인접한 집들을 하나의 단지로 묶을 때, 총 단지 수와 각 단지에 속한 집의 수를 오름차순으로 출력하는 프로그램을 작성하시오.",
+    "constraints": "N은 25 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "7\n0110100\n0110101\n1110101\n0000111\n0100000\n0111110\n0111000",
+        "output": "3\n7\n8\n9"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 85,
+    "number": 2178,
+    "tier": "Silver 1",
+    "title": "미로 탐색",
+    "url": "https://www.acmicpc.net/problem/2178",
+    "statement": "N x M 크기의 미로에서 (1,1)에서 (N,M)까지 이동할 때 지나야 하는 최소 칸의 수(시작과 도착 칸 포함)를 구하는 프로그램을 작성하시오. 1은 이동 가능한 칸, 0은 벽이다.",
+    "constraints": "N, M은 100 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "4 6\n101111\n101010\n101011\n111011",
+        "output": "15"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 86,
+    "number": 7576,
+    "tier": "Silver 1",
+    "title": "토마토",
+    "url": "https://www.acmicpc.net/problem/7576",
+    "statement": "토마토 상자에서 1은 익은 토마토, 0은 안 익은 토마토, -1은 토마토가 없는 칸을 나타낸다. 하루가 지날 때마다 익은 토마토의 상하좌우에 있는 안 익은 토마토가 익는다고 할 때, 모든 토마토가 익는 데 걸리는 최소 날짜를 구하는 프로그램을 작성하시오. 불가능하면 -1을 출력한다.",
+    "constraints": "상자의 가로 크기 M, 세로 크기 N은 각각 1,000 이하이다.",
+    "examples": [
+      {
+        "input": "2 2\n1 0\n0 0",
+        "output": "2"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 87,
+    "number": 1697,
+    "tier": "Silver 1",
+    "title": "숨바꼭질",
+    "url": "https://www.acmicpc.net/problem/1697",
+    "statement": "수빈이가 있는 위치 N에서 동생이 있는 위치 K까지 갈 때, -1/+1로 이동하면 1초, 순간이동으로 2배 위치로 이동하면 1초가 걸린다고 할 때 최소 시간을 구하는 프로그램을 작성하시오.",
+    "constraints": "N, K는 0 이상 100,000 이하의 정수이다.",
+    "examples": [
+      {
+        "input": "5 17",
+        "output": "4"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 88,
+    "number": 1463,
+    "tier": "Silver 3",
+    "title": "1로 만들기",
+    "url": "https://www.acmicpc.net/problem/1463",
+    "statement": "정수 N에 대해 1을 빼거나, 2로 나누어 떨어지면 2로 나누거나, 3으로 나누어 떨어지면 3으로 나누는 연산을 사용해 N을 1로 만드는 최소 연산 횟수를 구하는 프로그램을 작성하시오.",
+    "constraints": "N은 1 이상 1,000,000 이하의 정수이다.",
+    "examples": [
+      {
+        "input": "10",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 89,
+    "number": 9095,
+    "tier": "Silver 3",
+    "title": "1, 2, 3 더하기",
+    "url": "https://www.acmicpc.net/problem/9095",
+    "statement": "정수 n을 1, 2, 3의 합으로 나타내는 방법의 수를 구하는 프로그램을 작성하시오. 합을 나타내는 수의 순서가 다르면 다른 것으로 센다.",
+    "constraints": "n은 1 이상 11 이하의 정수이며, 테스트 케이스 개수가 먼저 주어진다.",
+    "examples": [
+      {
+        "input": "1\n4",
+        "output": "7"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 90,
+    "number": 2748,
+    "tier": "Silver 5",
+    "title": "피보나치 수 2",
+    "url": "https://www.acmicpc.net/problem/2748",
+    "statement": "n번째 피보나치 수를 구하는 프로그램을 작성하시오. (0번째는 0, 1번째는 1)",
+    "constraints": "n은 90 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "10",
+        "output": "55"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 91,
+    "number": 9461,
+    "tier": "Silver 3",
+    "title": "파도반 수열",
+    "url": "https://www.acmicpc.net/problem/9461",
+    "statement": "P(1)=P(2)=P(3)=1, P(4)=2, P(5)=2이고 n≥4일 때 P(n)=P(n-2)+P(n-3)로 정의되는 파도반 수열의 n번째 항을 구하는 프로그램을 작성하시오.",
+    "constraints": "n은 100 이하의 자연수이며, 테스트 케이스 개수가 먼저 주어진다.",
+    "examples": [
+      {
+        "input": "1\n6",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 92,
+    "number": 11726,
+    "tier": "Silver 3",
+    "title": "2×n 타일링",
+    "url": "https://www.acmicpc.net/problem/11726",
+    "statement": "2×n 크기의 직사각형을 1×2, 2×1 타일로 채우는 방법의 수를 10,007로 나눈 나머지를 구하는 프로그램을 작성하시오.",
+    "constraints": "n은 1,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "9",
+        "output": "55"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 93,
+    "number": 1904,
+    "tier": "Silver 3",
+    "title": "01타일",
+    "url": "https://www.acmicpc.net/problem/1904",
+    "statement": "0과 1로 이루어진 길이 N인 이진수열 중에서 00이 연속으로 나타나지 않는 것의 개수를 15,746으로 나눈 나머지를 구하는 프로그램을 작성하시오.",
+    "constraints": "N은 1,000,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "3",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 94,
+    "number": 2579,
+    "tier": "Silver 3",
+    "title": "계단 오르기",
+    "url": "https://www.acmicpc.net/problem/2579",
+    "statement": "계단마다 점수가 적혀 있고, 한 번에 한 계단 또는 두 계단씩 오를 수 있으며 연속된 세 계단을 모두 밟을 수는 없다. 마지막 계단은 반드시 밟아야 할 때 얻을 수 있는 점수의 최댓값을 구하는 프로그램을 작성하시오.",
+    "constraints": "계단의 개수는 300 이하이며, 각 계단의 점수는 10,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "8\n10\n20\n15\n25\n10\n20\n30\n10",
+        "output": "105"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 95,
+    "number": 11053,
+    "tier": "Silver 2",
+    "title": "가장 긴 증가하는 부분 수열",
+    "url": "https://www.acmicpc.net/problem/11053",
+    "statement": "수열 A가 주어졌을 때, 가장 긴 증가하는 부분 수열의 길이를 구하는 프로그램을 작성하시오.",
+    "constraints": "수열의 크기는 1,000 이하이며, 각 원소는 1,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "6\n10 20 10 30 20 50",
+        "output": "4"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 96,
+    "number": 1931,
+    "tier": "Silver 1",
+    "title": "회의실 배정",
+    "url": "https://www.acmicpc.net/problem/1931",
+    "statement": "회의실 하나에서 겹치지 않게 진행할 수 있는 회의의 최대 개수를 구하는 프로그램을 작성하시오. 각 회의는 시작 시간과 끝나는 시간이 주어지며, 끝나는 시간에 바로 다음 회의를 시작할 수 있다.",
+    "constraints": "회의의 수는 100,000 이하이며, 시간은 2^31-1 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "6\n1 2\n3 4\n0 6\n5 7\n8 9\n5 9",
+        "output": "4"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 97,
+    "number": 11047,
+    "tier": "Silver 4",
+    "title": "동전 0",
+    "url": "https://www.acmicpc.net/problem/11047",
+    "statement": "N종류의 동전이 오름차순으로 주어지고 각 동전의 가치는 바로 앞 동전 가치의 배수일 때, 금액 K를 만드는 데 필요한 동전 개수의 최솟값을 구하는 프로그램을 작성하시오.",
+    "constraints": "N은 10 이하, K는 100,000,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "3 23\n1\n5\n10",
+        "output": "5"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 98,
+    "number": 1920,
+    "tier": "Silver 4",
+    "title": "수 찾기",
+    "url": "https://www.acmicpc.net/problem/1920",
+    "statement": "N개의 정수로 이루어진 집합 A와 M개의 정수로 이루어진 집합 B가 주어졌을 때, B의 각 원소가 A에 존재하는지 확인하여 존재하면 1, 존재하지 않으면 0을 출력하는 프로그램을 작성하시오.",
+    "constraints": "N, M은 100,000 이하의 자연수이며, 모든 수는 -2^31보다 크거나 같고 2^31보다 작다.",
+    "examples": [
+      {
+        "input": "5\n4 5 1 3 2\n5\n1 3 7 9 5",
+        "output": "1\n1\n0\n0\n1"
+      }
+    ],
+    "solved": false
   }
 ]
