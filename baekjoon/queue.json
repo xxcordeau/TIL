@@ -1292,7 +1292,8 @@
         "output": "1\n2\n1\n2\n-1"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-17"
   },
   {
     "id": 77,
