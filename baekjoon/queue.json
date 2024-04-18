@@ -1309,7 +1309,8 @@
         "output": "NO\nYES"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-18"
   },
   {
     "id": 78,
