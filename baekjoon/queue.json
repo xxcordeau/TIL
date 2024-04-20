@@ -1343,7 +1343,8 @@
         "output": "NO"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-20"
   },
   {
     "id": 80,
