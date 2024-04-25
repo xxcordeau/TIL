@@ -1428,7 +1428,8 @@
         "output": "3\n7\n8\n9"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-25"
   },
   {
     "id": 85,
