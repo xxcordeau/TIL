@@ -1513,7 +1513,8 @@
         "output": "7"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-04-30"
   },
   {
     "id": 90,
