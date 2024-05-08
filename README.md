@@ -1,3 +1,1 @@
-wnshhsasdf
-afd
-ㅁㅇㄴㄹ
+wnsh
