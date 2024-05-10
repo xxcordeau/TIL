@@ -1668,5 +1668,310 @@
     ],
     "solved": true,
     "solvedDate": "2024-05-09"
+  },
+  {
+    "id": 99,
+    "number": 1149,
+    "tier": "Silver 1",
+    "title": "RGB거리",
+    "url": "https://www.acmicpc.net/problem/1149",
+    "statement": "집 N개를 빨강, 초록, 파랑 중 하나로 칠하는데 각 색을 칠하는 비용이 집마다 다르고, 이웃한 집끼리는 같은 색을 칠할 수 없을 때 모든 집을 칠하는 최소 비용을 구하는 프로그램을 작성하시오.",
+    "constraints": "집의 개수 N은 1,000 이하이며, 각 색을 칠하는 비용은 1,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "3\n26 40 83\n49 60 57\n13 89 99",
+        "output": "96"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-05-10"
+  },
+  {
+    "id": 100,
+    "number": 11055,
+    "tier": "Silver 2",
+    "title": "가장 큰 증가하는 부분 수열",
+    "url": "https://www.acmicpc.net/problem/11055",
+    "statement": "수열 A가 주어졌을 때, 증가하는 부분 수열 중 그 합이 가장 큰 값을 구하는 프로그램을 작성하시오.",
+    "constraints": "수열의 크기는 1,000 이하이며, 각 원소는 1,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "5\n1 100 2 50 60",
+        "output": "113"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 101,
+    "number": 2225,
+    "tier": "Silver 1",
+    "title": "합분해",
+    "url": "https://www.acmicpc.net/problem/2225",
+    "statement": "0부터 N까지의 정수 K개를 더해서 N을 만드는 경우의 수를 1,000,000,000으로 나눈 나머지로 구하는 프로그램을 작성하시오. 합을 이루는 수의 순서를 다르게 하면 다른 경우로 센다.",
+    "constraints": "N은 200 이하, K는 200 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "20 2",
+        "output": "21"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 102,
+    "number": 1912,
+    "tier": "Silver 2",
+    "title": "연속합",
+    "url": "https://www.acmicpc.net/problem/1912",
+    "statement": "n개의 정수로 이루어진 수열이 주어졌을 때, 연속된 수들의 합 중 최대값을 구하는 프로그램을 작성하시오. 부분 수열은 하나 이상의 원소를 포함해야 한다.",
+    "constraints": "정수의 개수는 100,000 이하이며, 각 정수는 절댓값이 1,000 이하이다.",
+    "examples": [
+      {
+        "input": "10\n10 -4 3 1 5 6 -35 12 21 -1",
+        "output": "33"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 103,
+    "number": 1092,
+    "tier": "Gold 5",
+    "title": "배",
+    "url": "https://www.acmicpc.net/problem/1092",
+    "statement": "N개의 크레인과 M개의 박스가 있다. 각 크레인은 자신의 최대 하중 이하인 박스만 옮길 수 있고, 한 라운드에 각 크레인은 박스를 하나씩 옮길 수 있다. 모든 박스를 옮기는 데 필요한 최소 라운드 수를 구하되, 어느 라운드에도 옮길 수 없는 박스가 남으면 -1을 출력하는 프로그램을 작성하시오.",
+    "constraints": "크레인 수와 박스 수는 각각 50 이하이다.",
+    "examples": [
+      {
+        "input": "3\n10 5 3\n5\n9 8 3 3 2",
+        "output": "2"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 104,
+    "number": 1541,
+    "tier": "Silver 2",
+    "title": "잃어버린 괄호",
+    "url": "https://www.acmicpc.net/problem/1541",
+    "statement": "숫자와 '+', '-'로 이루어진 식이 주어질 때, 괄호를 적절히 쳐서 식의 값을 최소로 만드는 프로그램을 작성하시오. 괄호는 필요한 만큼 사용할 수 있다.",
+    "constraints": "식의 길이는 50 이하이며, 각 숫자는 0 이상 100 이하의 정수이다.",
+    "examples": [
+      {
+        "input": "55-50+40",
+        "output": "-35"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 105,
+    "number": 11399,
+    "tier": "Silver 4",
+    "title": "ATM",
+    "url": "https://www.acmicpc.net/problem/11399",
+    "statement": "N명이 ATM에서 각각 인출하는 데 걸리는 시간이 주어질 때, 줄을 서는 순서를 잘 정해서 각자가 기다린 시간과 인출 시간을 합한 값의 총합을 최소로 만드는 프로그램을 작성하시오.",
+    "constraints": "사람 수 N은 1,000 이하이며, 각 인출 시간은 1,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "5\n3 1 4 3 2",
+        "output": "32"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 106,
+    "number": 1946,
+    "tier": "Silver 2",
+    "title": "신입 사원",
+    "url": "https://www.acmicpc.net/problem/1946",
+    "statement": "지원자마다 서류심사 순위와 면접 순위가 있다. 자신보다 서류, 면접 순위가 모두 우수한 지원자가 한 명도 없는 지원자만 뽑을 때, 뽑힐 수 있는 지원자의 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 T가 주어지며, 각 케이스마다 지원자 수 N과 N개의 (서류순위, 면접순위) 쌍이 주어진다.",
+    "examples": [
+      {
+        "input": "1\n5\n1 3\n2 4\n3 2\n4 1\n5 5",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 107,
+    "number": 2437,
+    "tier": "Silver 3",
+    "title": "저울",
+    "url": "https://www.acmicpc.net/problem/2437",
+    "statement": "N개의 추가 있을 때, 이 추들을 이용해 만들 수 없는 가장 작은 양의 정수 무게를 구하는 프로그램을 작성하시오.",
+    "constraints": "추의 개수 N은 1,000 이하이며, 각 추의 무게는 1,000,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "8\n3 1 6 2 1 12 1 2",
+        "output": "29"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 108,
+    "number": 5397,
+    "tier": "Silver 4",
+    "title": "키로거",
+    "url": "https://www.acmicpc.net/problem/5397",
+    "statement": "키로거로 기록된 로그가 주어질 때, 알파벳은 커서 위치에 입력되고 '-'는 백스페이스, '<'와 '>'는 커서를 좌우로 이동시킨다. 로그를 모두 처리한 후 화면에 남는 문자열을 구하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 T가 주어지며, 각 로그의 길이는 1,000,000 이하이다.",
+    "examples": [
+      {
+        "input": "1\nABC<<-",
+        "output": "BC"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 109,
+    "number": 2422,
+    "tier": "Silver 3",
+    "title": "한윤정이 이탈리아에서 아이스크림을 만들었다고 한다",
+    "url": "https://www.acmicpc.net/problem/2422",
+    "statement": "N가지 재료 중 서로 다른 3가지를 골라 아이스크림을 만들 때, 궁합이 좋지 않은 재료 쌍이 함께 포함된 조합을 제외하고 만들 수 있는 아이스크림의 가짓수를 구하는 프로그램을 작성하시오.",
+    "constraints": "재료의 수 N은 200 이하, 궁합이 좋지 않은 쌍의 수 M은 2,000 이하이다.",
+    "examples": [
+      {
+        "input": "4 1\n1 4",
+        "output": "2"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 110,
+    "number": 15829,
+    "tier": "Bronze 2",
+    "title": "Hashing",
+    "url": "https://www.acmicpc.net/problem/15829",
+    "statement": "알파벳 소문자로 이루어진 문자열이 주어질 때, r=31, M=1,234,567,891을 이용한 다항식 해시값을 계산하는 프로그램을 작성하시오. a는 1, b는 2, ... z는 26으로 대응한다.",
+    "constraints": "문자열의 길이는 1,000,000 이하이다.",
+    "examples": [
+      {
+        "input": "3\nabc",
+        "output": "2946"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 111,
+    "number": 1010,
+    "tier": "Silver 3",
+    "title": "다리 놓기",
+    "url": "https://www.acmicpc.net/problem/1010",
+    "statement": "강 서쪽에 N개, 동쪽에 M개의 사이트가 있을 때(N ≤ M), 다리끼리 겹치지 않게 N개의 다리를 놓는 경우의 수를 구하는 프로그램을 작성하시오. 이는 M개 중 N개를 고르는 조합의 수와 같다.",
+    "constraints": "테스트 케이스 T가 주어지며, N, M은 각각 30 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "1\n2 3",
+        "output": "3"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 112,
+    "number": 11050,
+    "tier": "Bronze 1",
+    "title": "이항 계수 1",
+    "url": "https://www.acmicpc.net/problem/11050",
+    "statement": "자연수 N과 정수 K가 주어졌을 때 이항 계수 (N, K)를 구하는 프로그램을 작성하시오.",
+    "constraints": "N은 10 이하의 자연수이고, K는 0 이상 N 이하의 정수이다.",
+    "examples": [
+      {
+        "input": "5 2",
+        "output": "10"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 113,
+    "number": 11051,
+    "tier": "Silver 2",
+    "title": "이항 계수 2",
+    "url": "https://www.acmicpc.net/problem/11051",
+    "statement": "자연수 N과 정수 K가 주어졌을 때 이항 계수 (N, K)를 10,007로 나눈 나머지를 구하는 프로그램을 작성하시오.",
+    "constraints": "N은 1,000 이하의 자연수이고, K는 0 이상 N 이하의 정수이다.",
+    "examples": [
+      {
+        "input": "5 2",
+        "output": "10"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 114,
+    "number": 1620,
+    "tier": "Silver 4",
+    "title": "나는야 포켓몬 마스터 이다솜",
+    "url": "https://www.acmicpc.net/problem/1620",
+    "statement": "N마리의 포켓몬 이름이 번호 순서대로 주어진 뒤, M개의 질문이 주어진다. 질문이 번호이면 그 번호의 포켓몬 이름을, 이름이면 그 이름의 포켓몬 번호를 출력하는 프로그램을 작성하시오.",
+    "constraints": "N, M은 각각 100,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "6 3\nPikachu\nRaichu\nAAA\nRaichu2\nZZZ\nCCC\nPikachu\n2\nCCC",
+        "output": "1\nRaichu\n6"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 115,
+    "number": 11060,
+    "tier": "Silver 3",
+    "title": "점프 점프",
+    "url": "https://www.acmicpc.net/problem/11060",
+    "statement": "1번 칸에서 시작해서 N번 칸까지 이동하는데, i번 칸에 적힌 수만큼(그 이하로도) 앞으로 점프할 수 있다. N번 칸까지 도달하는 최소 점프 횟수를 구하되, 도달할 수 없으면 -1을 출력하는 프로그램을 작성하시오.",
+    "constraints": "칸의 개수 N은 1,000 이하이며, 각 칸에 적힌 수는 100 이하이다.",
+    "examples": [
+      {
+        "input": "5\n1 1 1 1 1",
+        "output": "4"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 116,
+    "number": 1932,
+    "tier": "Silver 1",
+    "title": "정수 삼각형",
+    "url": "https://www.acmicpc.net/problem/1932",
+    "statement": "삼각형 모양으로 배치된 수들이 주어질 때, 맨 위 칸부터 시작해서 아래로 한 칸씩 내려가며(바로 아래 또는 오른쪽 아래로만 이동) 마지막 줄까지 도착했을 때 지나온 수의 합의 최댓값을 구하는 프로그램을 작성하시오.",
+    "constraints": "삼각형의 크기는 500 이하이다.",
+    "examples": [
+      {
+        "input": "5\n7\n3 8\n8 1 0\n2 7 4 4\n4 5 2 6 5",
+        "output": "30"
+      }
+    ],
+    "solved": false
+  },
+  {
+    "id": 117,
+    "number": 10816,
+    "tier": "Silver 4",
+    "title": "숫자 카드 2",
+    "url": "https://www.acmicpc.net/problem/10816",
+    "statement": "N개의 정수가 적힌 숫자 카드가 주어질 때, M개의 정수 각각이 카드에 몇 장 있는지 세어 출력하는 프로그램을 작성하시오.",
+    "constraints": "N, M은 각각 500,000 이하의 자연수이다.",
+    "examples": [
+      {
+        "input": "5\n10 9 -5 2 3\n4\n10 9 -5 2",
+        "output": "1 1 1 1"
+      }
+    ],
+    "solved": false
   }
 ]
