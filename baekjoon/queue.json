@@ -1717,7 +1717,8 @@
         "output": "21"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-05-12"
   },
   {
     "id": 102,
