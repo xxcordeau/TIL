@@ -1,2 +1,1 @@
-ihhtrytyf
-sdgdfgtth
+ㅁㄹㄴㅇ
