@@ -1836,7 +1836,8 @@
         "output": "BC"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-05-19"
   },
   {
     "id": 109,
