@@ -1921,7 +1921,8 @@
         "output": "10"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2024-05-24"
   },
   {
     "id": 114,
