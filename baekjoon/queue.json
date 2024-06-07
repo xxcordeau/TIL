@@ -2161,5 +2161,26 @@
     ],
     "solved": true,
     "solvedDate": "2026-08-19"
+  },
+  {
+    "id": 128,
+    "number": 2920,
+    "tier": "Bronze 5",
+    "title": "음계",
+    "url": "https://www.acmicpc.net/problem/2920",
+    "statement": "8개의 정수가 도부터 도까지의 음계 순서(1~8)를 나타낼 때, 오름차순이면 ascending, 내림차순이면 descending, 둘 다 아니면 mixed를 출력하는 프로그램을 작성하시오.",
+    "constraints": "1부터 8까지의 정수가 한 번씩 서로 다른 순서로 주어진다.",
+    "examples": [
+      {
+        "input": "3 4 5 6 7 8 1 2",
+        "output": "mixed"
+      },
+      {
+        "input": "1 2 3 4 5 6 7 8",
+        "output": "ascending"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-07"
   }
 ]
