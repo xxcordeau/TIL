@@ -2182,5 +2182,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-07"
+  },
+  {
+    "id": 129,
+    "number": 11653,
+    "tier": "Silver 5",
+    "title": "소인수분해",
+    "url": "https://www.acmicpc.net/problem/11653",
+    "statement": "정수 N이 주어졌을 때, N의 소인수분해 결과를 오름차순으로 한 줄에 하나씩 출력하는 프로그램을 작성하시오.",
+    "constraints": "1 ≤ N ≤ 10,000,000",
+    "examples": [
+      {
+        "input": "24",
+        "output": "2\n2\n2\n3"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-08"
   }
 ]
