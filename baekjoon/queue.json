@@ -2199,5 +2199,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-08"
+  },
+  {
+    "id": 130,
+    "number": 2606,
+    "tier": "Silver 3",
+    "title": "바이러스",
+    "url": "https://www.acmicpc.net/problem/2606",
+    "statement": "컴퓨터의 수와 연결된 네트워크 정보가 주어졌을 때, 1번 컴퓨터가 바이러스에 걸리면 1번 컴퓨터를 통해 감염되는 컴퓨터의 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "컴퓨터의 수는 100 이하, 연결 쌍의 수는 첫 줄에 컴퓨터 수, 둘째 줄에 연결 수, 이후 각 줄에 연결된 두 컴퓨터 번호가 주어진다.",
+    "examples": [
+      {
+        "input": "7\n6\n1 2\n2 3\n1 5\n5 2\n5 6\n4 7",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-09"
   }
 ]
