@@ -2216,5 +2216,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-09"
+  },
+  {
+    "id": 131,
+    "number": 4949,
+    "tier": "Silver 5",
+    "title": "균형잡힌 세상",
+    "url": "https://www.acmicpc.net/problem/4949",
+    "statement": "여러 줄의 문자열이 주어질 때, 각 줄에 있는 소괄호와 대괄호의 짝이 올바르게 맞는지 판단하는 프로그램을 작성하시오. 입력은 '.'만 있는 줄로 끝난다.",
+    "constraints": "각 줄의 길이는 100글자 이하, 마지막 줄은 '.' 하나만 있다.",
+    "examples": [
+      {
+        "input": "(hello [world]).\n([)].\n.",
+        "output": "yes\nno"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-10"
   }
 ]
