@@ -842,5 +842,24 @@
     ],
     "solved": true,
     "solvedDate": "2024-02-01"
+  },
+  {
+    "id": 41,
+    "title": "짝수와 홀수",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12937",
+    "statement": "정수 num이 짝수일 경우 \"Even\"을, 홀수일 경우 \"Odd\"를 return하는 solution 함수를 완성하세요.",
+    "constraints": "0 ≤ num ≤ 10,000",
+    "examples": [
+      {
+        "input": "3",
+        "output": "\"Odd\""
+      },
+      {
+        "input": "4",
+        "output": "\"Even\""
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-12"
   }
 ]
