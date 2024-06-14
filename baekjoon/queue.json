@@ -2267,5 +2267,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-13"
+  },
+  {
+    "id": 134,
+    "number": 25314,
+    "tier": "Bronze 5",
+    "title": "코딩은 체육과목입니다",
+    "url": "https://www.acmicpc.net/problem/25314",
+    "statement": "정수 N이 주어질 때, \"long\"을 N/4번 출력하되 사이에 공백을 넣어 출력하는 프로그램을 작성하시오.",
+    "constraints": "4 ≤ N ≤ 1000, N은 4의 배수",
+    "examples": [
+      {
+        "input": "8",
+        "output": "long long"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-14"
   }
 ]
