@@ -2284,5 +2284,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-14"
+  },
+  {
+    "id": 135,
+    "number": 10952,
+    "tier": "Bronze 5",
+    "title": "A+B - 4",
+    "url": "https://www.acmicpc.net/problem/10952",
+    "statement": "두 정수 A와 B를 입력받아 A+B를 출력하는 프로그램을 작성하시오. 입력의 마지막에는 0 0이 주어진다.",
+    "constraints": "각 줄에 A, B가 주어지며 A와 B가 0이면 입력 종료",
+    "examples": [
+      {
+        "input": "1 2\n3 4\n0 0",
+        "output": "3\n7"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-15"
   }
 ]
