@@ -2318,5 +2318,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-16"
+  },
+  {
+    "id": 137,
+    "number": 11022,
+    "tier": "Bronze 4",
+    "title": "A+B - 8",
+    "url": "https://www.acmicpc.net/problem/11022",
+    "statement": "테스트 케이스 개수 T가 주어지고, 각 케이스마다 두 정수 A, B가 주어질 때 \"Case #x: A + B = 결과\" 형식으로 출력하는 프로그램을 작성하시오.",
+    "constraints": "1 ≤ T ≤ 10000",
+    "examples": [
+      {
+        "input": "2\n1 1\n2 2",
+        "output": "Case #1: 1 + 1 = 2\nCase #2: 2 + 2 = 4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-17"
   }
 ]
