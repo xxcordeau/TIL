@@ -2352,5 +2352,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-18"
+  },
+  {
+    "id": 139,
+    "number": 11279,
+    "tier": "Silver 2",
+    "title": "최대 힙",
+    "url": "https://www.acmicpc.net/problem/11279",
+    "statement": "0이 입력되면 힙에서 최댓값을 출력하고 그 값을 제거하며(힙이 비어있으면 0 출력), 자연수 x가 입력되면 힙에 x를 삽입하는 프로그램을 작성하시오.",
+    "constraints": "연산의 개수는 100,000개 이하",
+    "examples": [
+      {
+        "input": "7\n3\n1\n0\n5\n0\n0\n0",
+        "output": "3\n5\n1\n0"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-19"
   }
 ]
