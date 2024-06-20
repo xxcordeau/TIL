@@ -861,5 +861,24 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-12"
+  },
+  {
+    "id": 42,
+    "title": "약수의 개수와 덧셈",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/77884",
+    "statement": "left부터 right까지의 수 중에서 약수의 개수가 짝수면 더하고 홀수면 빼서 반환하는 solution 함수를 완성하세요.",
+    "constraints": "1 ≤ left ≤ right ≤ 1000",
+    "examples": [
+      {
+        "input": "13, 17",
+        "output": "43"
+      },
+      {
+        "input": "24, 27",
+        "output": "52"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-20"
   }
 ]
