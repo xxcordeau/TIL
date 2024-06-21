@@ -2369,5 +2369,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-19"
+  },
+  {
+    "id": 140,
+    "number": 10866,
+    "tier": "Silver 4",
+    "title": "덱",
+    "url": "https://www.acmicpc.net/problem/10866",
+    "statement": "덱에 정수를 넣고 빼는 명령(push_front, push_back, pop_front, pop_back, size, empty, front, back)을 처리하는 프로그램을 작성하시오.",
+    "constraints": "명령의 개수는 500,000개 이하",
+    "examples": [
+      {
+        "input": "7\npush_back 5\npush_front 10\nsize\npop_front\nempty\nfront\nback",
+        "output": "2\n10\n0\n5\n5"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-21"
   }
 ]
