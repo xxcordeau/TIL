@@ -2386,5 +2386,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-21"
+  },
+  {
+    "id": 141,
+    "number": 4948,
+    "tier": "Silver 3",
+    "title": "베르트랑 공준",
+    "url": "https://www.acmicpc.net/problem/4948",
+    "statement": "자연수 n이 주어질 때 n보다 크고 2n보다 작거나 같은 소수의 개수를 출력하는 프로그램을 작성하시오. 입력은 0이 주어지면 종료한다.",
+    "constraints": "1 ≤ n ≤ 123,456",
+    "examples": [
+      {
+        "input": "1\n10\n0",
+        "output": "1\n4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-22"
   }
 ]
