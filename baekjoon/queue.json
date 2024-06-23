@@ -2403,5 +2403,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-22"
+  },
+  {
+    "id": 142,
+    "number": 6588,
+    "tier": "Silver 3",
+    "title": "골드바흐의 추측",
+    "url": "https://www.acmicpc.net/problem/6588",
+    "statement": "짝수 n이 주어질 때 n을 두 소수의 합으로 나타내되, 두 소수의 차이가 가장 작은 조합을 출력하는 프로그램을 작성하시오. 표현할 수 없으면 \"Goldbach's conjecture is wrong.\"을 출력한다. 입력은 0이 주어지면 종료한다.",
+    "constraints": "6 ≤ n < 1,000,000",
+    "examples": [
+      {
+        "input": "8\n4\n0",
+        "output": "8 = 3 + 5\n4 = 2 + 2"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-23"
   }
 ]
