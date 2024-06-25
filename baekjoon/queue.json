@@ -2437,5 +2437,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-24"
+  },
+  {
+    "id": 144,
+    "number": 2775,
+    "tier": "Silver 5",
+    "title": "부녀회장이 될테야",
+    "url": "https://www.acmicpc.net/problem/2775",
+    "statement": "0층 n호에는 n명이 살고, k층 n호에는 k-1층의 1호부터 n호까지 사는 사람 수의 합만큼 산다는 규칙에 따라 k층 n호에 사는 사람 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 개수 T, 각 케이스마다 층 k(0≤k≤14)와 호수 n(1≤n≤14)이 주어진다.",
+    "examples": [
+      {
+        "input": "1\n2\n3",
+        "output": "10"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-25"
   }
 ]
