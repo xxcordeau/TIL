@@ -2454,5 +2454,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-25"
+  },
+  {
+    "id": 145,
+    "number": 1012,
+    "tier": "Gold 4",
+    "title": "유기농 배추",
+    "url": "https://www.acmicpc.net/problem/1012",
+    "statement": "배추밭에서 배추가 심어진 칸들이 상하좌우로 인접해 있으면 지렁이 한 마리로 보호할 수 있다고 할 때, 필요한 지렁이의 최소 마릿수를 구하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 개수 T, 각 케이스마다 가로 M, 세로 N, 배추 위치 개수 K와 K개의 좌표가 주어진다.",
+    "examples": [
+      {
+        "input": "1\n3 3 3\n0 0\n1 0\n2 2",
+        "output": "2"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-26"
   }
 ]
