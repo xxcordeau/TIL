@@ -2471,5 +2471,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-26"
+  },
+  {
+    "id": 146,
+    "number": 7562,
+    "tier": "Silver 2",
+    "title": "나이트의 이동",
+    "url": "https://www.acmicpc.net/problem/7562",
+    "statement": "체스판 위에서 나이트가 시작 위치에서 목표 위치까지 이동하는 데 필요한 최소 이동 횟수를 구하는 프로그램을 작성하시오.",
+    "constraints": "테스트 케이스 개수 T, 각 케이스마다 체스판 크기 l, 시작 좌표, 목표 좌표가 주어진다.",
+    "examples": [
+      {
+        "input": "1\n8\n0 0\n7 0",
+        "output": "5"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-27"
   }
 ]
