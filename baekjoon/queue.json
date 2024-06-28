@@ -2488,5 +2488,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-27"
+  },
+  {
+    "id": 147,
+    "number": 2587,
+    "tier": "Bronze 3",
+    "title": "대표값2",
+    "url": "https://www.acmicpc.net/problem/2587",
+    "statement": "정수 5개가 주어질 때 그 산술평균(반올림한 정수)과 중앙값을 출력하는 프로그램을 작성하시오.",
+    "constraints": "각 정수는 0 이상 100 이하",
+    "examples": [
+      {
+        "input": "79\n82\n65\n100\n94",
+        "output": "84\n82"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-28"
   }
 ]
