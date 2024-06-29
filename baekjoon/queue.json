@@ -2505,5 +2505,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-28"
+  },
+  {
+    "id": 148,
+    "number": 10807,
+    "tier": "Bronze 5",
+    "title": "개수 세기",
+    "url": "https://www.acmicpc.net/problem/10807",
+    "statement": "N개의 정수 중에서 V와 같은 값이 몇 개 있는지 세는 프로그램을 작성하시오.",
+    "constraints": "1 ≤ N ≤ 100",
+    "examples": [
+      {
+        "input": "5\n1 4 1 0 3 1 5 4 3 1\n1",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-06-29"
   }
 ]
