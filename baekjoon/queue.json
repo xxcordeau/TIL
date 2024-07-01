@@ -2539,5 +2539,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-30"
+  },
+  {
+    "id": 150,
+    "number": 10818,
+    "tier": "Bronze 4",
+    "title": "최소, 최대",
+    "url": "https://www.acmicpc.net/problem/10818",
+    "statement": "N개의 정수가 주어질 때 그 중 최솟값과 최댓값을 출력하는 프로그램을 작성하시오.",
+    "constraints": "1 ≤ N ≤ 1,000,000",
+    "examples": [
+      {
+        "input": "5\n20 10 35 30 7",
+        "output": "7 35"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-07-01"
   }
 ]
