@@ -2573,5 +2573,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-07-02"
+  },
+  {
+    "id": 152,
+    "number": 1436,
+    "tier": "Silver 3",
+    "title": "영화감독 숌",
+    "url": "https://www.acmicpc.net/problem/1436",
+    "statement": "666이 들어간 숫자를 좋아하는 영화감독 숌은 자기가 만든 영화의 제목에 666이 들어간 숫자를 순서대로 붙인다. N번째 영화의 제목에 들어갈 숫자를 구하는 프로그램을 작성하시오.",
+    "constraints": "1 ≤ N ≤ 10,000",
+    "examples": [
+      {
+        "input": "3",
+        "output": "2666"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-07-03"
   }
 ]
