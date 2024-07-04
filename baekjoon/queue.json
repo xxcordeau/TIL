@@ -2590,5 +2590,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-07-03"
+  },
+  {
+    "id": 153,
+    "number": 18108,
+    "tier": "Bronze 5",
+    "title": "1998년생인 내가 태국에서는 무슨 띠?",
+    "url": "https://www.acmicpc.net/problem/18108",
+    "statement": "태국의 불기 연도가 주어질 때 이를 서기 연도로 변환하는 프로그램을 작성하시오. 불기는 서기보다 543년 빠르다.",
+    "constraints": "1000 ≤ 불기 연도 ≤ 3000",
+    "examples": [
+      {
+        "input": "2541",
+        "output": "1998"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-07-04"
   }
 ]
