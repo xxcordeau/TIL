@@ -2607,5 +2607,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-07-04"
+  },
+  {
+    "number": 2805,
+    "tier": "Silver 2",
+    "title": "나무 자르기",
+    "url": "https://www.acmicpc.net/problem/2805",
+    "statement": "나무 N그루의 높이가 주어질 때, 절단기 높이를 H로 설정해서 모든 나무를 자르면 나무 위쪽이 잘려나간다. 집으로 가져가려는 나무의 길이 M을 얻을 수 있는 절단기 높이의 최댓값을 구하시오.",
+    "constraints": "1<=N<=1,000,000, 1<=M<=2,000,000,000",
+    "examples": [
+      {
+        "input": "4 7\n20 15 10 17\n",
+        "output": "15"
+      }
+    ],
+    "id": 154,
+    "solved": true,
+    "solvedDate": "2024-07-05"
   }
 ]
