@@ -2624,5 +2624,22 @@
     "id": 154,
     "solved": true,
     "solvedDate": "2024-07-05"
+  },
+  {
+    "number": 2110,
+    "tier": "Gold 4",
+    "title": "공유기 설치",
+    "url": "https://www.acmicpc.net/problem/2110",
+    "statement": "일직선상에 있는 집 N개의 좌표가 주어지고, 공유기를 C개 설치해야 한다. 가장 인접한 두 공유기 사이의 거리를 최대로 하면서 C개를 설치할 때, 그 최대 거리를 구하시오.",
+    "constraints": "2<=N<=200,000, 2<=C<=N",
+    "examples": [
+      {
+        "input": "5 3\n1\n2\n8\n4\n9\n",
+        "output": "3"
+      }
+    ],
+    "id": 155,
+    "solved": true,
+    "solvedDate": "2024-07-06"
   }
 ]
