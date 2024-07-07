@@ -2641,5 +2641,22 @@
     "id": 155,
     "solved": true,
     "solvedDate": "2024-07-06"
+  },
+  {
+    "number": 2565,
+    "tier": "Gold 5",
+    "title": "전깃줄",
+    "url": "https://www.acmicpc.net/problem/2565",
+    "statement": "두 전봇대 사이에 연결된 전깃줄 중 일부를 없애서 전깃줄들이 서로 교차하지 않도록 만들려고 한다. 남아있는 전깃줄의 개수가 최대가 되도록 할 때, 없애야 하는 전깃줄의 최소 개수를 구하시오.",
+    "constraints": "전깃줄 개수 1<=N<=100",
+    "examples": [
+      {
+        "input": "8\n1 8\n3 9\n2 2\n4 1\n6 4\n10 10\n9 7\n7 6\n",
+        "output": "3"
+      }
+    ],
+    "id": 156,
+    "solved": true,
+    "solvedDate": "2024-07-07"
   }
 ]
