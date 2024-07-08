@@ -2658,5 +2658,22 @@
     "id": 156,
     "solved": true,
     "solvedDate": "2024-07-07"
+  },
+  {
+    "number": 11729,
+    "tier": "Silver 4",
+    "title": "하노이 탑 이동 순서",
+    "url": "https://www.acmicpc.net/problem/11729",
+    "statement": "세 개의 장대와 N개의 원판이 있는 하노이 탑 게임에서, 1번 장대에 쌓인 원판들을 규칙에 따라 3번 장대로 모두 옮기는 방법을 순서대로 출력하시오. 첫 줄에는 옮긴 횟수를 출력한다.",
+    "constraints": "1<=N<=20",
+    "examples": [
+      {
+        "input": "2\n",
+        "output": "3\n1 2\n1 3\n2 3"
+      }
+    ],
+    "id": 157,
+    "solved": true,
+    "solvedDate": "2024-07-08"
   }
 ]
