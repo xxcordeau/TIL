@@ -2675,5 +2675,22 @@
     "id": 157,
     "solved": true,
     "solvedDate": "2024-07-08"
+  },
+  {
+    "number": 1789,
+    "tier": "Silver 3",
+    "title": "수들의 합",
+    "url": "https://www.acmicpc.net/problem/1789",
+    "statement": "서로 다른 임의의 자연수 n개를 더해서 합이 S가 되는 경우, n의 최댓값을 구하는 프로그램을 작성하시오.",
+    "constraints": "1<=S<=4,294,967,295",
+    "examples": [
+      {
+        "input": "17\n",
+        "output": "5"
+      }
+    ],
+    "id": 158,
+    "solved": true,
+    "solvedDate": "2024-07-09"
   }
 ]
