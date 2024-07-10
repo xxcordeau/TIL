@@ -2692,5 +2692,22 @@
     "id": 158,
     "solved": true,
     "solvedDate": "2024-07-09"
+  },
+  {
+    "number": 1120,
+    "tier": "Bronze 1",
+    "title": "문자열",
+    "url": "https://www.acmicpc.net/problem/1120",
+    "statement": "길이가 같거나 A가 더 긴 두 문자열 A, B가 주어진다. B의 길이가 A와 같아지도록 앞뒤에 아무 알파벳이나 추가할 수 있을 때, 두 문자열이 같은 위치에서 다른 알파벳을 가지는 최소 개수를 구하시오.",
+    "constraints": "두 문자열의 길이는 50 이하이고 A의 길이는 B의 길이 이상",
+    "examples": [
+      {
+        "input": "hello\nworld\n",
+        "output": "4"
+      }
+    ],
+    "id": 159,
+    "solved": true,
+    "solvedDate": "2024-07-10"
   }
 ]
