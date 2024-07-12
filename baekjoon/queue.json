@@ -2709,5 +2709,22 @@
     "id": 159,
     "solved": true,
     "solvedDate": "2024-07-10"
+  },
+  {
+    "number": 20920,
+    "tier": "Silver 1",
+    "title": "영단어 암기는 어려워",
+    "url": "https://www.acmicpc.net/problem/20920",
+    "statement": "단어장에 적힌 N개의 단어 중 길이가 M 이상인 단어들만 외우려고 한다. 자주 나오는 단어일수록, 길이가 긴 단어일수록 외우기 우선순위가 높다. 자주 나오는 단어 순, 길이가 긴 단어 순, 사전 순으로 단어를 정렬해서 출력하시오(중복 제거).",
+    "constraints": "1<=N<=100,000, 1<=M<=단어의 최대 길이",
+    "examples": [
+      {
+        "input": "13 3\nobserve\nobserve\nobserver\nobserve\nskeptic\nsunset\nsunset\nsunset\nsunset\ndoor\ngrape\nmango\ndoor\n",
+        "output": "sunset\nobserve\ndoor\nobserver\nskeptic\ngrape\nmango"
+      }
+    ],
+    "id": 160,
+    "solved": true,
+    "solvedDate": "2024-07-12"
   }
 ]
