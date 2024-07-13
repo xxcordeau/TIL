@@ -2726,5 +2726,22 @@
     "id": 160,
     "solved": true,
     "solvedDate": "2024-07-12"
+  },
+  {
+    "number": 2493,
+    "tier": "Gold 5",
+    "title": "탑",
+    "url": "https://www.acmicpc.net/problem/2493",
+    "statement": "왼쪽부터 차례로 세워진 탑들에서 각 탑의 꼭대기에서 왼쪽으로 수평 레이저를 쏘았을 때, 자신보다 높은 가장 가까운 왼쪽 탑을 수신하는 탑의 번호를 구하시오. 수신하는 탑이 없으면 0을 출력한다.",
+    "constraints": "탑의 개수 2<=N<=500,000, 탑의 높이는 100,000 이하 자연수",
+    "examples": [
+      {
+        "input": "5\n6 9 5 7 4\n",
+        "output": "0 0 2 2 4"
+      }
+    ],
+    "id": 161,
+    "solved": true,
+    "solvedDate": "2024-07-13"
   }
 ]
