@@ -1,3 +1,1 @@
-asdfㅁㄴㅇㄹ
-asdf
-fggxx
+ㅁㄴㅇㄹ
