@@ -2743,5 +2743,22 @@
     "id": 161,
     "solved": true,
     "solvedDate": "2024-07-13"
+  },
+  {
+    "number": 2503,
+    "tier": "Silver 3",
+    "title": "숫자 야구",
+    "url": "https://www.acmicpc.net/problem/2503",
+    "statement": "1부터 9까지 서로 다른 숫자 세 개로 이루어진 세 자리 수를 맞추는 숫자 야구 게임에서, 질문한 세 자리 수와 그에 대한 스트라이크, 볼 개수가 N번 주어진다. 모든 질문 결과와 모순되지 않는 정답 후보의 개수를 구하시오.",
+    "constraints": "질문 횟수 1<=N<=100",
+    "examples": [
+      {
+        "input": "2\n123 1 1\n356 1 0\n",
+        "output": "5"
+      }
+    ],
+    "id": 162,
+    "solved": true,
+    "solvedDate": "2024-07-14"
   }
 ]
