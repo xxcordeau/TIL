@@ -903,5 +903,28 @@
     "id": 43,
     "solved": true,
     "solvedDate": "2024-07-11"
+  },
+  {
+    "title": "다항식 더하기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/120863",
+    "statement": "덧셈으로만 이루어진 두 개의 일차 다항식 polynomial이 문자열로 주어질 때, 이 다항식을 계산한 결괏값을 정해진 형식으로 반환하라.",
+    "constraints": "polynomial은 1 <= 길이 <= 15, 공백을 포함할 수 있음",
+    "examples": [
+      {
+        "input": "\"3x + 7 + x\"",
+        "output": "\"4x + 7\""
+      },
+      {
+        "input": "\"x + x\"",
+        "output": "\"2x\""
+      },
+      {
+        "input": "\"x + 3 + 2x + 5\"",
+        "output": "\"3x + 8\""
+      }
+    ],
+    "id": 44,
+    "solved": true,
+    "solvedDate": "2024-07-15"
   }
 ]
