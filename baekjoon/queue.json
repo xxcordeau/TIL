@@ -2777,5 +2777,22 @@
     "id": 163,
     "solved": true,
     "solvedDate": "2026-08-20"
+  },
+  {
+    "number": 11866,
+    "tier": "Silver 4",
+    "title": "요세푸스 문제 0",
+    "url": "https://www.acmicpc.net/problem/11866",
+    "statement": "1번부터 N번까지 N명이 원을 이루면서 앉아있고, 양의 정수 K가 주어진다. 순서대로 K번째 사람을 제거하는 것을 반복할 때 사람들이 제거되는 순서를 구하는 프로그램을 작성하시오.",
+    "constraints": "1<=K<=N<=1000",
+    "examples": [
+      {
+        "input": "7 3\n",
+        "output": "<3, 6, 2, 7, 5, 1, 4>"
+      }
+    ],
+    "id": 164,
+    "solved": true,
+    "solvedDate": "2024-07-16"
   }
 ]
