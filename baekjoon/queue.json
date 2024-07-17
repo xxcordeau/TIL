@@ -2794,5 +2794,22 @@
     "id": 164,
     "solved": true,
     "solvedDate": "2024-07-16"
+  },
+  {
+    "number": 4963,
+    "tier": "Silver 2",
+    "title": "섬의 개수",
+    "url": "https://www.acmicpc.net/problem/4963",
+    "statement": "너비 w, 높이 h인 지도가 주어질 때, 1은 땅, 0은 바다를 의미한다. 대각선으로 연결된 것도 같은 섬으로 취급할 때 섬의 개수를 구하시오. w와 h가 모두 0이면 입력 종료.",
+    "constraints": "1<=w,h<=50",
+    "examples": [
+      {
+        "input": "3 2\n1 1 0\n0 1 1\n0 0\n",
+        "output": "1"
+      }
+    ],
+    "id": 165,
+    "solved": true,
+    "solvedDate": "2024-07-17"
   }
 ]
