@@ -2811,5 +2811,22 @@
     "id": 165,
     "solved": true,
     "solvedDate": "2024-07-17"
+  },
+  {
+    "number": 11403,
+    "tier": "Silver 1",
+    "title": "경로 찾기",
+    "url": "https://www.acmicpc.net/problem/11403",
+    "statement": "가중치 없는 방향 그래프 G가 주어졌을 때, 모든 정점 (i, j)에 대해서 i에서 j로 가는 경로가 있는지 없는지 구하는 프로그램을 작성하시오.",
+    "constraints": "정점의 개수 N(1<=N<=100)",
+    "examples": [
+      {
+        "input": "3\n0 1 0\n0 0 1\n0 0 0\n",
+        "output": "0 1 1\n0 0 1\n0 0 0"
+      }
+    ],
+    "id": 166,
+    "solved": true,
+    "solvedDate": "2024-07-18"
   }
 ]
