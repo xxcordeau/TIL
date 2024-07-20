@@ -2845,5 +2845,22 @@
     "id": 167,
     "solved": true,
     "solvedDate": "2024-07-19"
+  },
+  {
+    "number": 15649,
+    "tier": "Silver 3",
+    "title": "N과 M (1)",
+    "url": "https://www.acmicpc.net/problem/15649",
+    "statement": "자연수 N과 M이 주어졌을 때, 1부터 N까지 자연수 중 중복 없이 M개를 고른 수열을 사전 순으로 모두 출력하시오.",
+    "constraints": "1<=M<=N<=8",
+    "examples": [
+      {
+        "input": "3 1\n",
+        "output": "1\n2\n3"
+      }
+    ],
+    "id": 168,
+    "solved": true,
+    "solvedDate": "2024-07-20"
   }
 ]
