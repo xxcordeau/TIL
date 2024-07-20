@@ -1,3 +1,2 @@
 ㅁㄴㅇㄻㄹㄴㅇㄴㅇㄻㄹㄴㅇasdf
-sfdg
-sfd
+sf
