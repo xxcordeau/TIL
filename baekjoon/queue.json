@@ -2879,5 +2879,22 @@
     "id": 169,
     "solved": true,
     "solvedDate": "2024-07-21"
+  },
+  {
+    "number": 15651,
+    "tier": "Silver 3",
+    "title": "N과 M (4)",
+    "url": "https://www.acmicpc.net/problem/15651",
+    "statement": "자연수 N과 M이 주어졌을 때, 1부터 N까지 자연수 중 M개를 고른 수열(중복 허용, 비내림차순)을 사전 순으로 모두 출력하시오.",
+    "constraints": "1<=M<=N<=8",
+    "examples": [
+      {
+        "input": "3 2\n",
+        "output": "1 1\n1 2\n1 3\n2 2\n2 3\n3 3"
+      }
+    ],
+    "id": 170,
+    "solved": true,
+    "solvedDate": "2024-07-22"
   }
 ]
