@@ -2896,5 +2896,22 @@
     "id": 170,
     "solved": true,
     "solvedDate": "2024-07-22"
+  },
+  {
+    "number": 2447,
+    "tier": "Silver 2",
+    "title": "별 찍기 - 10",
+    "url": "https://www.acmicpc.net/problem/2447",
+    "statement": "3의 거듭제곱 형태인 N이 주어질 때, 재귀적인 패턴으로 별을 찍어라. N=3인 정사각형을 9등분해서 가운데를 비우고, 나머지 8칸에 재귀적으로 같은 패턴을 채운다.",
+    "constraints": "N은 3, 9, 27, ... 형태이며 N<=3^7",
+    "examples": [
+      {
+        "input": "3\n",
+        "output": "***\n* *\n***"
+      }
+    ],
+    "id": 171,
+    "solved": true,
+    "solvedDate": "2024-07-23"
   }
 ]
