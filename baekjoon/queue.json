@@ -2913,5 +2913,22 @@
     "id": 171,
     "solved": true,
     "solvedDate": "2024-07-23"
+  },
+  {
+    "number": 1927,
+    "tier": "Silver 2",
+    "title": "최소 힙",
+    "url": "https://www.acmicpc.net/problem/1927",
+    "statement": "0이 주어지면 힙에서 가장 작은 값을 출력하고 그 값을 힙에서 제거한다. 만약 0이 아닌 값이 주어지면 그 값을 힙에 삽입한다. 힙이 비어있는데 0이 주어지면 0을 출력한다.",
+    "constraints": "연산 개수 N(1<=N<=100,000)",
+    "examples": [
+      {
+        "input": "9\n0\n1\n2\n0\n0\n0\n3\n0\n0\n",
+        "output": "0\n1\n2\n0\n3\n0"
+      }
+    ],
+    "id": 172,
+    "solved": true,
+    "solvedDate": "2024-07-24"
   }
 ]
