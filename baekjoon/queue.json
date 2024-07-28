@@ -2964,5 +2964,22 @@
     "id": 174,
     "solved": true,
     "solvedDate": "2024-07-27"
+  },
+  {
+    "number": 10870,
+    "tier": "Bronze 3",
+    "title": "피보나치 수 5",
+    "url": "https://www.acmicpc.net/problem/10870",
+    "statement": "피보나치 수는 0과 1로 시작하고, 그 다음부터는 바로 앞 두 수의 합이 된다. N이 주어졌을 때 N번째 피보나치 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "0<=N<=20",
+    "examples": [
+      {
+        "input": "10\n",
+        "output": "55"
+      }
+    ],
+    "id": 175,
+    "solved": true,
+    "solvedDate": "2024-07-28"
   }
 ]
