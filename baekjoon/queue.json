@@ -2981,5 +2981,22 @@
     "id": 175,
     "solved": true,
     "solvedDate": "2024-07-28"
+  },
+  {
+    "number": 9663,
+    "tier": "Gold 4",
+    "title": "N-Queen",
+    "url": "https://www.acmicpc.net/problem/9663",
+    "statement": "N-Queen 문제는 크기가 N x N인 체스판 위에 퀸 N개를 서로 공격할 수 없게 놓는 문제이다. N이 주어졌을 때, 퀸을 놓는 방법의 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "1<=N<15",
+    "examples": [
+      {
+        "input": "8\n",
+        "output": "92"
+      }
+    ],
+    "id": 176,
+    "solved": true,
+    "solvedDate": "2024-07-29"
   }
 ]
