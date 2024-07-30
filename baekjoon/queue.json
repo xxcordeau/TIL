@@ -2998,5 +2998,22 @@
     "id": 176,
     "solved": true,
     "solvedDate": "2024-07-29"
+  },
+  {
+    "number": 1748,
+    "tier": "Silver 1",
+    "title": "수 이어 쓰기 1",
+    "url": "https://www.acmicpc.net/problem/1748",
+    "statement": "1부터 N까지의 수를 이어서 쓰면 새로운 하나의 수가 만들어진다. N이 주어졌을 때 이 수가 몇 자리 수인지 구하는 프로그램을 작성하시오.",
+    "constraints": "1<=N<=100,000,000",
+    "examples": [
+      {
+        "input": "125\n",
+        "output": "267"
+      }
+    ],
+    "id": 177,
+    "solved": true,
+    "solvedDate": "2024-07-30"
   }
 ]
