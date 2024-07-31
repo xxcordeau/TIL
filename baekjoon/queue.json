@@ -3015,5 +3015,22 @@
     "id": 177,
     "solved": true,
     "solvedDate": "2024-07-30"
+  },
+  {
+    "number": 5086,
+    "tier": "Bronze 3",
+    "title": "배수와 약수",
+    "url": "https://www.acmicpc.net/problem/5086",
+    "statement": "두 수 A와 B가 주어졌을 때, A가 B의 약수인지 배수인지 알아내는 프로그램을 작성하시오. 두 수가 각각 0 0으로 주어지면 입력이 종료된다.",
+    "constraints": "0 < A, B < 10,000",
+    "examples": [
+      {
+        "input": "6 24\n30 15\n100 100\n50 30\n0 0\n",
+        "output": "factor\nmultiple\nfactor\nneither"
+      }
+    ],
+    "id": 178,
+    "solved": true,
+    "solvedDate": "2024-07-31"
   }
 ]
