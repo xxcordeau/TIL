@@ -3032,5 +3032,22 @@
     "id": 178,
     "solved": true,
     "solvedDate": "2024-07-31"
+  },
+  {
+    "number": 2740,
+    "tier": "Silver 4",
+    "title": "행렬 곱셈",
+    "url": "https://www.acmicpc.net/problem/2740",
+    "statement": "N*M 크기의 행렬 A와 M*K 크기의 행렬 B가 주어졌을 때, 두 행렬을 곱한 N*K 크기의 행렬을 출력하는 프로그램을 작성하시오.",
+    "constraints": "1<=N,M,K<=100, 행렬의 원소는 절댓값이 100을 넘지 않는 정수",
+    "examples": [
+      {
+        "input": "2 3\n1 2 3\n4 5 6\n3 2\n7 8\n9 10\n11 12\n",
+        "output": "58 64\n139 154"
+      }
+    ],
+    "id": 179,
+    "solved": true,
+    "solvedDate": "2024-08-02"
   }
 ]
