@@ -3066,5 +3066,22 @@
     "id": 180,
     "solved": true,
     "solvedDate": "2024-08-03"
+  },
+  {
+    "number": 2798,
+    "tier": "Bronze 2",
+    "title": "블랙잭",
+    "url": "https://www.acmicpc.net/problem/2798",
+    "statement": "N장의 카드에 쓰여 있는 숫자 중 세 장을 골라 그 합이 M을 넘지 않으면서 M에 최대한 가깝게 만드는 카드 3장의 합을 구하는 프로그램을 작성하시오.",
+    "constraints": "3<=N<=100, 10<=M<=300,000, 각 카드 숫자는 100,000 이하의 양의 정수",
+    "examples": [
+      {
+        "input": "5 21\n5 6 7 8 9\n",
+        "output": "21"
+      }
+    ],
+    "id": 181,
+    "solved": true,
+    "solvedDate": "2024-08-04"
   }
 ]
