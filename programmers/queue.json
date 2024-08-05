@@ -964,5 +964,28 @@
     "id": 46,
     "solved": true,
     "solvedDate": "2024-08-01"
+  },
+  {
+    "title": "큰 수 만들기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42883",
+    "statement": "숫자로 이루어진 문자열 number와 정수 k가 주어질 때, number에서 k개의 숫자를 제거했을 때 만들 수 있는 가장 큰 수를 문자열로 반환하라.",
+    "constraints": "number는 1자리 이상 1,000,000자리 이하의 숫자, k는 1 이상 number의 자릿수 미만인 자연수",
+    "examples": [
+      {
+        "input": "\"1924\", 2",
+        "output": "\"94\""
+      },
+      {
+        "input": "\"1231234\", 3",
+        "output": "\"3234\""
+      },
+      {
+        "input": "\"4177252841\", 4",
+        "output": "\"775841\""
+      }
+    ],
+    "id": 47,
+    "solved": true,
+    "solvedDate": "2024-08-05"
   }
 ]
