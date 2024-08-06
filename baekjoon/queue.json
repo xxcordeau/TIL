@@ -3083,5 +3083,22 @@
     "id": 181,
     "solved": true,
     "solvedDate": "2024-08-04"
+  },
+  {
+    "number": 7568,
+    "tier": "Bronze 3",
+    "title": "덩치",
+    "url": "https://www.acmicpc.net/problem/7568",
+    "statement": "N명의 학생 몸무게와 키가 주어졌을 때, 자신보다 몸무게와 키가 모두 큰 학생의 수에 1을 더한 값을 덩치 등수로 정한다. 각 학생의 덩치 등수를 구하는 프로그램을 작성하시오.",
+    "constraints": "1<=N<=50, 몸무게와 키는 1 이상 100 이하의 자연수",
+    "examples": [
+      {
+        "input": "5\n55 185\n58 183\n88 186\n60 175\n46 155\n",
+        "output": "2 2 1 2 5"
+      }
+    ],
+    "id": 182,
+    "solved": true,
+    "solvedDate": "2024-08-06"
   }
 ]
