@@ -3117,5 +3117,22 @@
     "id": 183,
     "solved": true,
     "solvedDate": "2024-08-07"
+  },
+  {
+    "number": 11727,
+    "tier": "Silver 3",
+    "title": "2×n 타일링 2",
+    "url": "https://www.acmicpc.net/problem/11727",
+    "statement": "2×n 크기의 직사각형을 1×2, 2×1, 2×2 타일로 채우는 방법의 수를 구하는 프로그램을 작성하시오. 이 값을 10,007로 나눈 나머지를 출력한다.",
+    "constraints": "1<=N<=1,000",
+    "examples": [
+      {
+        "input": "7\n",
+        "output": "85"
+      }
+    ],
+    "id": 184,
+    "solved": true,
+    "solvedDate": "2024-08-08"
   }
 ]
