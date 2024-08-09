@@ -3134,5 +3134,22 @@
     "id": 184,
     "solved": true,
     "solvedDate": "2024-08-08"
+  },
+  {
+    "number": 11722,
+    "tier": "Silver 2",
+    "title": "가장 긴 감소하는 부분 수열",
+    "url": "https://www.acmicpc.net/problem/11722",
+    "statement": "수열 A가 주어졌을 때, 가장 긴 감소하는 부분 수열을 구하는 프로그램을 작성하시오. 부분 수열은 배열에서 몇 개의 원소를 골라낸 것이고 그 순서가 바뀌면 안 된다.",
+    "constraints": "1<=N<=1,000",
+    "examples": [
+      {
+        "input": "6\n15 5 30 4 20 3\n",
+        "output": "4"
+      }
+    ],
+    "id": 185,
+    "solved": true,
+    "solvedDate": "2024-08-09"
   }
 ]
