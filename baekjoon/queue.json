@@ -3151,5 +3151,22 @@
     "id": 185,
     "solved": true,
     "solvedDate": "2024-08-09"
+  },
+  {
+    "number": 11054,
+    "tier": "Gold 4",
+    "title": "가장 긴 바이토닉 부분 수열",
+    "url": "https://www.acmicpc.net/problem/11054",
+    "statement": "수열 A가 주어졌을 때, 가장 긴 바이토닉 부분 수열을 구하는 프로그램을 작성하시오. 어떤 수열이 A(1)<A(2)<...<A(k-1)<A(k)>A(k+1)>...>A(S-1)>A(S) 형태를 가지면 바이토닉 수열이라고 한다.",
+    "constraints": "1<=N<=1,000",
+    "examples": [
+      {
+        "input": "10\n1 5 2 1 4 3 4 5 2 1\n",
+        "output": "7"
+      }
+    ],
+    "id": 186,
+    "solved": true,
+    "solvedDate": "2024-08-11"
   }
 ]
