@@ -3185,5 +3185,22 @@
     "id": 187,
     "solved": true,
     "solvedDate": "2024-08-12"
+  },
+  {
+    "number": 2747,
+    "tier": "Silver 3",
+    "title": "피보나치 수",
+    "url": "https://www.acmicpc.net/problem/2747",
+    "statement": "피보나치 수는 0과 1로 시작한다. 0번째 피보나치 수는 0이고, 1번째 피보나치 수는 1이다. 그 다음 2번째 부터는 바로 앞 두 피보나치 수의 합이 된다. n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "n은 45보다 작거나 같은 자연수 또는 0이다.",
+    "examples": [
+      {
+        "input": "10\n",
+        "output": "55"
+      }
+    ],
+    "id": 188,
+    "solved": true,
+    "solvedDate": "2024-08-13"
   }
 ]
