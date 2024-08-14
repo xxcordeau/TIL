@@ -3202,5 +3202,22 @@
     "id": 188,
     "solved": true,
     "solvedDate": "2024-08-13"
+  },
+  {
+    "number": 2193,
+    "tier": "Silver 3",
+    "title": "이친수",
+    "url": "https://www.acmicpc.net/problem/2193",
+    "statement": "0과 1로만 이루어진 수를 이진수라 한다. 이 이진수 중 특별한 성질을 갖는 것들이 있는데, 이들을 이친수라 한다. 이친수는 0으로 시작하지 않고, 1이 두 번 연속으로 나타나지 않는다. N자리 이친수의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "N은 90보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "3\n",
+        "output": "2"
+      }
+    ],
+    "id": 189,
+    "solved": true,
+    "solvedDate": "2024-08-14"
   }
 ]
