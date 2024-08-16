@@ -3236,5 +3236,22 @@
     "id": 190,
     "solved": true,
     "solvedDate": "2024-08-15"
+  },
+  {
+    "number": 1094,
+    "tier": "Bronze 1",
+    "title": "막대기",
+    "url": "https://www.acmicpc.net/problem/1094",
+    "statement": "길이가 64cm인 막대기가 있다. 막대기를 부러뜨릴 때는 항상 절반으로 부러뜨린다. N이 주어졌을 때, 길이 N을 만들기 위해 부러뜨려야 하는 횟수의 최솟값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. N은 1보다 크거나 같고, 64보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "20\n",
+        "output": "4"
+      }
+    ],
+    "id": 191,
+    "solved": true,
+    "solvedDate": "2024-08-16"
   }
 ]
