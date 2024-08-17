@@ -1002,5 +1002,24 @@
     "id": 48,
     "solved": true,
     "solvedDate": "2024-08-10"
+  },
+  {
+    "title": "정수 제곱근 판별",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12934",
+    "statement": "임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다. n이 x의 제곱이라면 x+1의 제곱을 반환하고, n이 x의 제곱이 아니라면 -1을 반환하는 함수를 완성해주세요.",
+    "constraints": "n은 1 이상 50000 이하인 양의 정수입니다.",
+    "examples": [
+      {
+        "input": "121",
+        "output": "144"
+      },
+      {
+        "input": "3",
+        "output": "-1"
+      }
+    ],
+    "id": 49,
+    "solved": true,
+    "solvedDate": "2024-08-17"
   }
 ]
