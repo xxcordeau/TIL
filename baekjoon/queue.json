@@ -3270,5 +3270,22 @@
     "id": 192,
     "solved": true,
     "solvedDate": "2024-08-18"
+  },
+  {
+    "number": 2470,
+    "tier": "Silver 3",
+    "title": "두 용액",
+    "url": "https://www.acmicpc.net/problem/2470",
+    "statement": "산성 용액은 양수, 알칼리성 용액은 음수 특성값을 갖는다. 서로 다른 두 용액을 선택하여 혼합했을 때 특성값의 합이 0에 가장 가까운 조합을 찾는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 용액의 개수 N (2 ≤ N ≤ 100,000)이 주어지고, 둘째 줄에 각 용액의 특성값이 주어진다.",
+    "examples": [
+      {
+        "input": "5\n-2 4 -99 -1 98\n",
+        "output": "-99 98"
+      }
+    ],
+    "id": 193,
+    "solved": true,
+    "solvedDate": "2024-08-19"
   }
 ]
