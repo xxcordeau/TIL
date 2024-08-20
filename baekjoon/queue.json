@@ -3287,5 +3287,22 @@
     "id": 193,
     "solved": true,
     "solvedDate": "2024-08-19"
+  },
+  {
+    "number": 2004,
+    "tier": "Silver 2",
+    "title": "조합 0의 개수",
+    "url": "https://www.acmicpc.net/problem/2004",
+    "statement": "n과 m이 주어졌을 때 이항 계수 nCm을 계산할 때, 이 수의 뒤에 0이 몇 개 붙는지 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 정수 n, m (0 ≤ m ≤ n ≤ 2,000,000,000, 0 ≤ n-m ≤ 10,000,000)이 들어온다.",
+    "examples": [
+      {
+        "input": "25 12\n",
+        "output": "2"
+      }
+    ],
+    "id": 194,
+    "solved": true,
+    "solvedDate": "2024-08-20"
   }
 ]
