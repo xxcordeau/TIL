@@ -3304,5 +3304,22 @@
     "id": 194,
     "solved": true,
     "solvedDate": "2024-08-20"
+  },
+  {
+    "number": 2108,
+    "tier": "Silver 4",
+    "title": "통계학",
+    "url": "https://www.acmicpc.net/problem/2108",
+    "statement": "수를 N개 입력받은 다음, 산술평균, 중앙값, 최빈값, 범위를 구하는 프로그램을 작성하시오. 산술평균은 반올림한 값을 출력하고, 최빈값이 여러 개면 두 번째로 작은 값을 출력한다.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 500,000)이 주어진다. 그 다음 N개의 줄에는 정수들이 주어진다. -4000 ≤ 정수 ≤ 4000.",
+    "examples": [
+      {
+        "input": "5\n1\n3\n8\n-2\n2\n",
+        "output": "2\n2\n1\n10"
+      }
+    ],
+    "id": 195,
+    "solved": true,
+    "solvedDate": "2024-08-21"
   }
 ]
