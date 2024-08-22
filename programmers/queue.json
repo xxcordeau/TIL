@@ -1021,5 +1021,24 @@
     "id": 49,
     "solved": true,
     "solvedDate": "2024-08-17"
+  },
+  {
+    "title": "가운데 글자 가져오기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12903",
+    "statement": "단어 s의 가운데 글자를 반환하는 함수를 완성해주세요. 단어의 길이가 짝수라면 가운데 두 글자를 반환하면 됩니다.",
+    "constraints": "s는 길이가 1 이상, 100 이하인 문자열입니다.",
+    "examples": [
+      {
+        "input": "\"abcde\"",
+        "output": "\"c\""
+      },
+      {
+        "input": "\"qwer\"",
+        "output": "\"we\""
+      }
+    ],
+    "id": 50,
+    "solved": true,
+    "solvedDate": "2024-08-22"
   }
 ]
