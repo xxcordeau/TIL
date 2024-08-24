@@ -3338,5 +3338,22 @@
     "id": 196,
     "solved": true,
     "solvedDate": "2024-08-23"
+  },
+  {
+    "number": 1213,
+    "tier": "Silver 4",
+    "title": "팰린드롬 만들기",
+    "url": "https://www.acmicpc.net/problem/1213",
+    "statement": "문자열이 주어지면 그 문자들을 적절히 섞어서 팰린드롬으로 만드는 프로그램을 작성하시오. 여러 개 만들 수 있으면 사전순으로 가장 앞서는 것을, 만들 수 없으면 \"I'm Sorry Hansoo\"를 출력한다.",
+    "constraints": "첫째 줄에 문자열이 주어진다. 길이는 50을 넘지 않고, 대문자로만 되어 있다.",
+    "examples": [
+      {
+        "input": "AABB\n",
+        "output": "ABBA"
+      }
+    ],
+    "id": 197,
+    "solved": true,
+    "solvedDate": "2024-08-24"
   }
 ]
