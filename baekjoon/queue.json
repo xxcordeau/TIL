@@ -3355,5 +3355,22 @@
     "id": 197,
     "solved": true,
     "solvedDate": "2024-08-24"
+  },
+  {
+    "number": 12865,
+    "tier": "Gold 5",
+    "title": "평범한 배낭",
+    "url": "https://www.acmicpc.net/problem/12865",
+    "statement": "N개의 물건이 각각 무게 W와 가치 V를 가질 때, 최대 K만큼의 무게를 넣을 수 있는 배낭에 넣을 수 있는 물건들의 가치의 합의 최댓값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 물품의 수 N(1 ≤ N ≤ 100)과 버틸 수 있는 무게 K(1 ≤ K ≤ 100,000)가 주어진다.",
+    "examples": [
+      {
+        "input": "4 7\n6 13\n4 8\n3 6\n5 12\n",
+        "output": "14"
+      }
+    ],
+    "id": 198,
+    "solved": true,
+    "solvedDate": "2024-08-25"
   }
 ]
