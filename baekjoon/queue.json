@@ -3372,5 +3372,22 @@
     "id": 198,
     "solved": true,
     "solvedDate": "2024-08-25"
+  },
+  {
+    "number": 14501,
+    "tier": "Silver 3",
+    "title": "퇴사",
+    "url": "https://www.acmicpc.net/problem/14501",
+    "statement": "퇴사까지 남은 N일 동안 최대한 많은 상담을 하려고 한다. 각 상담은 걸리는 기간 T와 받을 수 있는 금액 P가 있을 때, 얻을 수 있는 최대 수익을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N (1 ≤ N ≤ 15)이 주어진다. 다음 N개의 줄에 각 날짜에 대한 T와 P가 주어진다.",
+    "examples": [
+      {
+        "input": "7\n3 10\n5 20\n1 10\n1 20\n2 15\n4 40\n2 200\n",
+        "output": "45"
+      }
+    ],
+    "id": 199,
+    "solved": true,
+    "solvedDate": "2024-08-26"
   }
 ]
