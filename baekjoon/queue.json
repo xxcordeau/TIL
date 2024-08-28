@@ -3406,5 +3406,22 @@
     "id": 200,
     "solved": true,
     "solvedDate": "2024-08-27"
+  },
+  {
+    "number": 2217,
+    "tier": "Silver 4",
+    "title": "로프",
+    "url": "https://www.acmicpc.net/problem/2217",
+    "statement": "N개의 로프를 병렬로 연결하여 물건을 들 때, k개의 로프를 사용하면 각 로프가 버틸 수 있는 중량의 최솟값의 k배가 들 수 있는 최대 중량이 된다. 로프를 이용해 들 수 있는 물건의 최대 중량을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 로프의 개수 N (1 ≤ N ≤ 100,000)이 주어지고, 이후 N개 줄에 로프의 최대 중량이 주어진다.",
+    "examples": [
+      {
+        "input": "2\n3\n10\n",
+        "output": "10"
+      }
+    ],
+    "id": 201,
+    "solved": true,
+    "solvedDate": "2024-08-28"
   }
 ]
