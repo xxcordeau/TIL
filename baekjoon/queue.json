@@ -3423,5 +3423,22 @@
     "id": 201,
     "solved": true,
     "solvedDate": "2024-08-28"
+  },
+  {
+    "number": 1715,
+    "tier": "Gold 4",
+    "title": "카드 정렬하기",
+    "url": "https://www.acmicpc.net/problem/1715",
+    "statement": "정렬된 두 묶음의 숫자 카드를 합칠 때 각 묶음의 카드 개수의 합만큼 비교가 필요하다. 여러 묶음을 하나로 합칠 때 최소한 몇 번의 비교가 필요한지 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 100,000)이 주어진다. 이어서 N개의 줄에 걸쳐 숫자 카드 묶음의 개수가 주어진다.",
+    "examples": [
+      {
+        "input": "3\n10\n20\n40\n",
+        "output": "100"
+      }
+    ],
+    "id": 202,
+    "solved": true,
+    "solvedDate": "2024-08-29"
   }
 ]
