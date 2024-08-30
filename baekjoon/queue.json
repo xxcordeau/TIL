@@ -3457,5 +3457,22 @@
     "id": 203,
     "solved": true,
     "solvedDate": "2026-08-21"
+  },
+  {
+    "number": 1735,
+    "tier": "Bronze 1",
+    "title": "분수의 덧셈",
+    "url": "https://www.acmicpc.net/problem/1735",
+    "statement": "첫째 줄에 첫 번째 기약분수의 분자 A1과 분모 A2가 주어지고, 둘째 줄에 두 번째 기약분수의 분자 B1과 분모 B2가 주어진다. 두 분수의 합을 기약분수로 나타냈을 때의 분자와 분모를 출력하는 프로그램을 작성하시오.",
+    "constraints": "A1, A2, B1, B2는 1보다 크거나 같고 1,000보다 작거나 같은 자연수이다.",
+    "examples": [
+      {
+        "input": "5 6\n7 8\n",
+        "output": "41 24"
+      }
+    ],
+    "id": 204,
+    "solved": true,
+    "solvedDate": "2024-08-30"
   }
 ]
