@@ -3474,5 +3474,22 @@
     "id": 204,
     "solved": true,
     "solvedDate": "2024-08-30"
+  },
+  {
+    "number": 1373,
+    "tier": "Silver 4",
+    "title": "2진수 8진수",
+    "url": "https://www.acmicpc.net/problem/1373",
+    "statement": "2진수가 주어졌을 때, 이를 8진수로 변환하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 2진수가 주어진다. 주어지는 수의 길이는 1,000,000보다 작다.",
+    "examples": [
+      {
+        "input": "11001100\n",
+        "output": "314"
+      }
+    ],
+    "id": 205,
+    "solved": true,
+    "solvedDate": "2024-08-31"
   }
 ]
