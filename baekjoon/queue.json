@@ -3542,5 +3542,22 @@
     "id": 208,
     "solved": true,
     "solvedDate": "2024-09-04"
+  },
+  {
+    "number": 2583,
+    "tier": "Gold 5",
+    "title": "영역 구하기",
+    "url": "https://www.acmicpc.net/problem/2583",
+    "statement": "M×N 크기의 모눈종이 위에 변이 종이의 경계와 평행한 K개의 직사각형을 그린다. 이 직사각형들에 의해 나뉘어지는 영역들 중 직사각형에 포함되지 않는 영역의 개수와 그 넓이를 넓이가 작은 순서대로 출력하시오.",
+    "constraints": "첫째 줄에 M, N, K(1 ≤ M, N ≤ 100, 1 ≤ K ≤ 100)가 주어진다. 다음 K개의 줄에는 직사각형의 왼쪽 아래 좌표와 오른쪽 위 좌표가 주어진다.",
+    "examples": [
+      {
+        "input": "7 5 2\n2 0 3 5\n5 1 6 4\n",
+        "output": "2\n10 17"
+      }
+    ],
+    "id": 209,
+    "solved": true,
+    "solvedDate": "2024-09-05"
   }
 ]
