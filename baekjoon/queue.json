@@ -3559,5 +3559,22 @@
     "id": 209,
     "solved": true,
     "solvedDate": "2024-09-05"
+  },
+  {
+    "number": 1300,
+    "tier": "Gold 4",
+    "title": "K번째 수",
+    "url": "https://www.acmicpc.net/problem/1300",
+    "statement": "세준이가 만든 N×N 배열 A는 A[i][j] = i×j 로 채워져 있다. 이 배열을 1차원 배열 B에 넣고 오름차순 정렬했을 때, B의 K번째 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 100,000)이 주어지고, 둘째 줄에 K(1 ≤ K ≤ min(N^2, 10^9))가 주어진다.",
+    "examples": [
+      {
+        "input": "3\n7\n",
+        "output": "6"
+      }
+    ],
+    "id": 210,
+    "solved": true,
+    "solvedDate": "2024-09-06"
   }
 ]
