@@ -1055,5 +1055,20 @@
     "id": 51,
     "solved": true,
     "solvedDate": "2024-09-03"
+  },
+  {
+    "title": "부족한 금액 계산하기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/82612",
+    "statement": "물건을 사기 위해 필요한 예산이 있는데, k번째 시도에는 필요한 비용이 price*k이다. 물건을 count번 시도하기까지 필요한 총 금액에서 가지고 있는 돈(money)을 뺀 부족한 금액을 return 하도록 solution 함수를 완성해주세요. 돈이 부족하지 않다면 0을 return 합니다.",
+    "constraints": "price는 1 이상 2,000 이하의 자연수이며, money는 1 이상 1,000,000,000 이하, count는 2 이상 100,000 이하의 자연수입니다.",
+    "examples": [
+      {
+        "input": "price = 3, money = 20, count = 4",
+        "output": "10"
+      }
+    ],
+    "id": 52,
+    "solved": true,
+    "solvedDate": "2024-09-08"
   }
 ]
