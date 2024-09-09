@@ -3593,5 +3593,22 @@
     "id": 211,
     "solved": true,
     "solvedDate": "2024-09-07"
+  },
+  {
+    "number": 1655,
+    "tier": "Gold 3",
+    "title": "가운데를 말해요",
+    "url": "https://www.acmicpc.net/problem/1655",
+    "statement": "수빈이가 숫자를 하나씩 외칠 때마다, 지금까지 나온 수 중에서 중간값을 구해 출력하는 프로그램을 작성하시오. 숫자 개수가 짝수이면 두 값 중 작은 값을 출력한다.",
+    "constraints": "첫째 줄에 수빈이가 외치는 정수의 개수 N(1 ≤ N ≤ 100,000)이 주어지고, 다음 N개의 줄에 정수가 하나씩 주어진다.",
+    "examples": [
+      {
+        "input": "7\n1\n5\n2\n10\n-99\n7\n5\n",
+        "output": "1\n1\n2\n2\n2\n2\n5"
+      }
+    ],
+    "id": 212,
+    "solved": true,
+    "solvedDate": "2024-09-09"
   }
 ]
