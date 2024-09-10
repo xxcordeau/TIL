@@ -3610,5 +3610,22 @@
     "id": 212,
     "solved": true,
     "solvedDate": "2024-09-09"
+  },
+  {
+    "number": 3273,
+    "tier": "Silver 3",
+    "title": "두 수의 합",
+    "url": "https://www.acmicpc.net/problem/3273",
+    "statement": "n개의 서로 다른 양의 정수로 이루어진 수열이 있을 때, 이 수열에서 서로 다른 두 수를 더해서 X가 되는 순서쌍의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 n(1 ≤ n ≤ 100,000), 둘째 줄에 수열이 주어진다. 셋째 줄에 X(1 ≤ X ≤ 2,000,000)가 주어진다.",
+    "examples": [
+      {
+        "input": "5\n2 3 4 8 7\n10\n",
+        "output": "2"
+      }
+    ],
+    "id": 213,
+    "solved": true,
+    "solvedDate": "2024-09-10"
   }
 ]
