@@ -3627,5 +3627,22 @@
     "id": 213,
     "solved": true,
     "solvedDate": "2024-09-10"
+  },
+  {
+    "number": 1644,
+    "tier": "Gold 5",
+    "title": "소수의 연속합",
+    "url": "https://www.acmicpc.net/problem/1644",
+    "statement": "자연수 N이 주어졌을 때, N을 연속된 소수의 합으로 나타낼 수 있는 경우의 수를 구하는 프로그램을 작성하시오. 소수 하나만 있는 경우도 포함한다.",
+    "constraints": "첫째 줄에 자연수 N(1 ≤ N ≤ 4,000,000)이 주어진다.",
+    "examples": [
+      {
+        "input": "53\n",
+        "output": "2"
+      }
+    ],
+    "id": 214,
+    "solved": true,
+    "solvedDate": "2024-09-11"
   }
 ]
