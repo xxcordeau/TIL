@@ -1070,5 +1070,24 @@
     "id": 52,
     "solved": true,
     "solvedDate": "2024-09-08"
+  },
+  {
+    "title": "약수의 합",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12928",
+    "statement": "정수 n을 입력받아 n의 약수를 모두 더한 값을 return하는 함수, solution을 완성해주세요.",
+    "constraints": "n은 0 이상 3000 이하인 정수입니다.",
+    "examples": [
+      {
+        "input": "n = 12",
+        "output": "28"
+      },
+      {
+        "input": "n = 5",
+        "output": "6"
+      }
+    ],
+    "id": 53,
+    "solved": true,
+    "solvedDate": "2024-09-13"
   }
 ]
