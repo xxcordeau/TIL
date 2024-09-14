@@ -3661,5 +3661,22 @@
     "id": 215,
     "solved": true,
     "solvedDate": "2024-09-12"
+  },
+  {
+    "number": 15990,
+    "tier": "Silver 1",
+    "title": "1, 2, 3 더하기 5",
+    "url": "https://www.acmicpc.net/problem/15990",
+    "statement": "정수 4를 1, 2, 3의 합으로 나타내는 방법 중 연속으로 같은 수를 두 번 이상 사용하지 않는 방법의 수를 구하는 프로그램을 작성하시오. 정수 N이 주어질 때 방법의 수를 1,000,000,009로 나눈 나머지를 출력한다.",
+    "constraints": "첫째 줄에 테스트 케이스 개수 T가 주어지고, 다음 T개의 줄에 정수 N(1 ≤ N ≤ 100,000)이 주어진다.",
+    "examples": [
+      {
+        "input": "3\n4\n7\n10\n",
+        "output": "3\n9\n27"
+      }
+    ],
+    "id": 216,
+    "solved": true,
+    "solvedDate": "2024-09-14"
   }
 ]
