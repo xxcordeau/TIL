@@ -3678,5 +3678,22 @@
     "id": 216,
     "solved": true,
     "solvedDate": "2024-09-14"
+  },
+  {
+    "number": 11052,
+    "tier": "Silver 3",
+    "title": "카드 구매하기",
+    "url": "https://www.acmicpc.net/problem/11052",
+    "statement": "카드 구매 상점에는 카드 1장, 2장, ..., N장이 들어있는 카드팩이 있고, 각각의 가격이 정해져 있다. 상근이가 정확히 N장의 카드를 구매하는 금액의 최댓값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 1,000)이 주어지고, 둘째 줄에 카드팩 가격이 주어진다.",
+    "examples": [
+      {
+        "input": "4\n1 5 6 7\n",
+        "output": "10"
+      }
+    ],
+    "id": 217,
+    "solved": true,
+    "solvedDate": "2024-09-15"
   }
 ]
