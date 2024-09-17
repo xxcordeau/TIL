@@ -3712,5 +3712,22 @@
     "id": 218,
     "solved": true,
     "solvedDate": "2024-09-16"
+  },
+  {
+    "number": 15652,
+    "tier": "Silver 3",
+    "title": "N과 M (4)",
+    "url": "https://www.acmicpc.net/problem/15652",
+    "statement": "자연수 N과 M이 주어졌을 때, 1부터 N까지 자연수 중 M개를 고른 수열을 비내림차순으로(중복 허용) 모두 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N과 M(1 ≤ M ≤ N ≤ 8)이 주어진다.",
+    "examples": [
+      {
+        "input": "3 2\n",
+        "output": "1 1\n1 2\n1 3\n2 2\n2 3\n3 3"
+      }
+    ],
+    "id": 219,
+    "solved": true,
+    "solvedDate": "2024-09-17"
   }
 ]
