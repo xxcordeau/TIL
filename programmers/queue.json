@@ -1089,5 +1089,24 @@
     "id": 53,
     "solved": true,
     "solvedDate": "2024-09-13"
+  },
+  {
+    "title": "제일 작은 수 제거하기",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12935",
+    "statement": "정수를 저장한 배열, arr에서 가장 작은 수를 제거한 배열을 리턴하는 함수, solution을 완성해주세요. 단, 리턴하려는 배열이 빈 배열이라면 배열에 -1을 채워 리턴하세요.",
+    "constraints": "arr은 길이 1 이상인 배열이고, 정수를 담고 있습니다.",
+    "examples": [
+      {
+        "input": "arr = [4, 3, 2, 1]",
+        "output": "[4, 3, 2]"
+      },
+      {
+        "input": "arr = [10]",
+        "output": "[-1]"
+      }
+    ],
+    "id": 54,
+    "solved": true,
+    "solvedDate": "2024-09-18"
   }
 ]
