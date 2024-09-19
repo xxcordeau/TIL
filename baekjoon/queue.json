@@ -3729,5 +3729,22 @@
     "id": 219,
     "solved": true,
     "solvedDate": "2024-09-17"
+  },
+  {
+    "number": 15654,
+    "tier": "Silver 3",
+    "title": "N과 M (5)",
+    "url": "https://www.acmicpc.net/problem/15654",
+    "statement": "N개의 서로 다른 자연수와 M이 주어졌을 때, N개의 수 중에서 M개를 고른 수열을 모두 출력하는 프로그램을 작성하시오. 각 수열은 오름차순으로 정렬되어 출력되어야 한다.",
+    "constraints": "첫째 줄에 N과 M(1 ≤ M ≤ N ≤ 8)이 주어지고, 둘째 줄에 N개의 자연수가 주어진다.",
+    "examples": [
+      {
+        "input": "3 2\n3 1 2\n",
+        "output": "1 2\n1 3\n2 1\n2 3\n3 1\n3 2"
+      }
+    ],
+    "id": 220,
+    "solved": true,
+    "solvedDate": "2024-09-19"
   }
 ]
