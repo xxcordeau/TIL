@@ -3763,5 +3763,22 @@
     "id": 221,
     "solved": true,
     "solvedDate": "2024-09-20"
+  },
+  {
+    "number": 11066,
+    "tier": "Gold 4",
+    "title": "파일 합치기",
+    "url": "https://www.acmicpc.net/problem/11066",
+    "statement": "여러 개의 파일을 하나로 합치려고 한다. 두 파일을 합칠 때 드는 비용은 두 파일 크기의 합과 같다. 모든 파일을 하나로 합치는 데 필요한 최소 비용을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 테스트 케이스 개수 T가 주어진다. 각 테스트 케이스 첫째 줄에 파일 개수 K(1 ≤ K ≤ 500), 둘째 줄에 K개의 파일 크기가 주어진다.",
+    "examples": [
+      {
+        "input": "1\n4\n40 30 30 40\n",
+        "output": "280"
+      }
+    ],
+    "id": 222,
+    "solved": true,
+    "solvedDate": "2024-09-21"
   }
 ]
