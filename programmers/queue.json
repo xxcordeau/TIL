@@ -1108,5 +1108,24 @@
     "id": 54,
     "solved": true,
     "solvedDate": "2024-09-18"
+  },
+  {
+    "title": "짝수의 합",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12912",
+    "statement": "정수 n이 매개변수로 주어질 때, n이하의 짝수를 모두 더한 값을 return하도록 solution 함수를 작성해주세요.",
+    "constraints": "n은 1000 이하의 자연수입니다.",
+    "examples": [
+      {
+        "input": "n = 10",
+        "output": "30"
+      },
+      {
+        "input": "n = 4",
+        "output": "6"
+      }
+    ],
+    "id": 55,
+    "solved": true,
+    "solvedDate": "2024-09-23"
   }
 ]
