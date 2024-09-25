@@ -3865,5 +3865,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-08-24"
+  },
+  {
+    "id": 228,
+    "number": 25083,
+    "tier": "Bronze 5",
+    "title": "새싹",
+    "url": "https://www.acmicpc.net/problem/25083",
+    "statement": "아래와 같은 새싹을 출력해보자.",
+    "constraints": "입력은 없다. 예제와 완전히 동일한 모양(공백 포함)으로 출력해야 한다.",
+    "examples": [
+      {
+        "input": "",
+        "output": "         ,r'\"7\nr`-_   ,'  ,/\n \\. \". L_r'\n   `~/\n      |\n      |"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-09-25"
   }
 ]
