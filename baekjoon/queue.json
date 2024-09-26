@@ -3882,5 +3882,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-09-25"
+  },
+  {
+    "id": 229,
+    "number": 11718,
+    "tier": "Bronze 5",
+    "title": "그대로 출력하기",
+    "url": "https://www.acmicpc.net/problem/11718",
+    "statement": "입력받은 그대로 출력하는 프로그램을 작성하시오.",
+    "constraints": "입력은 최대 100줄이며, 각 줄은 공백을 포함한 아스키 문자와 탭으로만 이루어져 있다. 각 줄의 길이는 200을 넘지 않는다. 입력의 마지막 줄에는 항상 개행 문자가 포함되어 있다.",
+    "examples": [
+      {
+        "input": "Baekjoon Online Judge\nis the best PS site\nin Korea.",
+        "output": "Baekjoon Online Judge\nis the best PS site\nin Korea."
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-09-26"
   }
 ]
