@@ -3916,5 +3916,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-09-27"
+  },
+  {
+    "id": 231,
+    "number": 10172,
+    "tier": "Bronze 5",
+    "title": "개",
+    "url": "https://www.acmicpc.net/problem/10172",
+    "statement": "아래 예제와 같이 개를 출력하시오.",
+    "constraints": "입력은 없다. 예제와 완전히 동일한 모양(공백 포함)으로 출력해야 한다.",
+    "examples": [
+      {
+        "input": "",
+        "output": "|\\_/|\n|q p|   /}\n( 0 )\"\"\"\\\n|\"^\"    |\n||_/=\\\\__|"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-09-28"
   }
 ]
