@@ -3979,5 +3979,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-09-30"
+  },
+  {
+    "id": 234,
+    "number": 11004,
+    "tier": "Silver 5",
+    "title": "K번째 수",
+    "url": "https://www.acmicpc.net/problem/11004",
+    "statement": "수 N개로 이루어진 배열 A가 있다. A를 오름차순 정렬했을 때, 앞에서부터 K번째 있는 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 5,000,000)과 K(1 ≤ K ≤ N)가 주어진다. 둘째 줄에는 배열 A를 이루고 있는 A[i]가 주어진다.",
+    "examples": [
+      {
+        "input": "5 2\n4 1 2 3 5",
+        "output": "2"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-01"
   }
 ]
