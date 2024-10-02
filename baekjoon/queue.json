@@ -3996,5 +3996,26 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-01"
+  },
+  {
+    "id": 235,
+    "number": 10826,
+    "tier": "Bronze 1",
+    "title": "피보나치 4",
+    "url": "https://www.acmicpc.net/problem/10826",
+    "statement": "피보나치 수는 0과 1로 시작한다. n번째 피보나치 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 n이 주어진다. n은 90보다 작거나 같은 자연수 또는 0이다.",
+    "examples": [
+      {
+        "input": "10",
+        "output": "55"
+      },
+      {
+        "input": "90",
+        "output": "2880067194370816120"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-02"
   }
 ]
