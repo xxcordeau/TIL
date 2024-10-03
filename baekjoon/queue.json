@@ -4017,5 +4017,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-02"
+  },
+  {
+    "id": 236,
+    "number": 1032,
+    "tier": "Silver 5",
+    "title": "명령 프롬프트",
+    "url": "https://www.acmicpc.net/problem/1032",
+    "statement": "명령 프롬프트를 사용하다 보면, 파일이름의 일부만 입력하고 tab 키를 누르면 자동완성이 되는 기능이 있다. 파일 이름 N개가 주어졌을 때, 자동완성 기능을 사용했을 때 표시되는 문자열을 구하는 프로그램을 작성하시오. 만약 특정 자리의 알파벳이 파일마다 다르다면, 그 자리는 ?로 표시한다.",
+    "constraints": "첫째 줄에 파일 이름의 개수 N(1 ≤ N ≤ 50)이 주어진다. 다음 N개 줄에는 파일 이름이 주어진다. 파일 이름은 알파벳 대소문자로만 이루어져 있고, 그 길이는 모두 같으며 최대 60이다.",
+    "examples": [
+      {
+        "input": "4\nstrike\nstrife\nstripe\nstring",
+        "output": "stri??"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-03"
   }
 ]
