@@ -4051,5 +4051,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-04"
+  },
+  {
+    "id": 238,
+    "number": 4796,
+    "tier": "Silver 4",
+    "title": "캠핑",
+    "url": "https://www.acmicpc.net/problem/4796",
+    "statement": "산악왕은 캠핑장을 운영한다. 캠핑장은 매 P일마다 L일 동안만 사용할 수 있다. 총 V일간의 휴가가 주어졌을 때, 캠핑장을 최대 며칠 사용할 수 있는지 구하는 프로그램을 작성하시오. 입력은 L, P, V로 이루어진 여러 개의 테스트 케이스로 주어지며 0 0 0이 입력되면 종료한다.",
+    "constraints": "각 줄에 L, P, V (1 ≤ L ≤ P ≤ 10^9, 1 ≤ V ≤ 10^9)가 주어진다. 각 테스트 케이스마다 'Case #: 결과' 형식으로 출력한다.",
+    "examples": [
+      {
+        "input": "5 8 20\n0 0 0",
+        "output": "Case 1: 14"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-05"
   }
 ]
