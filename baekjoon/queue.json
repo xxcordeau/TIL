@@ -4085,5 +4085,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-06"
+  },
+  {
+    "id": 240,
+    "number": 4779,
+    "tier": "Silver 3",
+    "title": "칸토어 집합",
+    "url": "https://www.acmicpc.net/problem/4779",
+    "statement": "길이가 3^N인 선분에서 가운데 3분의 1을 지우고, 남은 두 선분에 대해서도 재귀적으로 같은 과정을 반복하면 칸토어 집합이 된다. N이 주어졌을 때 이 과정을 N번 반복한 결과를 '-'와 공백으로 출력하는 프로그램을 작성하시오.",
+    "constraints": "각 줄에 N(0 ≤ N ≤ 8)이 주어지며 입력의 마지막에는 EOF가 온다.",
+    "examples": [
+      {
+        "input": "1\n2",
+        "output": "- -\n- -   - -"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-07"
   }
 ]
