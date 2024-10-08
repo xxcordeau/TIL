@@ -4102,5 +4102,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-07"
+  },
+  {
+    "id": 241,
+    "number": 5525,
+    "tier": "Silver 3",
+    "title": "IOIOI",
+    "url": "https://www.acmicpc.net/problem/5525",
+    "statement": "I와 O로만 이루어진 길이 M의 문자열 S에서, I와 O가 번갈아가며 (2N+1)개 나열된 부분문자열(IOIOI...OI 형태)이 몇 번 나오는지 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 100)이, 둘째 줄에 M(1 ≤ M ≤ 1,000,000)이, 셋째 줄에 길이 M인 문자열 S가 주어진다.",
+    "examples": [
+      {
+        "input": "1\n12\nOOIOIOIOOIOI",
+        "output": "5"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-08"
   }
 ]
