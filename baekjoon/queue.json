@@ -4136,5 +4136,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-09"
+  },
+  {
+    "id": 243,
+    "number": 1747,
+    "tier": "Gold 4",
+    "title": "소수 & 팰린드롬",
+    "url": "https://www.acmicpc.net/problem/1747",
+    "statement": "어떤 수와 그 수의 숫자 순서를 뒤집은 수가 일치하는 수를 팰린드롬 수라고 한다. 어떤 수 N이 주어졌을 때, N보다 크거나 같은 수 중에서 소수이면서 팰린드롬인 수 중 가장 작은 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 1,000,000)이 주어진다.",
+    "examples": [
+      {
+        "input": "31",
+        "output": "101"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-10"
   }
 ]
