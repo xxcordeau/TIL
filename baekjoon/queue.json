@@ -4153,5 +4153,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-10"
+  },
+  {
+    "id": 244,
+    "number": 2442,
+    "tier": "Bronze 1",
+    "title": "별 찍기 5",
+    "url": "https://www.acmicpc.net/problem/2442",
+    "statement": "예제를 보고 규칙을 유추한 뒤 별을 찍는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.",
+    "examples": [
+      {
+        "input": "5",
+        "output": "    *\n   ***\n  *****\n *******\n*********"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-11"
   }
 ]
