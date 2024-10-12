@@ -4170,5 +4170,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-10-11"
+  },
+  {
+    "id": 245,
+    "number": 9506,
+    "tier": "Silver 5",
+    "title": "약수들의 합",
+    "url": "https://www.acmicpc.net/problem/9506",
+    "statement": "자연수 n의 진약수(자기 자신을 제외한 약수)의 합이 자기 자신과 같으면 n을 완전수라고 한다. 자연수 n이 주어질 때 n이 완전수인지 판단하고, 완전수라면 그 진약수들을 나열하는 프로그램을 작성하시오. 입력은 -1이 나오면 종료한다.",
+    "constraints": "각 줄에 n(2 < n < 100,000)이 주어진다.",
+    "examples": [
+      {
+        "input": "6\n28\n12\n-1",
+        "output": "6 = 1+2+3\n6 is a perfect number.\n28 = 1+2+4+7+14\n28 is a perfect number.\n12 is NOT perfect."
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-10-12"
   }
 ]
