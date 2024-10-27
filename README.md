@@ -1,3 +1,2 @@
 afds
 asdfasf
-ㅍㅗㅗ
