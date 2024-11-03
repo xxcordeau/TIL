@@ -4493,5 +4493,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-11-02"
+  },
+  {
+    "id": 264,
+    "number": 1417,
+    "tier": "Gold 4",
+    "title": "국회의원 선거",
+    "url": "https://www.acmicpc.net/problem/1417",
+    "statement": "N 이하의 자연수 중 소수의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-11-03"
   }
 ]
