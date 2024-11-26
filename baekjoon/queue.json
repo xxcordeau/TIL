@@ -4884,5 +4884,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-11-25"
+  },
+  {
+    "id": 287,
+    "number": 1497,
+    "tier": "Silver 3",
+    "title": "기타콘서트",
+    "url": "https://www.acmicpc.net/problem/1497",
+    "statement": "N 이하의 자연수 중 소수의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2024-11-26"
   }
 ]
