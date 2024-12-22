@@ -1,3 +1,2 @@
-ㅋafdsasfd
-asfd
+ㅋa
 ㅋㅋ
