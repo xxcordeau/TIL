@@ -1,4 +1,4 @@
-zㄴafdThis page refers to approvals, which is a feature for Jira Work Management that’s only available for
+zzㄴafdThis page refers to approvals, which is a feature for Jira Work Management that’s only available for
 
 Jira Work ManagementCloud Premium licenses
 
