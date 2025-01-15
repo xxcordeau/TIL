@@ -3,7 +3,7 @@
 Jira Work ManagementCloud Premium licenses
 
 Jira Service Management Cloud Premium and Enterprise license
-
+ㅏ
 Jira Cloud Premium and Enterprise licenses
 
 Before you add an approval step to a workflow
