@@ -1,4 +1,4 @@
-ㄱ which is a feature for Jira Work Management that’s only available for
+a Work Management that’s only available for
 
 Jira Work ManagementCloud Premium licenses
 
