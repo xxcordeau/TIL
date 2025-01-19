@@ -1,4 +1,4 @@
-a Work Management that’s only available for
+
 k
 Jira Work ManagementCloud Premium licenses
 
