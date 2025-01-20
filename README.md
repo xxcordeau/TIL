@@ -1,5 +1,3 @@
-
-k
 Jira Work ManagementCloud Premium licenses
 
 Jira Service Management Cloud Premium and Enterprise license
