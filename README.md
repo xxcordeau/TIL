@@ -1,4 +1,4 @@
-rk ManagementCloud Premium licenses
+ManagementCloud Premium licenses
 
 Jira Service Management Cloud Premium and Enterprise license
 ㅏ
