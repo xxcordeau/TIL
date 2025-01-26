@@ -5921,5 +5921,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-01-25"
+  },
+  {
+    "id": 348,
+    "number": 1780,
+    "tier": "Silver 5",
+    "title": "종이의 개수",
+    "url": "https://www.acmicpc.net/problem/1780",
+    "statement": "N이 주어졌을 때, 정해진 점화식에 따라 N번째 값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "55"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-01-26"
   }
 ]
