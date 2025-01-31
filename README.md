@@ -1,4 +1,4 @@
-nagementCloud Premium licenses
+nagementCloud
 Jira Service Management Cloud Premium and Enterprise license
 Jira Cloud Premiuand Enterprise lice
 Before you add an appro
