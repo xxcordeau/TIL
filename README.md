@@ -1,4 +1,4 @@
-Cloud Premium and Enterprise license
+
 Jira Cloud Premiuand Enterprise lice
 Before you add an appro
 You’re in a team-managed project. Approvals are not available for company-managed projects currently. To check which type of project you’re using, look at the bottom left of your project’s sidebar to see whether you’re in a company-managed project or a team-managed project. Learn more about knowing whether your project is team-managed or company-managed
