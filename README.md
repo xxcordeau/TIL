@@ -1,4 +1,4 @@
-company-managed projects currently. To check which type of project you’re using, look at the bottom left of your project’s sidebar to see whether you’re in a company-managed project or a team-managed project. Learn more about knowing whether your project is team-managed or 
+To check which type of project you’re using, look at the bottom left of your project’s sidebar to see whether you’re in a company-managed project or a team-managed project. Learn more about knowing whether your project is team-managed or 
 
 You have project admin permissions to add an approval step to a workflow.
 
