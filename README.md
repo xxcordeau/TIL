@@ -1,4 +1,4 @@
- to see whether you’re in a company-managed project or a team-managed project. Learn more about knowing whether your project is team-managed or 
+ to see whether you’re in a company-ma
 
 You have project admin permissions to add an approval step to a workflow.
 
