@@ -1,5 +1,3 @@
- to see whether you’re in a company-ma
-
 You have project admin permissions to add an approval step to a workflow.
 
 You have transitions set up for your workflow. Learn more about how to set up transitions
