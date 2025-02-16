@@ -1,4 +1,4 @@
- Learn more about how to set up transitions
+to set up transitions
 
 There are two ways you can set up an approval. You can set up approvals through the workflow editor or the approvals view for your business project. Setting up an approval process can help your team standardize and adhere to effective governance to minimize risk when delivering work. 
 
