@@ -1,4 +1,4 @@
- editor or the approvals view for your business project. Setting up an approval process can help your team standardize and adhere to effective governance to minimize risk when delivering work. 
+ editor or the approvals view for your business project. Setting up an approval process ca
 
 Your team may need approval for issues as part of your business process before they can move to the next status in their workflow
 
