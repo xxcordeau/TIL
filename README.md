@@ -1,4 +1,4 @@
-val for iss part of your business process before they can move to the next status in their workflow
+
 
 Before you can set up approvals, you’ll need to have transitions set for each status. Learn more about how to set up transitions
 
