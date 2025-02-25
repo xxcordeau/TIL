@@ -1,6 +1,6 @@
 
 
-Before you can set up approvals, you’ll need to have transitions set for each status. Learn more about how to set up transitions
+you’ll need to have transitions set for each status. Learn more about how to set up transitions
 
 Set up approvals from the approvals view
 Here’s one way you can set up approvals for your business project: 
