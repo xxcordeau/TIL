@@ -1,6 +1,4 @@
 
-
-Set up approvals from the approvals view
 Here’s one way you can set up approvals for your business project: 
 
 Select Approvals in your project view navigation (horizontal navigation above the project you’re viewing), then select Approvals.
