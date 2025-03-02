@@ -1,5 +1,3 @@
-If you haven’t set up an approval for this project before, you can select Set up approvals.
-
 Select which workflow to apply an approval to. Some projects may only have one workflow in which case you’ll set up an approval process for that one workflow. If you have multiple workflows, you’ll need to choose which workflow and associated issue types to apply an approval process to. 
 
 Choose a status from your workflow to trigger an approval from.
