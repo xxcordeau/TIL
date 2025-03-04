@@ -1,7 +1,4 @@
 
-Choose a status from your workflow to trigger an approval from.
-
-Select Continue.
 
 Select who you would like to nominate as preset approvers. Preset approvers will be automatically added when the issue reaches the status you’re triggering an approval from. You can always modify the list of approvers in an issue later. 
 
