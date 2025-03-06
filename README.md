@@ -1,10 +1,4 @@
- declined.
 
-Select Save.
-
-Select Update workflow at the top-right of the workflow editor to apply your approval and any changes to your workflow.
-
-Set up approvals through your project settings
 Another way you can set up approvals for your business project: 
 
 Select Project settings in project view navigation (horizontal navigation above your project’s view). 
