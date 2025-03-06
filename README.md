@@ -1,12 +1,4 @@
-
-
-Select who you would like to nominate as preset approvers. Preset approvers will be automatically added when the issue reaches the status you’re triggering an approval from. You can always modify the list of approvers in an issue later. 
-
-Give the approver field a name. This is a custom user picker field that contains the people you want to approve the issue.
-
-Choose a transition for when the issue is approved.
-
-Choose a transition for when the issue is declined.
+ declined.
 
 Select Save.
 
