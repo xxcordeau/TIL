@@ -1,5 +1,5 @@
 
-Another way you can set up approvals for your business project: 
+ way you can set up approvals for your business project: 
 
 Select Project settings in project view navigation (horizontal navigation above your project’s view). 
 
