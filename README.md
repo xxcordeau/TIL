@@ -1,6 +1,5 @@
 
- can set up approvals for your business project: 
-
+ can set up approvals for your business 
 Select Project settings in project view navigation (horizontal navigation above your project’s view). 
 
 Select Issue types from the sidebar navigation on the left. 
