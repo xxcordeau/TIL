@@ -1,5 +1,5 @@
 
- view navigation (horizontal navigation above your project’s view). 
+ (horizontal navigation above your project’s view). 
 
 Select Issue types from the sidebar navigation on the left. 
 
