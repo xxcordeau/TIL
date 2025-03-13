@@ -1,5 +1,5 @@
 
- (hornavigation above your project’s view). 
+ above your project’s view). 
 
 Select Issue types from the sidebar navigation on the left. 
 
