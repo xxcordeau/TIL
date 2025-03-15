@@ -1,5 +1,5 @@
 
- project’s view). 
+ proj
 
 Select Issue types from the sidebar navigation on the left. 
 
