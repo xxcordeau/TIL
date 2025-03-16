@@ -1,7 +1,4 @@
-
- proj
-
-Select Issue types from the sidebar navigation on the left. 
+ Issue types from the sidebar navigation on the left. 
 
 Choose which issue type’s workflow you would like to edit, then select Edit workflow of that issue type’s screen.
 
