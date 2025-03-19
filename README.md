@@ -1,5 +1,5 @@
  
-hen select Edit workflow of that issue type’s screen.
+ Edit workflow of that issue type’s screen.
 
 Select the status you want to add an approval step to.
 
