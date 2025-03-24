@@ -1,7 +1,7 @@
  
  
 
-you want to add an approval step to.
+
 
 Select the plus symbol :plus: next to Approvals in the right sidebar to open up the approvals setup screen. 
 
