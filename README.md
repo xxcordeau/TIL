@@ -1,5 +1,4 @@
  
-cally added when the issue reaches the status you’re triggering an approval from. You can always go back and modify the list of approvers in an issue later. 
 
 Give the approver field a name. This is a user picker field that contains the people you want to approve the issue.
 
