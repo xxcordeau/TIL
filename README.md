@@ -2,7 +2,6 @@
 
 Give the approver field a name. This is a user picker field that contains the people you want to approve the issue.
 
-Choose a transition for when the issue is approved.
 
 Choose a transition for when the issue is declined.
 
