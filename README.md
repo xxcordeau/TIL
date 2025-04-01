@@ -1,6 +1,6 @@
  
 
-field that contains the people you want to approve the
+u want to approve the
 
 
 Choose a transition for when the issue is declined.
