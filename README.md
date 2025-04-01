@@ -1,6 +1,5 @@
  
 
-u want to approve the
 
 
 Choose a transition for when the issue is declined.
