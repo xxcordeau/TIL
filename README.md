@@ -2,7 +2,7 @@
 
 
 
-Choose a transition for when the issue is declined.
+Choose a transiti
 
 Select Save.
 
