@@ -2,7 +2,7 @@
 
 
 
-Choose a transiti
+
 
 Select Save.
 
