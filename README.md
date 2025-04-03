@@ -1,10 +1,3 @@
- 
-
-
-
-
-
-Select Save.
 
 Select Update workflow at the top-right of the workflow editor to apply your approval and any changes to your workflow.
 
