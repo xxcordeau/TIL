@@ -1,4 +1,4 @@
- the workflow editor to apply your approval and any changes to your workflow.
+ and any changes to your workflow.
 
 Troubleshoot setting up your approval
 For further support when setting up approvals for your project: Learn more about troubleshooting your approval setup
