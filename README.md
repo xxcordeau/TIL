@@ -1,6 +1,6 @@
 
 
-Troubleshoot setting up your approval
+up your approval
 For further support when setting up approvals for your project: Learn more about troubleshooting your approval setup
 
 Important to note once your approval process is set up
