@@ -1,7 +1,6 @@
 
 
 
-ovals for your project: Learn more about troubleshooting your approval setup
 
 Important to note once your approval process is set up
 When you set up approvals for your project, approvals will not be r
