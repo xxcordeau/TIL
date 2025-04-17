@@ -1,2 +1,2 @@
   
-set up approvals for your project, approvals will not 
+ up approvals for your project, approvals will not 
