@@ -1,2 +1,2 @@
   
- up approvals for your project, approvals will not 
+ for your project, approvals will not 
