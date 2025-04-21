@@ -1,2 +1,2 @@
 
-  projec, approvals will not 
+ , approvals will not 
