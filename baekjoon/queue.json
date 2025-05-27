@@ -7978,5 +7978,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-05-26"
+  },
+  {
+    "id": 469,
+    "number": 2358,
+    "tier": "Bronze 3",
+    "title": "평행선",
+    "url": "https://www.acmicpc.net/problem/2358",
+    "statement": "N과 M이 주어졌을 때, 조건을 만족하는 수열을 모두 사전순으로 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N과 M이 주어진다. (1 <= M <= N <= 8)",
+    "examples": [
+      {
+        "input": "3 2",
+        "output": "1 2\n1 3\n2 1\n2 3\n3 1\n3 2"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-05-27"
   }
 ]
