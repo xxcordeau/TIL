@@ -8352,5 +8352,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-06-17"
+  },
+  {
+    "id": 491,
+    "number": 2526,
+    "tier": "Silver 1",
+    "title": "싸이클",
+    "url": "https://www.acmicpc.net/problem/2526",
+    "statement": "정점, 간선, 시작점이 주어졌을 때 시작점에서 각 정점까지의 최단 거리를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 정점 개수 V와 간선 개수 E가 주어진다. (1 <= V <= 20,000)",
+    "examples": [
+      {
+        "input": "3 2\n1\n1 2 5\n2 3 3",
+        "output": "0\n5\n8"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-06-18"
   }
 ]
