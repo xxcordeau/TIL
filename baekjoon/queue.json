@@ -8658,5 +8658,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-07-05"
+  },
+  {
+    "id": 509,
+    "number": 2607,
+    "tier": "Silver 1",
+    "title": "비슷한 단어",
+    "url": "https://www.acmicpc.net/problem/2607",
+    "statement": "문자열이 주어졌을 때, 이를 정해진 규칙에 따라 가공한 결과를 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 문자열이 주어진다. (문자열의 길이는 1,000을 넘지 않는다)",
+    "examples": [
+      {
+        "input": "hello world",
+        "output": "HELLO WORLD"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-07-06"
   }
 ]
