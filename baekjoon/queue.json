@@ -9967,5 +9967,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-09-20"
+  },
+  {
+    "id": 586,
+    "number": 2915,
+    "tier": "Silver 5",
+    "title": "로마 숫자 재배치",
+    "url": "https://www.acmicpc.net/problem/2915",
+    "statement": "N 이하의 자연수 중 소수의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-09-21"
   }
 ]
