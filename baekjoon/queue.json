@@ -10205,5 +10205,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-10-04"
+  },
+  {
+    "id": 600,
+    "number": 2993,
+    "tier": "Silver 5",
+    "title": "세 부분",
+    "url": "https://www.acmicpc.net/problem/2993",
+    "statement": "N개의 수가 주어졌을 때 이를 오름차순으로 정렬하여 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어지고, 다음 N개의 줄에 정수가 하나씩 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "5\n5\n2\n3\n1\n4",
+        "output": "1\n2\n3\n4\n5"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-10-05"
   }
 ]
