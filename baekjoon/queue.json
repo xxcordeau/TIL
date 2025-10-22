@@ -10494,5 +10494,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-10-21"
+  },
+  {
+    "id": 617,
+    "number": 3054,
+    "tier": "Silver 4",
+    "title": "피터팬 프레임",
+    "url": "https://www.acmicpc.net/problem/3054",
+    "statement": "두 문자열 혹은 배열이 주어질 때, 이를 이용한 최적값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄과 둘째 줄에 각각 입력이 주어진다. (길이는 1,000을 넘지 않는다)",
+    "examples": [
+      {
+        "input": "ACAYKP\nCAPCAK",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-10-22"
   }
 ]
