@@ -11089,5 +11089,22 @@
     ],
     "solved": true,
     "solvedDate": "2025-11-25"
+  },
+  {
+    "id": 652,
+    "number": 3205,
+    "tier": "Silver 1",
+    "title": "fusnote",
+    "url": "https://www.acmicpc.net/problem/3205",
+    "statement": "N개의 원소와 M개의 연산이 주어질 때, 두 원소가 같은 집합에 속하는지 판별하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N과 M이 주어지고, 다음 M개의 줄에 연산이 주어진다. (1 <= N, M <= 1,000,000)",
+    "examples": [
+      {
+        "input": "3 2\n0 1 2\n1 1 2",
+        "output": "YES"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2025-11-26"
   }
 ]
