@@ -11752,5 +11752,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-01-03"
+  },
+  {
+    "id": 691,
+    "number": 3360,
+    "tier": "Silver 2",
+    "title": "깡총깡총",
+    "url": "https://www.acmicpc.net/problem/3360",
+    "statement": "N이 주어졌을 때, 정해진 점화식에 따라 N번째 값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "55"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-01-04"
   }
 ]
