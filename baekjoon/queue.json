@@ -12772,5 +12772,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-03-04"
+  },
+  {
+    "id": 751,
+    "number": 4539,
+    "tier": "Silver 4",
+    "title": "반올림",
+    "url": "https://www.acmicpc.net/problem/4539",
+    "statement": "N x M 크기의 격자가 주어졌을 때, 정해진 규칙에 따라 시뮬레이션을 진행한 결과를 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N과 M이 주어지고, 다음 N개의 줄에 격자 정보가 주어진다. (1 <= N, M <= 1,000)",
+    "examples": [
+      {
+        "input": "2 2\n1 0\n0 1",
+        "output": "2"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-03-05"
   }
 ]
