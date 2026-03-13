@@ -12908,5 +12908,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-03-12"
+  },
+  {
+    "id": 759,
+    "number": 10867,
+    "tier": "Bronze 1",
+    "title": "중복 빼고 정렬하기",
+    "url": "https://www.acmicpc.net/problem/10867",
+    "statement": "N개의 수가 주어졌을 때 이를 오름차순으로 정렬하여 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어지고, 다음 N개의 줄에 정수가 하나씩 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "5\n5\n2\n3\n1\n4",
+        "output": "1\n2\n3\n4\n5"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-03-13"
   }
 ]
