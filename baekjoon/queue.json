@@ -13316,5 +13316,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-04-05"
+  },
+  {
+    "id": 783,
+    "number": 11292,
+    "tier": "Silver 3",
+    "title": "키 큰 사람",
+    "url": "https://www.acmicpc.net/problem/11292",
+    "statement": "괄호 혹은 기호로 이루어진 문자열이 주어졌을 때, 짝이 올바른지 판단하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 문자열이 주어진다. (문자열의 길이는 100,000을 넘지 않는다)",
+    "examples": [
+      {
+        "input": "(()())",
+        "output": "YES"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-04-06"
   }
 ]
