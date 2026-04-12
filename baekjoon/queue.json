@@ -13418,5 +13418,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-04-11"
+  },
+  {
+    "id": 789,
+    "number": 11478,
+    "tier": "Silver 2",
+    "title": "서로 다른 부분 문자열의 개수",
+    "url": "https://www.acmicpc.net/problem/11478",
+    "statement": "문자열이 주어졌을 때, 이를 정해진 규칙에 따라 가공한 결과를 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 문자열이 주어진다. (문자열의 길이는 1,000을 넘지 않는다)",
+    "examples": [
+      {
+        "input": "hello world",
+        "output": "HELLO WORLD"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-04-12"
   }
 ]
