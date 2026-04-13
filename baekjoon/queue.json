@@ -13435,5 +13435,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-04-12"
+  },
+  {
+    "id": 790,
+    "number": 11497,
+    "tier": "Silver 1",
+    "title": "통나무 건너뛰기",
+    "url": "https://www.acmicpc.net/problem/11497",
+    "statement": "두 문자열 혹은 배열이 주어질 때, 이를 이용한 최적값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄과 둘째 줄에 각각 입력이 주어진다. (길이는 1,000을 넘지 않는다)",
+    "examples": [
+      {
+        "input": "ACAYKP\nCAPCAK",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-04-13"
   }
 ]
