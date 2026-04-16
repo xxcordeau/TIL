@@ -13486,5 +13486,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-04-15"
+  },
+  {
+    "id": 793,
+    "number": 11504,
+    "tier": "Gold 4",
+    "title": "돌려 돌려 돌림판!",
+    "url": "https://www.acmicpc.net/problem/11504",
+    "statement": "N개의 값이 주어졌을 때, 특정 조건을 만족하는 최댓값 혹은 최솟값을 이분 탐색으로 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어지고, 둘째 줄에 N개의 정수가 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "4\n20 15 10 17",
+        "output": "15"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-04-16"
   }
 ]
