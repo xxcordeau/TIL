@@ -13860,5 +13860,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-05-07"
+  },
+  {
+    "id": 815,
+    "number": 11725,
+    "tier": "Silver 4",
+    "title": "트리의 부모 찾기",
+    "url": "https://www.acmicpc.net/problem/11725",
+    "statement": "두 자연수가 주어졌을 때, 최대공약수와 최소공배수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 두 자연수가 주어진다. (1 <= A, B <= 10,000,000)",
+    "examples": [
+      {
+        "input": "24 18",
+        "output": "6\n72"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-05-08"
   }
 ]
