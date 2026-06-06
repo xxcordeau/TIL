@@ -14353,5 +14353,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-06-05"
+  },
+  {
+    "id": 844,
+    "number": 12785,
+    "tier": "Silver 5",
+    "title": "토쟁이의 등굣길",
+    "url": "https://www.acmicpc.net/problem/12785",
+    "statement": "N이 주어졌을 때, 정해진 점화식에 따라 N번째 값을 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "55"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-06-06"
   }
 ]
