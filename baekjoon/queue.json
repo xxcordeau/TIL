@@ -14727,5 +14727,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-06-27"
+  },
+  {
+    "id": 866,
+    "number": 12915,
+    "tier": "Bronze 1",
+    "title": "대회 개최",
+    "url": "https://www.acmicpc.net/problem/12915",
+    "statement": "두 정수 A와 B가 주어졌을 때 이를 이용한 연산 결과를 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 A와 B가 주어진다. (0 < A, B < 100000)",
+    "examples": [
+      {
+        "input": "3 5",
+        "output": "8"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-06-28"
   }
 ]
