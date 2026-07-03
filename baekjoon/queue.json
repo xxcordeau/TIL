@@ -14812,5 +14812,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-07-02"
+  },
+  {
+    "id": 871,
+    "number": 12933,
+    "tier": "Silver 4",
+    "title": "오리",
+    "url": "https://www.acmicpc.net/problem/12933",
+    "statement": "N개의 일정이 주어졌을 때, 겹치지 않게 선택할 수 있는 최대 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어지고, 다음 N개의 줄에 시작 시간과 끝나는 시간이 주어진다. (1 <= N <= 100,000)",
+    "examples": [
+      {
+        "input": "3\n1 4\n2 3\n3 5",
+        "output": "2"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-07-03"
   }
 ]
