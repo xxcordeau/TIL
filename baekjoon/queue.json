@@ -14914,5 +14914,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-07-08"
+  },
+  {
+    "id": 877,
+    "number": 12981,
+    "tier": "Silver 3",
+    "title": "공 포장하기",
+    "url": "https://www.acmicpc.net/problem/12981",
+    "statement": "N 이하의 자연수 중 소수의 개수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N이 주어진다. (1 <= N <= 1,000,000)",
+    "examples": [
+      {
+        "input": "10",
+        "output": "4"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-07-09"
   }
 ]
