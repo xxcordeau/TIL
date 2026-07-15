@@ -15016,5 +15016,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-07-14"
+  },
+  {
+    "id": 883,
+    "number": 13022,
+    "tier": "Silver 4",
+    "title": "늑대와 올바른 단어",
+    "url": "https://www.acmicpc.net/problem/13022",
+    "statement": "문자열이 주어졌을 때, 이를 정해진 규칙에 따라 가공한 결과를 출력하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 문자열이 주어진다. (문자열의 길이는 1,000을 넘지 않는다)",
+    "examples": [
+      {
+        "input": "hello world",
+        "output": "HELLO WORLD"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-07-15"
   }
 ]
