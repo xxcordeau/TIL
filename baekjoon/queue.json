@@ -15135,5 +15135,22 @@
     ],
     "solved": true,
     "solvedDate": "2026-07-21"
+  },
+  {
+    "id": 890,
+    "number": 13241,
+    "tier": "Silver 4",
+    "title": "최소공배수",
+    "url": "https://www.acmicpc.net/problem/13241",
+    "statement": "두 자연수가 주어졌을 때, 최대공약수와 최소공배수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 두 자연수가 주어진다. (1 <= A, B <= 10,000,000)",
+    "examples": [
+      {
+        "input": "24 18",
+        "output": "6\n72"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-07-22"
   }
 ]
