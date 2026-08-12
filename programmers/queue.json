@@ -64,7 +64,8 @@
         "output": "[4,1,2,3]"
       }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2026-08-12"
   },
   {
     "id": 4,
