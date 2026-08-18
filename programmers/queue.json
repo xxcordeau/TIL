@@ -7,11 +7,21 @@
     "statement": "수많은 마라톤 선수들이 마라톤에 참여했습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주했습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.",
     "constraints": "마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다. completion의 길이는 participant의 길이보다 1 작습니다. 참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다. 동명이인이 있을 수 있습니다.",
     "examples": [
-      {"input": "participant = [\"leo\", \"kiki\", \"eden\"], completion = [\"eden\", \"kiki\"]", "output": "\"leo\""},
-      {"input": "participant = [\"marina\", \"josipa\", \"nikola\", \"vinko\", \"filipa\"], completion = [\"josipa\", \"filipa\", \"marina\", \"nikola\"]", "output": "\"vinko\""},
-      {"input": "participant = [\"mislav\", \"stanko\", \"mislav\", \"ana\"], completion = [\"stanko\", \"ana\", \"mislav\"]", "output": "\"mislav\""}
+      {
+        "input": "participant = [\"leo\", \"kiki\", \"eden\"], completion = [\"eden\", \"kiki\"]",
+        "output": "\"leo\""
+      },
+      {
+        "input": "participant = [\"marina\", \"josipa\", \"nikola\", \"vinko\", \"filipa\"], completion = [\"josipa\", \"filipa\", \"marina\", \"nikola\"]",
+        "output": "\"vinko\""
+      },
+      {
+        "input": "participant = [\"mislav\", \"stanko\", \"mislav\", \"ana\"], completion = [\"stanko\", \"ana\", \"mislav\"]",
+        "output": "\"mislav\""
+      }
     ],
-    "solved": false
+    "solved": true,
+    "solvedDate": "2026-08-18"
   },
   {
     "id": 2,
@@ -21,9 +31,18 @@
     "statement": "홍 박사님은 당신에게 자신의 연구실에 있는 총 N 마리의 폰켓몬 중에서 N/2 마리를 가져가도 좋다고 했습니다. 당신은 아래 규칙에 따라 최대한 다양한 종류의 폰켓몬을 가지고 오려 합니다. 규칙: 1. 이미 가지고 있는 폰켓몬은 다시 가져올 수 없습니다. 2. 뽑아온 순서와 상관없이, 최종적으로 가지고 있는 폰켓몬 종류를 최대화합니다. 각 폰켓몬을 나타내는 번호가 담긴 배열 nums가 매개변수로 주어질 때, N/2 마리의 폰켓몬을 선택하는 방법 중, 가장 많은 종류의 폰켓몬을 선택하는 경우의 종류 수를 return 하도록 solution 함수를 완성해주세요.",
     "constraints": "nums의 길이는 짝수이며, 1 이상 10,000 이하의 자연수입니다. nums의 원소는 1 이상 10,000 이하의 자연수이며, 0을 포함하지 않습니다.",
     "examples": [
-      {"input": "nums = [3,1,2,3]", "output": "2"},
-      {"input": "nums = [3,3,3,2,2,4]", "output": "3"},
-      {"input": "nums = [3,3,3,2,2,2]", "output": "2"}
+      {
+        "input": "nums = [3,1,2,3]",
+        "output": "2"
+      },
+      {
+        "input": "nums = [3,3,3,2,2,4]",
+        "output": "3"
+      },
+      {
+        "input": "nums = [3,3,3,2,2,2]",
+        "output": "2"
+      }
     ],
     "solved": false
   },
@@ -35,8 +54,14 @@
     "statement": "슈퍼 게임 개발자 오영식 씨는 순위 시스템을 개발하려 합니다. 실패율은 스테이지에 도달했으나 아직 클리어하지 못한 플레이어의 수를 스테이지에 도달한 플레이어 수로 나눈 값입니다. 전체 스테이지의 개수 N, 게임을 이용하는 사용자가 현재 멈춰있는 스테이지의 번호가 담긴 배열 stages가 매개변수로 주어질 때, 실패율이 높은 스테이지부터 내림차순으로 스테이지의 번호가 담긴 배열을 return 하도록 solution 함수를 완성하세요.",
     "constraints": "스테이지의 개수 N은 1 이상 500 이하의 자연수입니다. stages의 길이는 1 이상 200,000 이하입니다. stages에는 1 이상 N+1 이하의 자연수가 담겨있으며 N+1은 마지막 스테이지까지 클리어한 사용자를 의미합니다. 실패율이 같은 스테이지는 작은 번호가 먼저 오도록 배열에 담습니다.",
     "examples": [
-      {"input": "N = 5, stages = [2,1,2,6,2,4,3,3]", "output": "[3,4,2,1,5]"},
-      {"input": "N = 4, stages = [4,4,4,4,4]", "output": "[4,1,2,3]"}
+      {
+        "input": "N = 5, stages = [2,1,2,6,2,4,3,3]",
+        "output": "[3,4,2,1,5]"
+      },
+      {
+        "input": "N = 4, stages = [4,4,4,4,4]",
+        "output": "[4,1,2,3]"
+      }
     ],
     "solved": false
   },
@@ -48,8 +73,14 @@
     "statement": "부서별로 신청한 물품을 구매하기 위해 예산을 짜야 합니다. 부서별로 신청한 금액이 담긴 배열 d와 예산 budget이 매개변수로 주어질 때, 최대 몇 개의 부서에 물품을 지원할 수 있는지 return 하도록 solution 함수를 완성해주세요.",
     "constraints": "d는 부서별로 신청한 금액이 들어있는 배열이며, 길이(전체 부서의 개수)는 1 이상 100 이하입니다. d의 각 원소는 1 이상 100,000 이하인 자연수입니다. budget은 1 이상 10,000,000 이하인 자연수입니다.",
     "examples": [
-      {"input": "d = [1,3,2,5,4], budget = 9", "output": "3"},
-      {"input": "d = [2,2,3,3], budget = 10", "output": "4"}
+      {
+        "input": "d = [1,3,2,5,4], budget = 9",
+        "output": "3"
+      },
+      {
+        "input": "d = [2,2,3,3], budget = 10",
+        "output": "4"
+      }
     ],
     "solved": false
   },
@@ -61,8 +92,14 @@
     "statement": "자연수 N이 매개변수로 주어질 때, N의 각 자릿수의 합을 return 하는 solution 함수를 완성해주세요.",
     "constraints": "N의 범위 : 100,000,000 이하의 자연수",
     "examples": [
-      {"input": "n = 123", "output": "6"},
-      {"input": "n = 987", "output": "24"}
+      {
+        "input": "n = 123",
+        "output": "6"
+      },
+      {
+        "input": "n = 987",
+        "output": "24"
+      }
     ],
     "solved": false
   },
@@ -74,8 +111,14 @@
     "statement": "자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요. 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.",
     "constraints": "n은 10,000,000,000 이하인 자연수입니다.",
     "examples": [
-      {"input": "n = 12345", "output": "[5,4,3,2,1]"},
-      {"input": "n = 87654321", "output": "[1,2,3,4,5,6,7,8]"}
+      {
+        "input": "n = 12345",
+        "output": "[5,4,3,2,1]"
+      },
+      {
+        "input": "n = 87654321",
+        "output": "[1,2,3,4,5,6,7,8]"
+      }
     ],
     "solved": false
   },
@@ -87,7 +130,10 @@
     "statement": "함수 solution은 정수 n을 매개변수로 입력받습니다. n의 각 자릿수를 큰 것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요. 예를들어 n이 118372면 873211을 리턴하면 됩니다.",
     "constraints": "n은 1이상 8000000000 이하인 자연수입니다.",
     "examples": [
-      {"input": "n = 118372", "output": "873211"}
+      {
+        "input": "n = 118372",
+        "output": "873211"
+      }
     ],
     "solved": false
   },
@@ -99,10 +145,22 @@
     "statement": "양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 예를 들어 18의 자릿수의 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하여 하샤드 수이면 True, 아니면 False를 리턴하는 함수, solution을 완성해주세요.",
     "constraints": "x는 1 이상, 10000 이하인 자연수입니다.",
     "examples": [
-      {"input": "x = 10", "output": "true"},
-      {"input": "x = 12", "output": "true"},
-      {"input": "x = 11", "output": "false"},
-      {"input": "x = 13", "output": "false"}
+      {
+        "input": "x = 10",
+        "output": "true"
+      },
+      {
+        "input": "x = 12",
+        "output": "true"
+      },
+      {
+        "input": "x = 11",
+        "output": "false"
+      },
+      {
+        "input": "x = 13",
+        "output": "false"
+      }
     ],
     "solved": false
   },
@@ -114,9 +172,18 @@
     "statement": "두 정수 a, b가 주어졌을 때 a와 b 사이에 속한 모든 정수의 합을 리턴하는 함수, solution을 완성하세요. 예를 들어 a = 3, b = 5인 경우, 3 + 4 + 5 = 12이므로 12를 리턴합니다.",
     "constraints": "a와 b가 같은 경우는 둘 중 하나를 리턴하면 됩니다. a와 b는 -10,000,000 이상, 10,000,000 이하인 정수입니다. a와 b의 대소관계는 정해져있지 않습니다.",
     "examples": [
-      {"input": "a = 3, b = 5", "output": "12"},
-      {"input": "a = 3, b = 3", "output": "3"},
-      {"input": "a = 5, b = 3", "output": "12"}
+      {
+        "input": "a = 3, b = 5",
+        "output": "12"
+      },
+      {
+        "input": "a = 3, b = 3",
+        "output": "3"
+      },
+      {
+        "input": "a = 5, b = 3",
+        "output": "12"
+      }
     ],
     "solved": false
   },
@@ -128,9 +195,18 @@
     "statement": "array의 각 element 중 divisor로 나누어 떨어지는 값을 오름차순으로 정렬한 배열을 반환하는 함수, solution을 작성해주세요. divisor로 나누어 떨어지는 element가 하나도 없다면 배열에 -1을 담아 반환하세요.",
     "constraints": "array는 자연수를 담은 배열이며, 크기는 1 이상 1000 이하입니다. array의 각 원소는 1 이상 1000 이하입니다. divisor는 1 이상 1000 이하인 자연수입니다.",
     "examples": [
-      {"input": "array = [5,9,7,10], divisor = 5", "output": "[5,10]"},
-      {"input": "array = [2,36,1,3], divisor = 1", "output": "[1,2,3,36]"},
-      {"input": "array = [3,2,6], divisor = 10", "output": "[-1]"}
+      {
+        "input": "array = [5,9,7,10], divisor = 5",
+        "output": "[5,10]"
+      },
+      {
+        "input": "array = [2,36,1,3], divisor = 1",
+        "output": "[1,2,3,36]"
+      },
+      {
+        "input": "array = [3,2,6], divisor = 10",
+        "output": "[-1]"
+      }
     ],
     "solved": false
   },
@@ -142,9 +218,18 @@
     "statement": "1937년 popular 콜라츠 추측을 검증하는 함수를 작성합니다. 임의의 자연수 n에 대해 n이 짝수면 2로 나누고, 홀수면 3을 곱한 후 1을 더하는 작업을 반복할 때, n이 1이 될 때까지의 횟수를 return 하도록 solution 함수를 완성해주세요. 단, 500번을 반복해도 1이 되지 않으면 -1을 return 하세요.",
     "constraints": "n은 1 이상 8,000,000 미만인 정수입니다. 500번을 반복하고도 1이 되지 않는다면 -1을 반환합니다.",
     "examples": [
-      {"input": "n = 6", "output": "8"},
-      {"input": "n = 16", "output": "4"},
-      {"input": "n = 626331", "output": "-1"}
+      {
+        "input": "n = 6",
+        "output": "8"
+      },
+      {
+        "input": "n = 16",
+        "output": "4"
+      },
+      {
+        "input": "n = 626331",
+        "output": "-1"
+      }
     ],
     "solved": false
   },
@@ -156,8 +241,14 @@
     "statement": "두 수를 입력받아 두 수의 최대공약수와 최소공배수를 반환하는 함수, solution을 완성해 보세요. 배열의 첫 번째 원소가 최대공약수, 두 번째 원소가 최소공배수입니다.",
     "constraints": "두 수는 1이상 1000000이하의 자연수입니다.",
     "examples": [
-      {"input": "n = 3, m = 12", "output": "[3, 12]"},
-      {"input": "n = 2, m = 5", "output": "[1, 10]"}
+      {
+        "input": "n = 3, m = 12",
+        "output": "[3, 12]"
+      },
+      {
+        "input": "n = 2, m = 5",
+        "output": "[1, 10]"
+      }
     ],
     "solved": false
   },
@@ -169,8 +260,14 @@
     "statement": "대문자와 소문자가 섞여있는 문자열 s가 주어집니다. s에서 대문자 P와 소문자 y가 각각 몇 개가 있는지 비교해 대문자와 소문자가 개수가 같으면 true를, 다르면 false를 return 하는 solution을 완성하세요. 대소문자를 구분하지 않고 p의 개수만 비교합니다. s는 빈 문자열이 아닙니다.",
     "constraints": "문자열 s의 길이 : 50 이하의 자연수. p, y 모두 없는 경우는 항상 true를 반환합니다.",
     "examples": [
-      {"input": "s = \"pPoooyY\"", "output": "true"},
-      {"input": "s = \"Pyy\"", "output": "false"}
+      {
+        "input": "s = \"pPoooyY\"",
+        "output": "true"
+      },
+      {
+        "input": "s = \"Pyy\"",
+        "output": "false"
+      }
     ],
     "solved": false
   },
@@ -182,7 +279,10 @@
     "statement": "문자열 s에 나타나는 문자를 큰 것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요. s는 영문 대소문자로만 구성되어 있고, 대문자는 소문자보다 작은 것으로 간주합니다.",
     "constraints": "str은 길이 1 이상인 문자열입니다.",
     "examples": [
-      {"input": "s = \"Zbcdefg\"", "output": "\"gfedcbZ\""}
+      {
+        "input": "s = \"Zbcdefg\"",
+        "output": "\"gfedcbZ\""
+      }
     ],
     "solved": false
   },
@@ -194,7 +294,10 @@
     "statement": "String형 배열 seoul의 element 중 \"Kim\"의 위치 x를 찾아, \"김서방은 x에 있다\"는 String을 반환하는 함수, solution을 완성하세요. seoul에 \"Kim\"은 오직 한 번만 나타나며 위치 x는 0부터 시작합니다.",
     "constraints": "seoul 배열의 크기는 1 이상 1000 이하입니다.",
     "examples": [
-      {"input": "seoul = [\"Jane\", \"Kim\"]", "output": "\"김서방은 1에 있다\""}
+      {
+        "input": "seoul = [\"Jane\", \"Kim\"]",
+        "output": "\"김서방은 1에 있다\""
+      }
     ],
     "solved": false
   },
@@ -206,8 +309,14 @@
     "statement": "1부터 n 사이의 소수의 개수를 리턴하는 함수, solution을 만들어 보세요. 소수는 1과 자기 자신으로만 나누어지는 수를 의미합니다. (1은 소수가 아닙니다.)",
     "constraints": "n은 2 이상 1000000 이하의 자연수입니다.",
     "examples": [
-      {"input": "n = 10", "output": "4"},
-      {"input": "n = 5", "output": "3"}
+      {
+        "input": "n = 10",
+        "output": "4"
+      },
+      {
+        "input": "n = 5",
+        "output": "3"
+      }
     ],
     "solved": false
   },
@@ -219,8 +328,14 @@
     "statement": "길이가 n인 문자열을 \"수박수박수박수...\"와 같이 만들려고 합니다. 길이 n이 주어질 때, 위와 같이 반복된 문자열을 리턴하는 함수, solution을 완성하세요.",
     "constraints": "n은 길이 10,000 이하인 자연수입니다.",
     "examples": [
-      {"input": "n = 3", "output": "\"수박수\""},
-      {"input": "n = 4", "output": "\"수박수박\""}
+      {
+        "input": "n = 3",
+        "output": "\"수박수\""
+      },
+      {
+        "input": "n = 4",
+        "output": "\"수박수박\""
+      }
     ],
     "solved": false
   },
@@ -232,8 +347,14 @@
     "statement": "0부터 9까지의 숫자 중 일부가 들어있는 배열 numbers가 매개변수로 주어집니다. numbers에서 찾을 수 없는 숫자를 모두 찾아 더한 값을 return 하도록 solution 함수를 완성해주세요.",
     "constraints": "1 ≤ numbers의 길이 ≤ 9. 0 ≤ numbers의 원소 ≤ 9. numbers의 원소는 서로 다릅니다.",
     "examples": [
-      {"input": "numbers = [1,2,3,4,6,7,8,0]", "output": "14"},
-      {"input": "numbers = [5,8,4,0,6,7,9]", "output": "6"}
+      {
+        "input": "numbers = [1,2,3,4,6,7,8,0]",
+        "output": "14"
+      },
+      {
+        "input": "numbers = [5,8,4,0,6,7,9]",
+        "output": "6"
+      }
     ],
     "solved": false
   },
@@ -245,7 +366,10 @@
     "statement": "문자열 s는 한 개 이상의 단어로 구성되어 있습니다. 각 단어는 하나 이상의 공백문자로 구분되어 있습니다. 각 단어의 짝수번째 알파벳은 대문자로, 홀수번째 알파벳은 소문자로 바꾼 문자열을 리턴하는 함수, solution을 완성하세요.",
     "constraints": "문자열 전체의 길이는 1 이상, 200 이하입니다. 첫 문자는 공백이 아닙니다.",
     "examples": [
-      {"input": "s = \"try hello world\"", "output": "\"TrY HeLlO WoRlD\""}
+      {
+        "input": "s = \"try hello world\"",
+        "output": "\"TrY HeLlO WoRlD\""
+      }
     ],
     "solved": false
   },
@@ -257,8 +381,14 @@
     "statement": "문자열 s에는 공백으로 구분된 숫자들이 저장되어 있습니다. s에 나타나는 숫자 중 최소값과 최대값을 찾아 \"(최소값) (최대값)\" 형태의 문자열을 반환하는 함수, solution을 완성하세요.",
     "constraints": "s에는 공백으로 구분된 숫자가 1개 이상 있습니다. 숫자는 -1000000 이상 1000000 이하의 정수입니다.",
     "examples": [
-      {"input": "s = \"1 2 3 4\"", "output": "\"1 4\""},
-      {"input": "s = \"-1 -2 -3 -4\"", "output": "\"-4 -1\""}
+      {
+        "input": "s = \"1 2 3 4\"",
+        "output": "\"1 4\""
+      },
+      {
+        "input": "s = \"-1 -2 -3 -4\"",
+        "output": "\"-4 -1\""
+      }
     ],
     "solved": false
   },
@@ -270,9 +400,18 @@
     "statement": "명함 지갑을 만드는 회사에서 다양한 명함 사이즈에 대응하는 지갑을 개발하려 합니다. 각 명함의 가로 길이와 세로 길이가 담긴 2차원 배열 sizes가 주어질 때, 모든 명함을 수납할 수 있는 가장 작은 지갑을 만들 때 지갑의 크기를 return 하도록 solution 함수를 완성해주세요. 단, 명함은 회전시켜 수납할 수 있습니다.",
     "constraints": "sizes의 길이는 1 이상 10,000 이하입니다. sizes의 원소는 [w, h] 형태이며 1 이상 1,000 이하의 자연수입니다.",
     "examples": [
-      {"input": "sizes = [[60,50],[30,70],[60,30],[80,40]]", "output": "4000"},
-      {"input": "sizes = [[10,7],[12,3],[8,15],[14,7],[5,15]]", "output": "120"},
-      {"input": "sizes = [[14,4],[19,6],[6,16],[18,7],[7,11]]", "output": "133"}
+      {
+        "input": "sizes = [[60,50],[30,70],[60,30],[80,40]]",
+        "output": "4000"
+      },
+      {
+        "input": "sizes = [[10,7],[12,3],[8,15],[14,7],[5,15]]",
+        "output": "120"
+      },
+      {
+        "input": "sizes = [[14,4],[19,6],[6,16],[18,7],[7,11]]",
+        "output": "133"
+      }
     ],
     "solved": false
   },
@@ -284,7 +423,10 @@
     "statement": "board는 2차원 배열로 인형이 놓인 상태를 나타내며 0은 빈칸을 의미합니다. moves는 크레인을 작동시킨 열 번호가 순서대로 담긴 배열입니다. 크레인은 해당 열에서 가장 위에 있는 인형을 집어 바구니에 넣고, 바구니에 쌓이면서 같은 인형이 연속해서 2개가 되면 두 개가 터지면서 사라집니다. 모든 동작이 끝난 후 터진 인형의 개수를 return 하도록 solution 함수를 완성해주세요.",
     "constraints": "board는 n x n 2차원 배열이며, 5 ≤ n ≤ 30. moves의 길이는 1 이상 1000 이하입니다.",
     "examples": [
-      {"input": "board = [[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]], moves = [1,5,3,5,1,2,1,4]", "output": "4"}
+      {
+        "input": "board = [[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]], moves = [1,5,3,5,1,2,1,4]",
+        "output": "4"
+      }
     ],
     "solved": false
   },
@@ -296,8 +438,14 @@
     "statement": "스마트폰 키패드에서 숫자를 누를 때, 왼손과 오른손의 엄지손가락만을 사용해서 숫자를 누르려 합니다. 왼쪽 열(1,4,7)은 왼손, 오른쪽 열(3,6,9)은 오른손으로 누르고, 가운데 열(2,5,8,0)은 두 엄지손가락의 현재 위치에서 더 가까운 손가락으로 누릅니다. 만약 거리가 같다면, 오른손잡이는 오른손, 왼손잡이는 왼손을 사용합니다. 순서대로 누른 번호가 담긴 배열 numbers와 왼손잡이인지 오른손잡이인지를 나타내는 hand가 매개변수로 주어질 때, 각 번호를 누른 손가락이 왼손인지 오른손인지를 나타내는 문자열을 return 하도록 solution 함수를 완성해주세요.",
     "constraints": "numbers 배열의 크기는 1 이상 1000 이하입니다. numbers 배열 원소는 0부터 9까지의 정수입니다. hand는 \"right\" 또는 \"left\"입니다.",
     "examples": [
-      {"input": "numbers = [1,3,4,5,8,2,1,4,5,9,5], hand = \"right\"", "output": "\"LRLLLRLLRRL\""},
-      {"input": "numbers = [7,0,8,2,8,3,1,5,7,6,2], hand = \"left\"", "output": "\"LRLLRRLLLRR\""}
+      {
+        "input": "numbers = [1,3,4,5,8,2,1,4,5,9,5], hand = \"right\"",
+        "output": "\"LRLLLRLLRRL\""
+      },
+      {
+        "input": "numbers = [7,0,8,2,8,3,1,5,7,6,2], hand = \"left\"",
+        "output": "\"LRLLRRLLLRR\""
+      }
     ],
     "solved": false
   },
@@ -309,8 +457,14 @@
     "statement": "전화번호부에 저장된 전화번호 중 일부를 가리려 합니다. 전화번호가 문자열 phone_number로 주어졌을 때, 뒤의 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.",
     "constraints": "s는 길이 4 이상, 20 이하인 문자열입니다.",
     "examples": [
-      {"input": "phone_number = \"01033334444\"", "output": "\"*******4444\""},
-      {"input": "phone_number = \"027778888\"", "output": "\"*****8888\""}
+      {
+        "input": "phone_number = \"01033334444\"",
+        "output": "\"*******4444\""
+      },
+      {
+        "input": "phone_number = \"027778888\"",
+        "output": "\"*****8888\""
+      }
     ],
     "solved": false
   },
@@ -322,8 +476,14 @@
     "statement": "2차원 행렬 arr1과 arr2를 입력받아, arr1 x arr2 행렬을 반환하는 함수, solution을 완성해주세요.",
     "constraints": "행렬 arr1, arr2의 행과 열의 길이는 2 이상 100 이하입니다. 행렬 arr1, arr2의 원소는 -10 이상 20 이하인 자연수입니다. 곱할 수 있는 배열만 주어집니다.",
     "examples": [
-      {"input": "arr1 = [[1,4],[3,2],[4,1]], arr2 = [[3,3],[3,3]]", "output": "[[15,15],[15,15],[15,15]]"},
-      {"input": "arr1 = [[2,3,2],[4,2,4],[3,1,4]], arr2 = [[5,4,3],[2,4,1],[3,1,1]]", "output": "[[22,22,11],[36,28,18],[29,20,14]]"}
+      {
+        "input": "arr1 = [[1,4],[3,2],[4,1]], arr2 = [[3,3],[3,3]]",
+        "output": "[[15,15],[15,15],[15,15]]"
+      },
+      {
+        "input": "arr1 = [[2,3,2],[4,2,4],[3,1,4]], arr2 = [[5,4,3],[2,4,1],[3,1,1]]",
+        "output": "[[22,22,11],[36,28,18],[29,20,14]]"
+      }
     ],
     "solved": false
   },
@@ -335,8 +495,14 @@
     "statement": "자연수 n이 매개변수로 주어집니다. n을 x로 나눈 나머지가 1이 되도록 하는 가장 작은 자연수 x를 return 하도록 solution 함수를 완성해주세요. 답이 항상 존재함은 증명될 수 있습니다.",
     "constraints": "3 ≤ n ≤ 1,000,000",
     "examples": [
-      {"input": "n = 10", "output": "3"},
-      {"input": "n = 12", "output": "11"}
+      {
+        "input": "n = 10",
+        "output": "3"
+      },
+      {
+        "input": "n = 12",
+        "output": "11"
+      }
     ],
     "solved": false
   },
@@ -348,8 +514,14 @@
     "statement": "로또 번호 6개 중 지워진 번호는 0으로 표시되어 있습니다. 알아볼 수 있는 번호 6개가 주어진 lottos와 실제 당첨 번호 6개 win_nums가 매개변수로 주어질 때, 순위를 매길 수 있는 최고 순위와 최저 순위를 return 하도록 solution 함수를 완성해주세요. 순위는 1등(6개 일치)부터 6등(0~1개 일치)까지이며 그 외는 등수 없음(7)으로 표현합니다.",
     "constraints": "lottos는 길이 6인 정수 배열이고, 0 이상 45 이하의 숫자가 중복없이 들어있습니다(0은 지워진 숫자). win_nums도 길이 6인 정수 배열이며 1~45 사이의 숫자가 중복없이 들어있습니다.",
     "examples": [
-      {"input": "lottos = [44, 1, 0, 0, 31, 25], win_nums = [31, 10, 45, 1, 6, 19]", "output": "[3, 5]"},
-      {"input": "lottos = [0, 0, 0, 0, 0, 0], win_nums = [38, 19, 20, 8, 25, 13]", "output": "[1, 6]"}
+      {
+        "input": "lottos = [44, 1, 0, 0, 31, 25], win_nums = [31, 10, 45, 1, 6, 19]",
+        "output": "[3, 5]"
+      },
+      {
+        "input": "lottos = [0, 0, 0, 0, 0, 0], win_nums = [38, 19, 20, 8, 25, 13]",
+        "output": "[1, 6]"
+      }
     ],
     "solved": false
   },
@@ -361,8 +533,14 @@
     "statement": "택해가 있는 반의 학생 번호가 저장된 정수 배열 number가 주어질 때, 학생 번호 3개를 뽑아 조합했을 때 그 합이 0이 되는 조합의 개수를 return 하도록 solution 함수를 완성해주세요.",
     "constraints": "3 ≤ number의 길이 ≤ 13. -1000 ≤ number의 원소 ≤ 1000. number의 원소는 서로 다릅니다.",
     "examples": [
-      {"input": "number = [-2,3,0,2,-5]", "output": "2"},
-      {"input": "number = [-3,-2,-1,0,1,2,3]", "output": "4"}
+      {
+        "input": "number = [-2,3,0,2,-5]",
+        "output": "2"
+      },
+      {
+        "input": "number = [-3,-2,-1,0,1,2,3]",
+        "output": "4"
+      }
     ],
     "solved": false
   },
@@ -374,7 +552,10 @@
     "statement": "고객의 약관 동의를 얻어서 수집된 1~n번 개인정보가 있습니다. 오늘 날짜를 의미하는 today, 각 개인정보의 수집 일자를 담은 배열 dates, 약관의 유효기간을 담은 배열 terms가 주어질 때, 파기해야 할 개인정보의 번호를 오름차순으로 return 하도록 solution 함수를 완성해주세요. 한 달은 28일로 계산합니다.",
     "constraints": "today는 \"YYYY.MM.DD\" 형식입니다. terms는 [\"약관명 유효기간\", ...] 형태입니다. dates는 [\"YYYY.MM.DD\", ...] 형태입니다.",
     "examples": [
-      {"input": "today = \"2022.05.19\", terms = [\"A 6\", \"B 12\", \"C 3\"], privacies = [\"2021.05.02 A\", \"2021.07.01 B\", \"2022.02.19 C\", \"2022.02.20 C\"]", "output": "[1, 3]"}
+      {
+        "input": "today = \"2022.05.19\", terms = [\"A 6\", \"B 12\", \"C 3\"], privacies = [\"2021.05.02 A\", \"2021.07.01 B\", \"2022.02.19 C\", \"2022.02.20 C\"]",
+        "output": "[1, 3]"
+      }
     ],
     "solved": false
   },
@@ -386,8 +567,14 @@
     "statement": "휴대폰 자판을 대충 만들었더니 여러 키에 같은 문자가 할당된 경우가 있습니다. 자판을 나타내는 문자열 배열 keymap과, 입력하려는 문자열 배열 targets가 주어질 때, 각 문자열을 입력하기 위해 최소 몇 번을 눌러야 하는지 순서대로 배열에 담아 return 하도록 solution 함수를 완성해주세요. 만들 수 없는 문자열은 -1을 담습니다.",
     "constraints": "keymap의 길이는 1 이상 100 이하입니다. keymap 원소의 길이는 1 이상 26 이하이며 알파벳 대문자로만 이루어져 있습니다. targets의 길이는 1 이상 100 이하입니다.",
     "examples": [
-      {"input": "keymap = [\"ABACD\", \"BCEFD\"], targets = [\"ABCD\",\"AABB\"]", "output": "[9, -1]"},
-      {"input": "keymap = [\"AABB\", \"BBAC\"], targets = [\"ABBA\", \"BAA\", \"BBB\"]", "output": "[4, 3, 5]"}
+      {
+        "input": "keymap = [\"ABACD\", \"BCEFD\"], targets = [\"ABCD\",\"AABB\"]",
+        "output": "[9, -1]"
+      },
+      {
+        "input": "keymap = [\"AABB\", \"BBAC\"], targets = [\"ABBA\", \"BAA\", \"BBB\"]",
+        "output": "[4, 3, 5]"
+      }
     ],
     "solved": false
   }
