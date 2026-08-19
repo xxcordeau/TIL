@@ -2144,5 +2144,22 @@
     ],
     "solved": true,
     "solvedDate": "2024-06-06"
+  },
+  {
+    "id": 127,
+    "number": 11723,
+    "tier": "Silver 5",
+    "title": "집합",
+    "url": "https://www.acmicpc.net/problem/11723",
+    "statement": "1부터 20까지의 정수로 이루어진 공집합에서 시작해서 add x(추가), remove x(삭제), check x(포함 여부 출력), toggle x(있으면 삭제, 없으면 추가), all(전체집합으로), empty(공집합으로) 연산을 처리하는 프로그램을 작성하시오.",
+    "constraints": "명령의 개수 M은 3,000,000 이하이다.",
+    "examples": [
+      {
+        "input": "6\nadd 1\nadd 2\ncheck 1\ncheck 3\nremove 1\ncheck 1",
+        "output": "1\n0\n0"
+      }
+    ],
+    "solved": true,
+    "solvedDate": "2026-08-19"
   }
 ]
