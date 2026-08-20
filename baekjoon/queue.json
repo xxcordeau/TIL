@@ -2760,5 +2760,22 @@
     "id": 162,
     "solved": true,
     "solvedDate": "2024-07-14"
+  },
+  {
+    "number": 1181,
+    "tier": "Silver 5",
+    "title": "단어 정렬",
+    "url": "https://www.acmicpc.net/problem/1181",
+    "statement": "알파벳 소문자로 이루어진 N개의 단어가 주어질 때, 단어를 길이가 짧은 것부터, 길이가 같으면 사전 순으로 정렬해서 출력하시오. 같은 단어가 여러 번 나오면 한 번만 출력한다.",
+    "constraints": "1<=N<=20,000, 단어 길이는 50 이하",
+    "examples": [
+      {
+        "input": "13\nbut\ni\nbig\nellipse\ninteresting\nde\nfine\ndelet\npineapple\nok\ncar\nwant\nwant\n",
+        "output": "i\nde\nok\nbig\nbut\ncar\nfine\nwant\ndelet\nellipse\npineapple\ninteresting"
+      }
+    ],
+    "id": 163,
+    "solved": true,
+    "solvedDate": "2026-08-20"
   }
 ]
