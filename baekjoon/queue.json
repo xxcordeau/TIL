@@ -3440,5 +3440,22 @@
     "id": 202,
     "solved": true,
     "solvedDate": "2024-08-29"
+  },
+  {
+    "number": 2075,
+    "tier": "Silver 1",
+    "title": "N번째 큰 수",
+    "url": "https://www.acmicpc.net/problem/2075",
+    "statement": "N×N개의 수가 채워진 표에서 각 행이 오름차순으로 정렬되어 주어질 때, 표에 채워진 모든 수 중에서 N번째로 큰 수를 구하는 프로그램을 작성하시오.",
+    "constraints": "첫째 줄에 N (1 ≤ N ≤ 1,500)이 주어진다. 다음 N개의 줄에는 각 줄마다 N개의 수가 오름차순으로 주어진다. 수는 -10^9보다 크거나 같고, 10^9보다 작거나 같은 정수이다.",
+    "examples": [
+      {
+        "input": "3\n20 15 10\n5 18 27\n30 1 2\n",
+        "output": "20"
+      }
+    ],
+    "id": 203,
+    "solved": true,
+    "solvedDate": "2026-08-21"
   }
 ]
