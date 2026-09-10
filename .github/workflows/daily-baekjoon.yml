@@ -1,0 +1,32 @@
+name: Daily Baekjoon
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 매일 UTC 00:00 = KST 09:00
+  workflow_dispatch:      # 수동 실행도 가능
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate daily solution
+        run: node .github/scripts/generate-solution.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "xxcordeau"
+          git config user.email "qazseeszaq3219@gmail.com"
+          git add baekjoon/solutions/
+          git diff --cached --quiet || git commit -m "$(cat .github/scripts/.last-commit-msg)"
+          git push
