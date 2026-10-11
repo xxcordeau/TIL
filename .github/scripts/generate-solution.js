@@ -837,10 +837,944 @@ if (require.main === module) {
   console.log(solve(input));
 }`,
   },
+  // --- 2026-10-11 이후 추가 문제 ---
+  {
+    num: 11727,
+    title: '2×n 타일링 2',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/11727
+// 2×n 타일링 2
+//
+// 1×2, 2×1, 2×2 타일로 2×n을 채우는 경우의 수.
+// dp[n] = dp[n-1] + 2*dp[n-2] 점화식이 성립한다.
+// 10007로 나눈 나머지를 출력해야 한다.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  if (n === 1) return 1;
+  const dp = new Array(n + 1).fill(0);
+  dp[1] = 1; dp[2] = 3;
+  for (let i = 3; i <= n; i++) dp[i] = (dp[i-1] + 2 * dp[i-2]) % 10007;
+  return dp[n];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1003,
+    title: '피보나치 함수',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/1003
+// 피보나치 함수
+//
+// fibonacci(n) 호출 시 0과 1이 각각 몇 번 출력되는지 구하는 문제.
+// dp로 각 n에서의 (0 출력 횟수, 1 출력 횟수)를 미리 계산해두면 된다.
+
+function solve(lines) {
+  const T = parseInt(lines[0].trim(), 10);
+  const dp = [[1,0],[0,1]];
+  for (let i = 2; i <= 40; i++) dp[i] = [dp[i-1][0]+dp[i-2][0], dp[i-1][1]+dp[i-2][1]];
+  const result = [];
+  for (let t = 1; t <= T; t++) {
+    const n = parseInt(lines[t].trim(), 10);
+    result.push(dp[n][0] + ' ' + dp[n][1]);
+  }
+  return result.join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2193,
+    title: '이친수',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/2193
+// 이친수
+//
+// 0으로 시작하지 않고 11이 연속으로 나타나지 않는 N자리 수의 개수.
+// dp[i][j]: i번째 자리가 j일 때의 경우의 수.
+// dp[i][0] = dp[i-1][0] + dp[i-1][1], dp[i][1] = dp[i-1][0]
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const dp = Array.from({length: n+1}, () => [BigInt(0), BigInt(0)]);
+  dp[1][1] = BigInt(1);
+  for (let i = 2; i <= n; i++) {
+    dp[i][0] = dp[i-1][0] + dp[i-1][1];
+    dp[i][1] = dp[i-1][0];
+  }
+  return (dp[n][0] + dp[n][1]).toString();
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1699,
+    title: '제곱수의 합',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/1699
+// 제곱수의 합
+//
+// N을 제곱수의 합으로 나타낼 때 항의 최솟값을 구하는 DP.
+// dp[i] = min(dp[i - j*j] + 1) for j*j <= i
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const dp = new Array(n + 1).fill(Infinity);
+  dp[0] = 0;
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j * j <= i; j++) {
+      dp[i] = Math.min(dp[i], dp[i - j*j] + 1);
+    }
+  }
+  return dp[n];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2747,
+    title: '피보나치 수',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/2747
+// 피보나치 수
+//
+// n번째 피보나치 수를 구하는 기본 DP 문제.
+// 반복문으로 아래서부터 채워올라가면 된다.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  if (n <= 1) return n;
+  let a = 0, b = 1;
+  for (let i = 2; i <= n; i++) [a, b] = [b, a + b];
+  return b;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 11052,
+    title: '카드 구매하기',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/11052
+// 카드 구매하기
+//
+// N개의 카드를 살 때 최대 금액을 구하는 냅색 DP.
+// dp[i] = i개 카드를 살 때의 최댓값.
+// dp[i] = max(dp[i-j] + P[j]) for j=1..i
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const P = [0, ...lines[1].trim().split(' ').map(Number)];
+  const dp = new Array(n + 1).fill(0);
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      dp[i] = Math.max(dp[i], dp[i-j] + P[j]);
+    }
+  }
+  return dp[n];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2839,
+    title: '설탕 배달',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/2839
+// 설탕 배달
+//
+// 3kg, 5kg 봉지로 N kg을 만들 때 봉지 수 최솟값.
+// 5kg을 최대한 많이 쓰면서 나머지를 3kg으로 채울 수 있는지 확인한다.
+
+function solve(lines) {
+  let n = parseInt(lines[0].trim(), 10);
+  let count = 0;
+  while (n >= 0) {
+    if (n % 3 === 0) return count + n / 3;
+    n -= 5;
+    count++;
+  }
+  return -1;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 10844,
+    title: '쉬운 계단 수',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/10844
+// 쉬운 계단 수
+//
+// 인접한 자리의 차가 1인 N자리 수의 개수.
+// dp[i][j]: i자리이고 끝이 j인 계단 수의 개수.
+// dp[i][j] = dp[i-1][j-1] + dp[i-1][j+1]
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const MOD = BigInt(1000000000);
+  const dp = Array.from({length: n+1}, () => new Array(10).fill(BigInt(0)));
+  for (let j = 1; j <= 9; j++) dp[1][j] = BigInt(1);
+  for (let i = 2; i <= n; i++) {
+    for (let j = 0; j <= 9; j++) {
+      if (j > 0) dp[i][j] = (dp[i][j] + dp[i-1][j-1]) % MOD;
+      if (j < 9) dp[i][j] = (dp[i][j] + dp[i-1][j+1]) % MOD;
+    }
+  }
+  let ans = BigInt(0);
+  for (let j = 0; j <= 9; j++) ans = (ans + dp[n][j]) % MOD;
+  return ans.toString();
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2133,
+    title: '타일 채우기',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/2133
+// 타일 채우기
+//
+// 3×N 크기를 1×2, 2×1 타일로 채우는 경우의 수.
+// N이 홀수면 0. dp[i] = 3*dp[i-2] + 2*(dp[i-4]+...+dp[0])
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  if (n % 2 !== 0) return 0;
+  const dp = new Array(n + 1).fill(0);
+  dp[0] = 1; dp[2] = 3;
+  for (let i = 4; i <= n; i += 2) {
+    dp[i] = 3 * dp[i-2];
+    for (let j = i - 4; j >= 0; j -= 2) dp[i] += 2 * dp[j];
+  }
+  return dp[n];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2156,
+    title: '포도주 시식',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/2156
+// 포도주 시식
+//
+// 연속 3잔을 마실 수 없는 조건의 DP.
+// dp[i] = max(dp[i-1], dp[i-2]+wine[i], dp[i-3]+wine[i-1]+wine[i])
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const wine = [0];
+  for (let i = 1; i <= n; i++) wine.push(parseInt(lines[i].trim(), 10));
+  if (n === 1) return wine[1];
+  if (n === 2) return wine[1] + wine[2];
+  const dp = new Array(n + 1).fill(0);
+  dp[1] = wine[1]; dp[2] = wine[1] + wine[2];
+  for (let i = 3; i <= n; i++) {
+    dp[i] = Math.max(dp[i-1], dp[i-2]+wine[i], dp[i-3]+wine[i-1]+wine[i]);
+  }
+  return dp[n];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 9184,
+    title: '신나는 함수 실행',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/9184
+// 신나는 함수 실행
+//
+// 재귀 함수 w(a,b,c)의 결과를 메모이제이션으로 빠르게 구하는 문제.
+// 조건에 따라 분기하고 한 번 계산한 값은 캐시에 저장한다.
+
+function solve(lines) {
+  const cache = {};
+  function w(a, b, c) {
+    if (a <= 0 || b <= 0 || c <= 0) return 1;
+    if (a > 20 || b > 20 || c > 20) return w(20, 20, 20);
+    const key = \`\${a},\${b},\${c}\`;
+    if (cache[key] !== undefined) return cache[key];
+    let res;
+    if (a < b && b < c) res = w(a,b,c-1) + w(a,b-1,c-1) - w(a,b-1,c);
+    else res = w(a-1,b,c) + w(a-1,b-1,c) + w(a-1,b,c-1) - w(a-1,b-1,c-1);
+    cache[key] = res;
+    return res;
+  }
+
+  const result = [];
+  let idx = 0;
+  while (idx < lines.length) {
+    const line = lines[idx++].trim();
+    if (!line) continue;
+    const [a, b, c] = line.split(' ').map(Number);
+    if (a === -1 && b === -1 && c === -1) break;
+    result.push(\`w(\${a}, \${b}, \${c}) = \${w(a,b,c)}\`);
+  }
+  return result.join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1309,
+    title: '동물원',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/1309
+// 동물원
+//
+// 2×N 우리에서 같은 행 또는 열에 인접하지 않게 사자를 배치하는 경우의 수.
+// dp[i][0]: i행에 사자 없음, dp[i][1]: 왼쪽에 사자, dp[i][2]: 오른쪽에 사자
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const MOD = 9901;
+  const dp = [[1,1,1]];
+  for (let i = 1; i < n; i++) {
+    const prev = dp[i-1];
+    dp.push([
+      (prev[0] + prev[1] + prev[2]) % MOD,
+      (prev[0] + prev[2]) % MOD,
+      (prev[0] + prev[1]) % MOD,
+    ]);
+  }
+  return (dp[n-1][0] + dp[n-1][1] + dp[n-1][2]) % MOD;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2225,
+    title: '합분해',
+    tag: 'dp',
+    code: `// https://www.acmicpc.net/problem/2225
+// 합분해
+//
+// 0~N 사이 정수 K개를 더해 N을 만드는 경우의 수.
+// dp[k][n] = 합이 n이 되도록 k개를 고르는 경우의 수.
+// dp[k][n] = sum(dp[k-1][0..n])
+
+function solve(lines) {
+  const [N, K] = lines[0].trim().split(' ').map(Number);
+  const MOD = 1000000000;
+  const dp = Array.from({length: K+1}, () => new Array(N+1).fill(0));
+  for (let n = 0; n <= N; n++) dp[1][n] = 1;
+  for (let k = 2; k <= K; k++) {
+    let cumul = 0;
+    for (let n = 0; n <= N; n++) {
+      cumul = (cumul + dp[k-1][n]) % MOD;
+      dp[k][n] = cumul;
+    }
+  }
+  return dp[K][N];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1018,
+    title: '체스판 다시 칠하기',
+    tag: 'brute-force',
+    code: `// https://www.acmicpc.net/problem/1018
+// 체스판 다시 칠하기
+//
+// N×M 보드에서 8×8 체스판 패턴으로 잘랐을 때 다시 칠해야 하는 최솟값.
+// 왼쪽 위가 W인 경우와 B인 경우를 둘 다 계산해서 최솟값을 취한다.
+
+function solve(lines) {
+  const [N, M] = lines[0].trim().split(' ').map(Number);
+  const board = [];
+  for (let i = 1; i <= N; i++) board.push(lines[i].trim());
+
+  let minCost = Infinity;
+  for (let r = 0; r <= N - 8; r++) {
+    for (let c = 0; c <= M - 8; c++) {
+      let costW = 0;
+      for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 8; j++) {
+          const expected = (i + j) % 2 === 0 ? 'W' : 'B';
+          if (board[r+i][c+j] !== expected) costW++;
+        }
+      }
+      minCost = Math.min(minCost, costW, 64 - costW);
+    }
+  }
+  return minCost;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1181,
+    title: '단어 정렬',
+    tag: 'sorting',
+    code: `// https://www.acmicpc.net/problem/1181
+// 단어 정렬
+//
+// 길이 짧은 순, 같으면 사전순으로 정렬하고 중복은 제거한다.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const words = new Set();
+  for (let i = 1; i <= n; i++) words.add(lines[i].trim());
+  return [...words]
+    .sort((a, b) => a.length !== b.length ? a.length - b.length : a.localeCompare(b))
+    .join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 10814,
+    title: '나이순 정렬',
+    tag: 'sorting',
+    code: `// https://www.acmicpc.net/problem/10814
+// 나이순 정렬
+//
+// 나이 오름차순, 같으면 가입 순서(입력 순서) 유지.
+// JS의 sort는 stable sort라서 입력 순서 유지가 보장된다.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const members = [];
+  for (let i = 1; i <= n; i++) {
+    const [age, name] = lines[i].trim().split(' ');
+    members.push([parseInt(age, 10), name]);
+  }
+  members.sort((a, b) => a[0] - b[0]);
+  return members.map(([age, name]) => \`\${age} \${name}\`).join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1427,
+    title: '소트인사이드',
+    tag: 'sorting',
+    code: `// https://www.acmicpc.net/problem/1427
+// 소트인사이드
+//
+// 숫자의 각 자리를 내림차순으로 정렬해서 출력한다.
+
+function solve(lines) {
+  return lines[0].trim().split('').sort((a, b) => b - a).join('');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2751,
+    title: '수 정렬하기 2',
+    tag: 'sorting',
+    code: `// https://www.acmicpc.net/problem/2751
+// 수 정렬하기 2
+//
+// N개의 수를 오름차순으로 정렬한다. N이 최대 1,000,000이라 O(N log N)이 필요하다.
+// JS 내장 sort는 Timsort라서 충분히 빠르다.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const nums = [];
+  for (let i = 1; i <= n; i++) nums.push(parseInt(lines[i].trim(), 10));
+  nums.sort((a, b) => a - b);
+  return nums.join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 11651,
+    title: '좌표 정렬하기 2',
+    tag: 'sorting',
+    code: `// https://www.acmicpc.net/problem/11651
+// 좌표 정렬하기 2
+//
+// y 기준으로 정렬하고 y가 같으면 x 기준으로 정렬한다.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const points = [];
+  for (let i = 1; i <= n; i++) {
+    const [x, y] = lines[i].trim().split(' ').map(Number);
+    points.push([x, y]);
+  }
+  points.sort((a, b) => a[1] !== b[1] ? a[1] - b[1] : a[0] - b[0]);
+  return points.map(([x, y]) => \`\${x} \${y}\`).join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1966,
+    title: '프린터 큐',
+    tag: 'queue',
+    code: `// https://www.acmicpc.net/problem/1966
+// 프린터 큐
+//
+// 우선순위 큐 시뮬레이션 문제.
+// 큐에서 꺼낸 문서보다 우선순위 높은 게 있으면 다시 뒤에 넣고,
+// 없으면 출력하고 카운트를 올린다. 목표 문서가 출력될 때 카운트를 리턴.
+
+function solve(lines) {
+  const T = parseInt(lines[0].trim(), 10);
+  const result = [];
+  for (let t = 0; t < T; t++) {
+    const [N, M] = lines[1 + t*2].trim().split(' ').map(Number);
+    const priorities = lines[2 + t*2].trim().split(' ').map(Number);
+    const queue = priorities.map((p, i) => [p, i]);
+    let count = 0;
+    while (true) {
+      const [p, idx] = queue.shift();
+      if (queue.some(([pp]) => pp > p)) {
+        queue.push([p, idx]);
+      } else {
+        count++;
+        if (idx === M) { result.push(count); break; }
+      }
+    }
+  }
+  return result.join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 10799,
+    title: '쇠막대기',
+    tag: 'stack',
+    code: `// https://www.acmicpc.net/problem/10799
+// 쇠막대기
+//
+// 레이저가 만나는 막대기 수만큼 자른다.
+// ( 는 막대 시작 or 레이저 시작, ) 는 레이저 완성 or 막대 끝.
+// 앞이 ( 인 ) 은 레이저, 그 외는 막대 끝.
+
+function solve(lines) {
+  const s = lines[0].trim();
+  const stack = [];
+  let count = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '(') {
+      stack.push(i);
+    } else {
+      stack.pop();
+      if (s[i-1] === '(') {
+        count += stack.length;
+      } else {
+        count += 1;
+      }
+    }
+  }
+  return count;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 9012,
+    title: '괄호',
+    tag: 'stack',
+    code: `// https://www.acmicpc.net/problem/9012
+// 괄호
+//
+// 주어진 괄호 문자열이 올바른지 판단한다.
+// 스택으로 여는 괄호를 쌓고, 닫는 괄호가 나오면 pop한다.
+// 최종적으로 스택이 비어있으면 YES, 아니면 NO.
+
+function solve(lines) {
+  const T = parseInt(lines[0].trim(), 10);
+  const result = [];
+  for (let t = 1; t <= T; t++) {
+    const s = lines[t].trim();
+    let stack = 0;
+    let valid = true;
+    for (const c of s) {
+      if (c === '(') stack++;
+      else {
+        if (stack === 0) { valid = false; break; }
+        stack--;
+      }
+    }
+    result.push(valid && stack === 0 ? 'YES' : 'NO');
+  }
+  return result.join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1935,
+    title: '후위 표기식2',
+    tag: 'stack',
+    code: `// https://www.acmicpc.net/problem/1935
+// 후위 표기식2
+//
+// 후위 표기식을 계산하는 문제. 숫자면 스택에 push, 연산자면 두 개 pop해서 계산 후 push.
+// 피연산자는 A=1, B=2... 로 대응.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const expr = lines[1].trim();
+  const vals = [];
+  for (let i = 2; i < 2 + n; i++) vals.push(parseFloat(lines[i].trim()));
+
+  const stack = [];
+  for (const c of expr) {
+    if (c >= 'A' && c <= 'Z') {
+      stack.push(vals[c.charCodeAt(0) - 65]);
+    } else {
+      const b = stack.pop(), a = stack.pop();
+      if (c === '+') stack.push(a + b);
+      else if (c === '-') stack.push(a - b);
+      else if (c === '*') stack.push(a * b);
+      else if (c === '/') stack.push(a / b);
+    }
+  }
+  return stack[0].toFixed(2);
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1003,
+    title: '피보나치 함수',
+    tag: 'memoization',
+    code: `// https://www.acmicpc.net/problem/1003
+// 피보나치 함수 (메모이제이션 버전)
+//
+// fib(n) 호출 시 0과 1의 출력 횟수를 메모이제이션으로 구한다.
+
+function solve(lines) {
+  const T = parseInt(lines[0].trim(), 10);
+  const memo = {0: [1,0], 1: [0,1]};
+  function fib(n) {
+    if (memo[n]) return memo[n];
+    const [a0, a1] = fib(n-1), [b0, b1] = fib(n-2);
+    memo[n] = [a0+b0, a1+b1];
+    return memo[n];
+  }
+  const result = [];
+  for (let t = 1; t <= T; t++) {
+    const n = parseInt(lines[t].trim(), 10);
+    result.push(fib(n).join(' '));
+  }
+  return result.join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 1920,
+    title: '수 찾기',
+    tag: 'binary-search',
+    code: `// https://www.acmicpc.net/problem/1920
+// 수 찾기
+//
+// N개의 수에서 M개의 수가 있는지 이진 탐색으로 확인한다.
+// Set으로 풀면 더 간단하지만, 이진 탐색 연습용으로 직접 구현.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const A = lines[1].trim().split(' ').map(Number).sort((a,b) => a-b);
+  const m = parseInt(lines[2].trim(), 10);
+  const queries = lines[3].trim().split(' ').map(Number);
+
+  const bsearch = (arr, target) => {
+    let lo = 0, hi = arr.length - 1;
+    while (lo <= hi) {
+      const mid = (lo + hi) >> 1;
+      if (arr[mid] === target) return 1;
+      if (arr[mid] < target) lo = mid + 1;
+      else hi = mid - 1;
+    }
+    return 0;
+  };
+
+  return queries.map(q => bsearch(A, q)).join('\\n');
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2805,
+    title: '나무 자르기',
+    tag: 'binary-search',
+    code: `// https://www.acmicpc.net/problem/2805
+// 나무 자르기
+//
+// 절단기 높이 H를 이진 탐색으로 찾는다.
+// H로 잘랐을 때 얻는 나무 합이 M 이상이면 H를 높이고, 아니면 낮춘다.
+
+function solve(lines) {
+  const [N, M] = lines[0].trim().split(' ').map(Number);
+  const trees = lines[1].trim().split(' ').map(Number);
+  let lo = 0, hi = Math.max(...trees);
+  while (lo < hi) {
+    const mid = Math.floor((lo + hi + 1) / 2);
+    const total = trees.reduce((s, t) => s + Math.max(0, t - mid), 0);
+    if (total >= M) lo = mid;
+    else hi = mid - 1;
+  }
+  return lo;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 2164,
+    title: '카드2',
+    tag: 'simulation',
+    code: `// https://www.acmicpc.net/problem/2164
+// 카드2 (시뮬레이션)
+//
+// 1번부터 N번까지 카드를 순서대로 쌓고, 맨 위 카드를 버리고 다음 카드를 맨 아래로 보내는 과정 반복.
+
+function solve(lines) {
+  const n = parseInt(lines[0].trim(), 10);
+  const q = Array.from({length: n}, (_, i) => i + 1);
+  while (q.length > 1) { q.shift(); q.push(q.shift()); }
+  return q[0];
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 3190,
+    title: '뱀',
+    tag: 'simulation',
+    code: `// https://www.acmicpc.net/problem/3190
+// 뱀
+//
+// 뱀이 이동하는 시뮬레이션. 사과를 먹으면 길이가 늘고, 못 먹으면 꼬리가 사라진다.
+// 벽이나 자기 몸에 닿으면 종료. 방향 전환 명령을 큐로 관리한다.
+
+function solve(lines) {
+  const N = parseInt(lines[0].trim(), 10);
+  const K = parseInt(lines[1].trim(), 10);
+  const apples = new Set();
+  for (let i = 2; i < 2+K; i++) {
+    const [r, c] = lines[i].trim().split(' ').map(Number);
+    apples.add(\`\${r},\${c}\`);
+  }
+  const L = parseInt(lines[2+K].trim(), 10);
+  const turns = [];
+  for (let i = 3+K; i < 3+K+L; i++) {
+    const [t, d] = lines[i].trim().split(' ');
+    turns.push([parseInt(t,10), d]);
+  }
+
+  const dr = [0,1,0,-1], dc = [1,0,-1,0];
+  let dir = 0, r = 1, c = 1, time = 0;
+  const body = [[r,c]];
+  const bodySet = new Set([`\${r},\${c}\`]);
+  let turnIdx = 0;
+
+  while (true) {
+    time++;
+    r += dr[dir]; c += dc[dir];
+    if (r < 1 || r > N || c < 1 || c > N || bodySet.has(\`\${r},\${c}\`)) break;
+    body.push([r,c]); bodySet.add(\`\${r},\${c}\`);
+    if (apples.has(\`\${r},\${c}\`)) apples.delete(\`\${r},\${c}\`);
+    else { const [tr,tc] = body.shift(); bodySet.delete(\`\${tr},\${tc}\`); }
+    if (turnIdx < turns.length && turns[turnIdx][0] === time) {
+      dir = turns[turnIdx][1] === 'L' ? (dir+3)%4 : (dir+1)%4;
+      turnIdx++;
+    }
+  }
+  return time;
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
+  {
+    num: 14891,
+    title: '톱니바퀴',
+    tag: 'simulation',
+    code: `// https://www.acmicpc.net/problem/14891
+// 톱니바퀴
+//
+// 4개의 톱니바퀴가 서로 맞닿아서 회전하는 시뮬레이션.
+// 회전할 때 인접 바퀴의 맞닿는 부분이 같으면 돌지 않고, 다르면 반대 방향으로 돈다.
+
+function solve(lines) {
+  const wheels = [];
+  for (let i = 0; i < 4; i++) wheels.push(lines[i].trim().split('').map(Number));
+  const K = parseInt(lines[4].trim(), 10);
+
+  for (let k = 0; k < K; k++) {
+    const [num, dir] = lines[5+k].trim().split(' ').map(Number);
+    const idx = num - 1;
+    const dirs = [0,0,0,0];
+    dirs[idx] = dir;
+    for (let i = idx-1; i >= 0; i--) {
+      if (wheels[i][2] !== wheels[i+1][6]) dirs[i] = -dirs[i+1];
+      else break;
+    }
+    for (let i = idx+1; i < 4; i++) {
+      if (wheels[i][6] !== wheels[i-1][2]) dirs[i] = -dirs[i-1];
+      else break;
+    }
+    for (let i = 0; i < 4; i++) {
+      if (dirs[i] === 1) wheels[i].unshift(wheels[i].pop());
+      else if (dirs[i] === -1) wheels[i].push(wheels[i].shift());
+    }
+  }
+
+  return wheels.reduce((s, w, i) => s + w[0] * (1 << i), 0);
+}
+
+module.exports = solve;
+
+if (require.main === module) {
+  const input = require('fs').readFileSync('/dev/stdin').toString().split('\\n');
+  console.log(solve(input));
+}`,
+  },
 ];
 
 // 오늘 날짜 기준으로 몇 번째 문제인지 계산
-const startDate = new Date('2026-09-11T00:00:00+09:00');
+const startDate = new Date('2026-10-11T00:00:00+09:00');
 const today = new Date();
 const kstToday = new Date(today.toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
 const diffDays = Math.floor((kstToday - startDate) / (1000 * 60 * 60 * 24));
