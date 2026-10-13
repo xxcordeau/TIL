@@ -1702,7 +1702,7 @@ function solve(lines) {
   const dr = [0,1,0,-1], dc = [1,0,-1,0];
   let dir = 0, r = 1, c = 1, time = 0;
   const body = [[r,c]];
-  const bodySet = new Set([`\${r},\${c}\`]);
+  const bodySet = new Set([\`\${r},\${c}\`]);
   let turnIdx = 0;
 
   while (true) {
